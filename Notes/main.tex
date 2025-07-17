@@ -17,6 +17,8 @@
     allcolors=navyblue
 }
 
+\bibliographystyle{ieeetr}
+
 \title{Axiverse Machine}
 \author{Masha Baryakhtar, David Cyncynates, Ella Henry}
 \date{\today}
@@ -25,121 +27,124 @@
 
 \maketitle
 \section{Anthropics}
-\subsection{$n$ heavy axions with uniform ICs}
-The bounds for the possible ratio of the dark matter abundance to baryon abundance, $\zeta$, are given in \cite{ben} to be $2.5<\zeta <100$. The lower bound is related to the value for which perturbations near the size of our galaxy's stop growing, and the upper bound is related to the value that ultimately prevents star formation. All values within this range are allowed in the sense that they would lead to our existence today, but their likelihoods depend on the theory for dark matter, as we will see below. In section 5 of \cite{bookkeeping}, the authors consider the case of $n$ axions and the fraction of the dark matter that they constitute. If the axions make up all of the dark matter, then we can write $\zeta$ as:
+The bounds for the possible ratio of the dark matter abundance to baryon abundance, $\zeta$, are given in \cite{anthropic-explanation} to be $2.5<\zeta <100$. The lower bound is related to the value for which perturbations near the size of our galaxy's stop growing, and the upper bound is related to the value that ultimately prevents star formation. All values within this range are allowed in the sense that they would lead to our existence today, but their likelihoods depend on the theory for dark matter, as we will see below. In section 5 of \cite{exploring-string-axiverse}, the authors consider the case of $n$ axions and the fraction of the dark matter that they constitute. If the axions make up all of the dark matter, then we can write $\zeta$ as:
 
 \begin{equation}
 \label{eq:zeta}
     \zeta = \sum_{a=1}^n c(m_a) F(\theta_a)
 \end{equation}
 
-Here, $c(m_a)F(\theta_a)$ is the fractional abundance in the $a$-th axion, where $F(\theta_a)$ encodes the dependence of the fractional abundance on the axion's intial misalignment angle. For small enough angles, $F(\theta_a)\sim\theta_a^2$. The $c(m_a)$ factor takes into account the fractional abundance's dependence on the mass and on the scale of symmetry breaking (e.g. for axions that start to oscillate during radiation domination, $c(m_a) \sim \Big(\frac{m_a}{H_{eq}}\Big)^{1/2}\Big(\frac{f_a}{M_{pl}}\Big)^2$).
+Here, $c(m_a)F(\theta_a)$ is the fractional abundance in the $a$-th axion, where $F(\theta_a)$ encodes the dependence of the fractional abundance on the axion's intial misalignment angle. For small enough angles, $F(\theta_a)\sim\theta_a^2$. The $c(m_a)$ factor takes into account the fractional abundance's dependence on the mass and on the scale of symmetry breaking, e.g. for axions that start to oscillate during radiation domination, $c(m_a) \sim \Big(\frac{m_a}{H_{eq}}\Big)^{1/2}\Big(\frac{f_a}{M_{pl}}\Big)^2$.
 
-The authors of \cite{bookkeeping} then calculate the probability of finding ourselves in a causal patch where the dark matter abundance is no larger than the observed value of $\zeta \sim 5$, without being so small that we could not exist, i.e. the probability that $2.5<\zeta<5$. They consider $n$ axions at the GUT scale ($f\sim 10^{16}$ GeV), with masses $m_a\geq10^{-21}$ eV, and find that this probability is:
+\subsection{The anthropic measure}
+
+The authors of \cite{exploring-string-axiverse} then calculate the probability $P$ of finding ourselves in a causal patch where the dark matter abundance is no larger than the observed value of $\zeta \sim 5$, without being so small that we could not exist, in other words, the probability that $2.5<\zeta<5$. The calculation uses the causal diamond measure (details in \cite{anthropic-explanation}) to circumvent the problem of computing probabilities in an infinite-dimensional space, which leads to difficulties in normalizing these probabilities. The measure allows us to restrict ourselves to one causal patch and consider the number of observations made in that patch. To determine this number, the author of \cite{anthropic-explanation} counts the number of baryons in a causal patch and then the number of observations per baryon. The quantitative expression the author finds for the number of baryons in a causal patch is $(1+\zeta)^{-1}$ with the assumption of fixed baryon-to-photon ratio. The number of observers per baryon is approximated to be constant within the range of allowed $\zeta$ values. The overall contribution to the probability density from the causal diamond measure is therefore $C(1+\zeta)^{-1}$, for some constant $C$.
+
+We must also assume some distribution for the initial conditions $theta_a$, which will depend on the scale of inflation relative to the axion's potential: for high scale inflation, the distribution is flat between $[-\pi,\pi]$, while for low scale inflation,     $p(\theta_a) \propto \exp{\left(-\frac{8\pi^2V(\theta_a)}{3H^4}\right)}$, where $V(\theta_a)=\Lambda^4(1-\cos{\theta_a})$. We can approximate this distribution from low scale inflation as flat between $[-\sigma,\sigma]$, where $\sigma^2 = 3H^4/(8\pi^2m^2f^2)$ is the spread in this distribution. So in general, we can consider $p(\theta_a)$ as flat between two values, which we'll call $\pm f(H)$, where:
 
 \begin{equation}
-\label{eq:prob-result}
+\label{eq:f(H)}
+    f(H) = \begin{cases}
+        \pi \; \text{ for } H>\Lambda\\
+        \sigma \; \text{ for } H < \Lambda
+    \end{cases}
+\end{equation}
+
+Now, using the causal diamond measure described above and the flat distribution between $\pm f(H)$ for the initial conditions, we can write down an expression for the probability $P$:
+
+\begin{equation}
+    \label{eq:prob-deriv}
+    P = N^{-1} \frac{C}{(2f(H))^n}\int_{2.5<\zeta(\theta_a)<5} \frac{\prod_{a=1}^nd\theta_a}{1+\zeta(\theta_a)}
+\end{equation}
+
+\noindent where again $n$ is the number of axions and $C$ is the constant factor from the number of observations per baryon. The normalization $N$ is such that the probability is normalized to 1 and is given by:
+
+\begin{equation}
+    \label{eq:prob-deriv-norm}
+    N = \frac{C}{(2f(H))^n}\int_{2.5<\zeta(\theta_a)<100} \frac{\prod_{a=1}^nd\theta_a}{1+\zeta(\theta_a)}
+\end{equation}
+
+We can compute this probability for any value of $f(H)$ by rescaling the integration variables as $\theta_a' = \theta_a/f(H)$ and writing $\zeta(\theta_a)=c_a\theta_a^2$ (summing over the $a$ index):
+
+\begin{equation}
+    \label{eq:general-prob}
+     P = \mathcal{N}^{-1} \int_{-1}^1 \frac{\prod_{a=1}^nd\theta_a'}{1+c_a'\theta_a'^2}\Theta(c_a'\theta_a'^2-2.5)\Theta(5-c_a'\theta_a'^2)
+\end{equation}
+
+\noindent where the $\theta_a$-independent factors out front in Eq. \eqref{eq:prob-deriv} have canceled out with those in the normalization $N$, and so $\mathcal{N}$ is the same as $N$, without those factors. $\Theta$ here is the Heaviside function and $c_a'\equiv c_af(H)^2$.
+
+\subsection{1 axion}
+
+The probability for one axion can be computed numerically as a function of $c_1$ and is shown below.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{figs/1axion-prob.jpeg}
+    \centering
+    \caption{Probability of measuring $2.5<\zeta<5$ in the case of one axion, as a function of $c_1'$. The dashed horizontal line corresponds to $P=0.3$, the probability found for 1 axion in \cite{exploring-string-axiverse}}.
+    \label{fig:1axion-prob}
+\end{figure}
+
+Fig. \ref{fig:1axion-prob} shows that once $c_1'>\zeta_\text{upper}=100$, the probability becomes independent of the axion parameters (recall that $c' \propto m^{1/2}f^2$), and acquires the constant value of $P=0.3$. This corresponds to the $n=1$ case of the result presented in Eq. 79 of \cite{exploring-string-axiverse}, reproduced below:
+
+\begin{equation}
+\label{eq:bookkeeping-result}
     P_n = \frac{\int_{2.5}^5 \frac{d\zeta \zeta^{(n-2)/2}}{1+\zeta}}{\int_{2.5}^{100}\frac{d\zeta \zeta^{(n-2)/2}}{1+\zeta}} = \text{0.3, 0.16, 0.06, 0.02, 0.006, . . .}
 \end{equation}
 
-This result is independent of the masses $m_a$, as long as $m_a$ is large enough so that the axion is required to have small enough $\theta_a$ to not overproduce the dark matter. For such small angles, we can approximate the $\theta_a$ dependence of the relic abundance as $F(\theta_a)\sim \theta_a^2$. The exact mass threshold for which the result becomes independent of the mass depends on the decay constant; for $f_a \sim 10^{16}$ GeV, this corresponds to a mass of $m_a \sim  10^{-19}$ eV.
+\noindent In this result, the authors focus on $n$ axions at the GUT scale ($f\sim 10^{16}$ GeV), with masses heavy enough ( $m_a\geq10^{-19}$ eV) so that the axions would find themselves in this constant $P$ regime. Indeed, one can check that for $f\sim 10^{16}$ GeV and $m_a\geq10^{-19}$ eV, the criterion $c_a>100$ is satisfied.
 
-\subsection{2 axions of arbitrary mass and uniform ICs}
-Focusing on two axions, we can take into account the mass dependence of the probability given in Eq. \eqref{eq:prob-result}, we have:
+\subsection{2 axions}
 
-\begin{equation}
-\label{eq:two-axion}
-P_2 = \frac{\int_{2.5<\zeta<5} \frac{d\theta_1d\theta_2}{1+\zeta}}{\int_{2.5<\zeta<100} \frac{d\theta_1d\theta_2}{1+\zeta}}
-\end{equation}
-
-\noindent where $\zeta = c_1\theta_1^2+c_2\theta_2^2$ and $c_i = (m_i/H_{eq})^{1/2}(f/M_{pl})^2$.
+We can compute the probability in Eq. \eqref{eq:general-prob} now for $n=2$, numerically, and plot the results as a function of $c_2'$, for a few chosen values of $c_1'$. This is shown below in Fig. \ref{fig:2axion-prob}
 
 \begin{figure}[h]
-    \includegraphics[scale=0.5]{figs/twoAxions.jpeg}
+    \includegraphics[scale=0.5]{figs/2axion-prob.jpeg}
     \centering
-    \caption{Probability of measuring $2.5<\zeta<5$ in the case of two axion as a function of $c_2$, for different values of $c_1$ (Eq. \eqref{eq:two-axion}). The dashed horizontal lines correspond to the probabilities for 1 and 2 axions as given by Eq. \eqref{eq:prob-result}: 0.3 and 0.16 respectively.}
+    \caption{Probability of measuring $2.5<\zeta<5$ in the case of two axion as a function of $c_2'$, for different values of $c_1'$. The dashed horizontal lines correspond to the probabilities for 1 and 2 axions as given by Eq. \eqref{eq:bookkeeping-result}: 0.3 and 0.16 respectively.}.
+    \label{fig:2axion-prob}
 \end{figure}
 
-In the graph above, there seems to be some noticeable behavior around a value of $c\sim 10$, which I'll call $c_\text{crit}$. In the regimes where at least one $c_i > c_\text{crit}$ while the other is much smaller, or when both $c_\text{crit}$, correspond to the mass-independent regime to which Eq. $\eqref{eq:two-axion}$ is valid. If $\zeta_\text{lower}<\zeta<\zeta_\text{upper}$, then the value of $c_\text{crit} = \zeta_\text{upper}/\pi^2$ or $100/\pi^2\approx10$ in our case. In terms of the mass and decay constant of the $a$-th axion, this condition is (up to some order 1 numbers I think):
+The behavior of $P_2$ shows that there is a little more nuance, but the result that an axion contributes to the anthropic measure once $c'>\zeta_\text{upper}$ holds true. We see that if $c_1'\ll\zeta_\text{upper}$ and $c_2'>\zeta_\text{upper}$ (see red line for larger $c_2'$ in Fig. \ref{fig:2axion-prob}), the the first axion does not contribute while the second one does, and thus we recover the $P=0.3$ probability from the 1-axion scenario. The same is true if $c_1'>\zeta_\text{upper}$ and $c_2'\ll\zeta_\text{upper}$ (Fig. \ref{fig:2axion-prob}, blue line for small $c_2'$). If both $c_1',c_2'>\zeta_\text{upper}$ (Fig. \ref{fig:2axion-prob}, blue line for large $c_2'$), then the two axions contribute to the measure and so the probability is $P=0.16$, in agreement with Eq. \eqref{eq:bookkeeping-result}. There is a weird middle regime (purple line in Fig. \ref{fig:2axion-prob}, as well as region in all three lines where there is a bump), where I am not really sure what's going on yet. 
+
+We have thus seen, in the case 1 and 2 axions, that the condition that an axion must satisfy to contribute to the anthropic measure is $c'>\zeta_\text{upper}$. Recalling that $c'=c\,f(H)^2$ (with $f(H)$ given in Eq. \eqref{eq:f(H)}), and that $c=(m/H_{eq})^{1/2}(f/M_{pl})^2$ we can write this condition in terms of the physical parameters as:
 
 \begin{equation}
-    \boxed{\left(\frac{m_a}{H_{eq}}\right)^{1/2}\left(\frac{f}{M_{pl}}\right)^{2}=\frac{\zeta_\text{upper}}{\pi^2}}
+    \label{eq:c-condition}
+    \boxed{\left(\frac{m}{H_{eq}}\right)^{1/2}\left(\frac{f}{M_{pl}}\right)^{2}\min{ \Bigl\{ \pi^2,\frac{3H^4}{8\pi^2m^2f^2}\Bigr\}}>\zeta_\text{upper}}
 \end{equation}
 
-This dependence of $c_\text{crit}$ on $\zeta_\text{upper}$ physically corresponds to the idea that the upper anthropic limit on the dark matter abundance affects the value of $c$ that an axion must have in order to contribute meaningfully to that abundance. Note that if the misalignment angle is large enough so that the dependence of the energy density on it is different from quadratic, then this expression for $c_\text{crit}$ will be slightly modified. \\
+The takeaway is that if the scale of inflation is low, heavier axions will evade this criterion and therefore will not contribute to the anthropic measure: including them in the theory does not require more fine-tuning. On the other hand, if the scale of inflation is high, these axions will quickly satisfy this condition and require fine-tuning, while lighter axions won't (the words ``lighter" and ``heavier" depend on the values of $H$ and $f$ in each case respectively; this will need to be further investigated).
 
-\noindent \textbf{Things to better understand:}
-\begin{enumerate}
-    \item include correction to the energy density from cosine potential if you want to integrate over all angles equally and get rid of requirement imposed by looking at only heavy masses
-    \item what happens below $c_\text{crit}$
-    \item and related to the previous point, what the bump is, what it looks like with more axions
-\end{enumerate}
+Note that Eq. \eqref{eq:c-condition} is approximate in that: (1) it assumes that $F(\theta_a)\sim\theta^2$, which is not true if $\theta_a \sim O(1)$, in which case there is a small correction; (2) it approximates the distribution of $\theta_a$ in a low scale inflation scenario to be flat between $\pm \sigma$, instead of treating it fully as $\propto \exp{\left(-V(\theta_a)/H^4\right)}$; and (3) it only accounts for regimes where $H<\Lambda$ or $H>\Lambda$, and glosses over the $H\sim\Lambda$ regime.
 
-\subsection{1 axion with arbitrary scale of inflation}
+\subsection{Exact anthropic probability with low scale inflation}
 
-\begin{figure}[h]
-\label{fig:1axion-unifprob}
-    \includegraphics[scale=0.5]{figs/oneAxion.jpeg}
-    \centering
-    \caption{Probability of measuring $2.5<\zeta<5$ in the case of one axion as a function of $c$. The dashed line corresponds to the mass-independent probability from Eq. \eqref{eq:prob-result} for $n=1$.}
-\end{figure}
-
-First, consider a single axion in a scenario with a high scale of inflation such that its misalignment angle is uniformly distributed between $[-\pi,\pi]$. In the anthropic measure, we can again calculate the probability that $2.5<\zeta=c\theta^2<5$ for this single axion and plot this probability as a function of $c$, as shown above:
-
-\begin{equation}
-\label{eq:1axion-prob}
-   P_1 = \frac{\int_{2.5<\zeta<5} \frac{d\theta}{1+\zeta}}{\int_{2.5<\zeta<100} \frac{d\theta}{1+\zeta}} = \frac{\int_{-\pi}^{\pi}\frac{d\theta}{1+c\theta^2}H(c\theta^2-2.5)H(5-c\theta^2)}{\int_{-\pi}^{\pi}\frac{d\theta}{1+c\theta^2}H(c\theta^2-2.5)H(100-c\theta^2)}
-\end{equation}
-
-\noindent where $H(\theta)$ is the Heaviside step function. The 1-axion probability as shown in the above figure follows the same story as the one we deduced from the 2-axion scenario, in which an axion contributed once its value of $c$ satisfies $c>c_\text{crit}$.
-
-For an arbitrary scale of inflation, if the duration of inflation is long enough, the initial conditions are drawn according to the following distribution:
-
-\begin{equation}
-\label{eq:inflationary-dist}
-    p(\theta) \propto \exp{\left(-\frac{8\pi^2V(\theta)}{3H^4}\right)}
-\end{equation}
-
-\noindent where $V(\theta)$ is the potential. To study the effect of inflationary initial conditions on anthropics, we can take two approaches: (1) an exact calculation of the probability, with the integrand integrated against the exponential distribution for $\theta$ from inflation; and (2) approximate the potential $V(\theta)$ as a quadratic so that the distribution in Eq. \eqref{eq:inflationary-dist} is a Gaussian with some standard deviation $\sigma$, and the approximate the Gaussian as flat between $[-\sigma,\sigma]$.
-
-\subsubsection{Exact approach}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1
-\linewidth]{figs/Screenshot 2025-07-14 at 17.00.25.png}
-    \caption{Probability of $2.5<\zeta<5$ for a stochastic axion scenario, with different vales of $H$ relative to $\Lambda = (mf)^{1/2}$}
-    \label{fig:enter-label}
-\end{figure}
-
-Solving exactly\footnote{``exactly" in the sense that I'm not approximating the potential or distribution of misalignment angles, but integral is done numerically.} for the anthropic probability with initial conditions can be done pretty straightforwardly for one axion. The probability becomes:
+In the previous section, we used an approximate form for the distribution of initial conditions from low scale inflation. We can compute the anthropic probability \textit{for one axion} more precisely in the case of low scale inflation by numerically calculating the following:
 
 \begin{equation}
     \label{eq:inflation-prob-1axion}
     P = N^{-1}\int_{2.5<\zeta<5} \frac{d\theta}{1+\zeta} \exp{\left(-\frac{8\pi^2V(\theta)}{3H^4}\right)}
 \end{equation}
 
-\noindent where the normalization is $N = \int_{2.5<\zeta<100} \frac{d\theta}{1+\zeta}\exp{\left(-\frac{8\pi^2V(\theta)}{3H^4}\right)}$. This probability is plotted against $\sqrt{mf}$ for certain values of $H$ in the figure above. As expected, for each curve, we see that when the scale of inflation is low relative to the size of the potential (i.e. $H<\Lambda$), the probability that $2.5<\zeta<5$ grows, since you are sampling $\theta$ from a distribution peaked closer and closer to zero (effectively acts like a small $c$, see Fig. 3). When $H>\Lambda$, you recover the expected behavior from flat initial conditions: the probability drops for $\Lambda$ (until $\Lambda \sim H$, and then you enter the first regime).
+\noindent where the normalization is the same integral but with integration bound $2.5<\zeta<100$. This probability is plotted against $\sqrt{mf}$ for certain values of $H$ in Fig. \ref{fig:low-scale-inf-prob} (and $f$ is set to 1).
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/low-scale-inf-prob.jpeg}
+    \caption{Probability of $2.5<\zeta<5$ for a stochastic axion scenario (low scale, long-lasting inflation), with different vales of $H$ relative to $\Lambda = (mf)^{1/2}$. In this plot, $f=1$.}
+    \label{fig:low-scale-inf-prob}
+\end{figure}
 
-\subsubsection{Approximate approach}
-Alternatively, we can study the effect of inflationary initial conditions on the anthropic probability by approximating the distribution in Eq. \eqref{eq:inflation-prob-1axion} as $\theta \sim \text{Unif}(-\sigma,\sigma)$ where $\sigma = \sqrt{(3H^4)/(8\pi^2m^2f^2})$. Then, the expression for the probability is the same as in Eq. \eqref{eq:1axion-prob}, except the bounds of integration over $\theta$ are different. We can perform a change of variables $\theta\rightarrow\frac{\sigma}{\pi}\theta'$ so that this difference manifests itself not in the bounds of integration but in the $c$ factor:
+As expected, for each curve, we see that when the scale of inflation is low relative to the size of the potential (i.e. $H<\Lambda$), the probability that $2.5<\zeta<5$ grows, since you are sampling $\theta$ from a distribution peaked closer and closer to zero (effectively acts like a small $c$). When $H>\Lambda$, you recover the expected behavior from flat initial conditions: the probability drops for $\Lambda$ (until $\Lambda \sim H$, and then you enter the first regime). \\
 
-\begin{align*}
-    \label{eq:approx-inf-prob}
-    P & = \frac{\int_{-\sigma}^{\sigma}\frac{d\theta}{1+c\theta^2}H(c\theta^2-2.5)H(5-c\theta^2)}{N'} \\
-    & = \frac{\int_{-\pi}^{\pi}\frac{d\theta'}{1+c(\frac{\sigma}{\pi}\theta')^2}H(c(\frac{\sigma}{\pi}\theta')^2-2.5)H(5-c(\frac{\sigma}{\pi}\theta')^2)}{N'}
-\end{align*}
-
-\noindent As usual, the normalization factor $N'$ is the same integral but with an upper limit $c\theta^2<100$. The integral in the last line is the same as that in Eq. \eqref{eq:1axion-prob}, but with $c\rightarrow c(\sigma/\pi)^2 = \frac{c}{\pi^2}(3H^4)/(8\pi^2m^2f^2)$. 
-
-The nice thing about this approach is that it generalizes nicely to $n>1$ axions, whereas the exact approach in the previous section would be harder to think about for $n>1$.
-
-So to summarize, if we approximate the potential to be quadratic (i.e. $H_I<\Lambda$), and then approximate the distribution of initial conditions to be flat between $\pm \sqrt{(3H^4)/(8\pi^2m^2f^2})$, then the condition for an axion to contribute to the anthropic measure is:
-
-\begin{equation}
-    \boxed{\frac{3}{8\pi^2}\frac{H_I^4}{M_{pl}^2H_{eq}^{1/2}m^{3/2}}=\zeta_\text{upper}}
-\end{equation}
+\color{red}\noindent \textbf{Things to do:}
+\begin{enumerate}
+    \item could include correction to the energy density from cosine potential in the probability calc
+    \item what happens below $c=\zeta_\text{upper}$?
+    \item and related to the previous point, what is the bump? what does it looks like with more axions?
+    \item visualize/better understand the parts of parameter space that are viable via anthropics using Eq. \eqref{eq:c-condition}
+    \item keep in mind dependence of results on choice of measure (causal diamond vs others?)
+\end{enumerate}\color{black}
 
 \section{GSification}
 
@@ -233,5 +238,6 @@ Let us consider the algorithm more carefully, and consider how it may be improve
     \item In order to avoid using arbitrary precision during numerical integration, consider why arbitrary precision may be considered necessary at all. It is only the case that arbitrary precision would be necessary if terms with a huge dynamical range entered into the light field equations of motion in the first place. These terms necessarily cancel -- how can we eliminate them without losing precision? IDEA: Suppose there are N dynamical degrees of freedom -- using arbitrary precision, precompute an N dimensional subvolume of the potential
 \end{enumerate}
 
+\bibliography{refs}
 
 \end{document}

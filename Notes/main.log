@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  14 JUL 2025 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  17 JUL 2025 09:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -358,28 +358,41 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box56
 )
-No file main.aux.
+(./main.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
 \scratchdimen=\dimen159
@@ -401,19 +414,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 24.
-Package microtype Info: Applying patch `item' on input line 24.
-Package microtype Info: Applying patch `toc' on input line 24.
-Package microtype Info: Applying patch `eqnum' on input line 24.
-Package microtype Info: Applying patch `footnote' on input line 24.
-Package microtype Info: Applying patch `verbatim' on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 26.
+Package microtype Info: Applying patch `item' on input line 26.
+Package microtype Info: Applying patch `toc' on input line 26.
+Package microtype Info: Applying patch `eqnum' on input line 26.
+Package microtype Info: Applying patch `footnote' on input line 26.
+Package microtype Info: Applying patch `verbatim' on input line 26.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 24.
+LaTeX Info: Redefining \showhyphens on input line 26.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -422,20 +435,20 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 26.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -443,195 +456,108 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 28.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 28.
-
-
-LaTeX Warning: Citation `ben' on page 1 undefined on input line 29.
-
-
-LaTeX Warning: Citation `bookkeeping' on page 1 undefined on input line 29.
-
-
-LaTeX Warning: Citation `bookkeeping' on page 1 undefined on input line 38.
-
-[1
+) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<figs/1axion-prob.jpeg, id=76, 554.07pt x 361.35pt>
+File: figs/1axion-prob.jpeg Graphic file (type jpg)
+<use figs/1axion-prob.jpeg>
+Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 81.
+(pdftex.def)             Requested size: 277.03432pt x 180.67456pt.
 
-LaTeX Warning: Reference `eq:prob-result' on page 2 undefined on input line 48.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/twoAxions.jpeg, id=28, 858.20625pt x 464.73625pt>
-File: figs/twoAxions.jpeg Graphic file (type jpg)
-<use figs/twoAxions.jpeg>
-Package pdftex.def Info: figs/twoAxions.jpeg  used on input line 58.
-(pdftex.def)             Requested size: 429.10208pt x 232.36755pt.
+[2]
+<figs/2axion-prob.jpeg, id=95, 714.67pt x 391.4625pt>
+File: figs/2axion-prob.jpeg Graphic file (type jpg)
+<use figs/2axion-prob.jpeg>
+Package pdftex.def Info: figs/2axion-prob.jpeg  used on input line 101.
+(pdftex.def)             Requested size: 357.33412pt x 195.73076pt.
 
-Overfull \hbox (84.10208pt too wide) in paragraph at lines 58--60
+Overfull \hbox (12.33412pt too wide) in paragraph at lines 101--103
  [][] 
  []
 
 
-LaTeX Warning: Reference `eq:two-axion' on page 2 undefined on input line 60.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[3 <./figs/1axion-prob.jpeg>] [4 <./figs/2axion-prob.jpeg>]
+<figs/low-scale-inf-prob.jpeg, id=120, 659.46375pt x 363.3575pt>
+File: figs/low-scale-inf-prob.jpeg Graphic file (type jpg)
+<use figs/low-scale-inf-prob.jpeg>
+Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 133.
+(pdftex.def)             Requested size: 345.0pt x 190.09467pt.
 
-LaTeX Warning: Reference `eq:prob-result' on page 2 undefined on input line 60.
-
-
-
-LaTeX Warning: Reference `eq:two-axion' on page 2 undefined on input line 60.
-
-
-LaTeX Warning: Reference `eq:prob-result' on page 2 undefined on input line 60.
-
-
-
-LaTeX Warning: Reference `eq:two-axion' on page 2 undefined on input line 63.
-
-[2 <./figs/twoAxions.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-<figs/oneAxion.jpeg, id=36, 666.49pt x 430.60875pt>
-File: figs/oneAxion.jpeg Graphic file (type jpg)
-<use figs/oneAxion.jpeg>
-Package pdftex.def Info: figs/oneAxion.jpeg  used on input line 82.
-(pdftex.def)             Requested size: 333.24419pt x 215.30383pt.
-
-LaTeX Warning: Reference `eq:prob-result' on page 3 undefined on input line 84.
-
-
-
-LaTeX Warning: Reference `eq:prob-result' on page 3 undefined on input line 84.
-
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `eq:inflationary-dist' on page 3 undefined on input li
-ne 103.
-
-<figs/Screenshot 2025-07-14 at 17.00.25.png, id=37, 668.4975pt x 366.36874pt>
-File: figs/Screenshot 2025-07-14 at 17.00.25.png Graphic file (type png)
-<use figs/Screenshot 2025-07-14 at 17.00.25.png>
-Package pdftex.def Info: figs/Screenshot 2025-07-14 at 17.00.25.png  used on in
-put line 110.
-(pdftex.def)             Requested size: 345.0pt x 189.08171pt.
-[3]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `eq:inflation-prob-1axion' on page 4 undefined on inpu
-t line 126.
-
-
-LaTeX Warning: Reference `eq:1axion-prob' on page 4 undefined on input line 126
-.
-
-[4 <./figs/oneAxion.jpeg>]
-
-LaTeX Warning: Reference `eq:1axion-prob' on page 5 undefined on input line 134
-.
-
-[5 <./figs/Screenshot 2025-07-14 at 17.00.25.png>]
-
-LaTeX Warning: Reference `eqn:canonical' on page 1 undefined on input line 160.
-
-
-
-LaTeX Warning: Reference `eqn:fundamental' on page 1 undefined on input line 16
-0.
-
-[6]
-
-LaTeX Warning: Reference `sec:separable-energy-density' on page 1 undefined on 
-input line 189.
-
-<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=82, 563.10374pt x 428.60126
-pt>
+[5 <./figs/low-scale-inf-prob.jpeg>] [6] [7]
+<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=158, 563.10374pt x 428.6012
+6pt>
 File: figs/Screenshot 2024-11-12 at 5.53.04 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.04 PM.png>
 Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used o
-n input line 202.
+n input line 207.
 (pdftex.def)             Requested size: 345.0pt x 262.59741pt.
-[7]
-<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=95, 572.1375pt x 426.59375p
-t>
+<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=159, 572.1375pt x 426.59375
+pt>
 File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
 Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used o
-n input line 208.
+n input line 213.
 (pdftex.def)             Requested size: 345.0pt x 257.24054pt.
-<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=96, 574.145pt x 429.605pt>
+<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=160, 574.145pt x 429.605pt>
+
 File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
 Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used o
-n input line 214.
+n input line 219.
 (pdftex.def)             Requested size: 345.0pt x 258.15173pt.
  [8 <./figs/Screenshot 2024-11-12 at 5.53.04 PM.png>] [9 <./figs/Screenshot 2
-024-11-12 at 5.53.09 PM.png>] [10 <./figs/Screenshot 2024-11-12 at 5.53.14 
-PM.png>] [11] (./main.aux)
+024-11-12 at 5.53.09 PM.png>]
+[10 <./figs/Screenshot 2024-11-12 at 5.53.14 PM.png>] (./main.bbl) [11]
+(./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  452E55D8251C0402C79D1A69C69D0587;2131.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 06648F6D94ED978D67915F09D43E3EDE;1723.
  ) 
 Here is how much of TeX's memory you used:
- 14054 strings out of 474116
- 230144 string characters out of 5743682
- 1940187 words of memory out of 5000000
- 36067 multiletter control sequences out of 15000+600000
- 574803 words of font info for 150 fonts, out of 8000000 for 9000
+ 14092 strings out of 474116
+ 230713 string characters out of 5743682
+ 1939187 words of memory out of 5000000
+ 36097 multiletter control sequences out of 15000+600000
+ 574701 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1001b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,1288b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
-ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
-24/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (11 pages, 717709 bytes).
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2
+024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/202
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (11 pages, 720628 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
- 32799 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 32895 words of extra memory for PDF output out of 35830 (max. 10000000)
 
