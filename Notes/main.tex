@@ -40,7 +40,7 @@ Here, $c(m_a)F(\theta_a)$ is the fractional abundance in the $a$-th axion, where
 
 The authors of \cite{exploring-string-axiverse} then calculate the probability $P$ of finding ourselves in a causal patch where the dark matter abundance is no larger than the observed value of $\zeta \sim 5$, without being so small that we could not exist, in other words, the probability that $2.5<\zeta<5$. The calculation uses the causal diamond measure (details in \cite{anthropic-explanation}) to circumvent the problem of computing probabilities in an infinite-dimensional space, which leads to difficulties in normalizing these probabilities. The measure allows us to restrict ourselves to one causal patch and consider the number of observations made in that patch. To determine this number, the author of \cite{anthropic-explanation} counts the number of baryons in a causal patch and then the number of observations per baryon. The quantitative expression the author finds for the number of baryons in a causal patch is $(1+\zeta)^{-1}$ with the assumption of fixed baryon-to-photon ratio. The number of observers per baryon is approximated to be constant within the range of allowed $\zeta$ values. The overall contribution to the probability density from the causal diamond measure is therefore $C(1+\zeta)^{-1}$, for some constant $C$.
 
-We must also assume some distribution for the initial conditions $theta_a$, which will depend on the scale of inflation relative to the axion's potential: for high scale inflation, the distribution is flat between $[-\pi,\pi]$, while for low scale inflation,     $p(\theta_a) \propto \exp{\left(-\frac{8\pi^2V(\theta_a)}{3H^4}\right)}$, where $V(\theta_a)=\Lambda^4(1-\cos{\theta_a})$. We can approximate this distribution from low scale inflation as flat between $[-\sigma,\sigma]$, where $\sigma^2 = 3H^4/(8\pi^2m^2f^2)$ is the spread in this distribution. So in general, we can consider $p(\theta_a)$ as flat between two values, which we'll call $\pm f(H)$, where:
+We must also assume some distribution for the initial conditions $\theta_a$, which will depend on the scale of inflation relative to the axion's potential: for high scale inflation, the distribution is flat between $[-\pi,\pi]$, while for low scale inflation,     $p(\theta_a) \propto \exp{\left(-\frac{8\pi^2V(\theta_a)}{3H^4}\right)}$, where $V(\theta_a)=\Lambda^4(1-\cos{\theta_a})$. We can approximate this distribution from low scale inflation as flat between $[-\sigma,\sigma]$, where $\sigma^2 = 3H^4/(8\pi^2m^2f^2)$ is the spread in this distribution. So in general, we can consider $p(\theta_a)$ to be flat between two values, which we'll call $\pm f(H)$, where:
 
 \begin{equation}
 \label{eq:f(H)}
@@ -75,7 +75,7 @@ We can compute this probability for any value of $f(H)$ by rescaling the integra
 
 \subsection{1 axion}
 
-The probability for one axion can be computed numerically as a function of $c_1$ and is shown below.
+The probability for one axion is given by Eq. $\eqref{eq:general-prob}$ for $n=1$ and can be computed numerically as a function of $c_1$. It is plotted below:
 
 \begin{figure}[h]
     \includegraphics[scale=0.5]{figs/1axion-prob.jpeg}
@@ -95,7 +95,7 @@ Fig. \ref{fig:1axion-prob} shows that once $c_1'>\zeta_\text{upper}=100$, the pr
 
 \subsection{2 axions}
 
-We can compute the probability in Eq. \eqref{eq:general-prob} now for $n=2$, numerically, and plot the results as a function of $c_2'$, for a few chosen values of $c_1'$. This is shown below in Fig. \ref{fig:2axion-prob}
+We can numerically compute the probability in Eq. \eqref{eq:general-prob} now for $n=2$, and plot the results as a function of $c_2'$, for a few chosen values of $c_1'$. This is shown below in Fig. \ref{fig:2axion-prob}
 
 \begin{figure}[h]
     \includegraphics[scale=0.5]{figs/2axion-prob.jpeg}
@@ -106,7 +106,7 @@ We can compute the probability in Eq. \eqref{eq:general-prob} now for $n=2$, num
 
 The behavior of $P_2$ shows that there is a little more nuance, but the result that an axion contributes to the anthropic measure once $c'>\zeta_\text{upper}$ holds true. We see that if $c_1'\ll\zeta_\text{upper}$ and $c_2'>\zeta_\text{upper}$ (see red line for larger $c_2'$ in Fig. \ref{fig:2axion-prob}), the the first axion does not contribute while the second one does, and thus we recover the $P=0.3$ probability from the 1-axion scenario. The same is true if $c_1'>\zeta_\text{upper}$ and $c_2'\ll\zeta_\text{upper}$ (Fig. \ref{fig:2axion-prob}, blue line for small $c_2'$). If both $c_1',c_2'>\zeta_\text{upper}$ (Fig. \ref{fig:2axion-prob}, blue line for large $c_2'$), then the two axions contribute to the measure and so the probability is $P=0.16$, in agreement with Eq. \eqref{eq:bookkeeping-result}. There is a weird middle regime (purple line in Fig. \ref{fig:2axion-prob}, as well as region in all three lines where there is a bump), where I am not really sure what's going on yet. 
 
-We have thus seen, in the case 1 and 2 axions, that the condition that an axion must satisfy to contribute to the anthropic measure is $c'>\zeta_\text{upper}$. Recalling that $c'=c\,f(H)^2$ (with $f(H)$ given in Eq. \eqref{eq:f(H)}), and that $c=(m/H_{eq})^{1/2}(f/M_{pl})^2$ we can write this condition in terms of the physical parameters as:
+We have thus seen, in the case of 1 and 2 axions, that the condition that an axion must satisfy to contribute to the anthropic measure is $c'>\zeta_\text{upper}$. Recalling that $c'=c\,f(H)^2$ (with $f(H)$ given in Eq. \eqref{eq:f(H)}), and that $c=(m/H_{eq})^{1/2}(f/M_{pl})^2$ we can write this condition in terms of the physical parameters as:
 
 \begin{equation}
     \label{eq:c-condition}
@@ -135,7 +135,7 @@ In the previous section, we used an approximate form for the distribution of ini
     \label{fig:low-scale-inf-prob}
 \end{figure}
 
-As expected, for each curve, we see that when the scale of inflation is low relative to the size of the potential (i.e. $H<\Lambda$), the probability that $2.5<\zeta<5$ grows, since you are sampling $\theta$ from a distribution peaked closer and closer to zero (effectively acts like a small $c$). When $H>\Lambda$, you recover the expected behavior from flat initial conditions: the probability drops for $\Lambda$ (until $\Lambda \sim H$, and then you enter the first regime). \\
+As expected, for each curve, we see that when the scale of inflation is low relative to the size of the potential (i.e. $H<\Lambda$), the probability that $2.5<\zeta<5$ grows, since you are sampling $\theta$ from a distribution peaked closer and closer to zero (effectively acts like a small $c$). When $H>\Lambda$, you recover the expected behavior from flat initial conditions: the probability drops as $\Lambda$ increases (until $\Lambda \sim H$, and then you enter the first regime). \\
 
 \color{red}\noindent \textbf{Things to do:}
 \begin{enumerate}

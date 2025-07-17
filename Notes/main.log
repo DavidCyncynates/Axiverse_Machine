@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  17 JUL 2025 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  17 JUL 2025 10:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,7 +459,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/1axion-prob.jpeg, id=76, 554.07pt x 361.35pt>
+<figs/1axion-prob.jpeg, id=80, 554.07pt x 361.35pt>
 File: figs/1axion-prob.jpeg Graphic file (type jpg)
 <use figs/1axion-prob.jpeg>
 Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 81.
@@ -469,7 +469,7 @@ Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 81.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
-<figs/2axion-prob.jpeg, id=95, 714.67pt x 391.4625pt>
+<figs/2axion-prob.jpeg, id=99, 714.67pt x 391.4625pt>
 File: figs/2axion-prob.jpeg Graphic file (type jpg)
 <use figs/2axion-prob.jpeg>
 Package pdftex.def Info: figs/2axion-prob.jpeg  used on input line 101.
@@ -483,7 +483,7 @@ Overfull \hbox (12.33412pt too wide) in paragraph at lines 101--103
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./figs/1axion-prob.jpeg>] [4 <./figs/2axion-prob.jpeg>]
-<figs/low-scale-inf-prob.jpeg, id=120, 659.46375pt x 363.3575pt>
+<figs/low-scale-inf-prob.jpeg, id=124, 659.46375pt x 363.3575pt>
 File: figs/low-scale-inf-prob.jpeg Graphic file (type jpg)
 <use figs/low-scale-inf-prob.jpeg>
 Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 133.
@@ -494,21 +494,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--139
  []
 
 [5 <./figs/low-scale-inf-prob.jpeg>] [6] [7]
-<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=158, 563.10374pt x 428.6012
+<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=162, 563.10374pt x 428.6012
 6pt>
 File: figs/Screenshot 2024-11-12 at 5.53.04 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.04 PM.png>
 Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used o
 n input line 207.
 (pdftex.def)             Requested size: 345.0pt x 262.59741pt.
-<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=159, 572.1375pt x 426.59375
+<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=163, 572.1375pt x 426.59375
 pt>
 File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
 Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used o
 n input line 213.
 (pdftex.def)             Requested size: 345.0pt x 257.24054pt.
-<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=160, 574.145pt x 429.605pt>
+<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=164, 574.145pt x 429.605pt>
 
 File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
@@ -532,10 +532,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  14092 strings out of 474116
- 230713 string characters out of 5743682
+ 230715 string characters out of 5743682
  1939187 words of memory out of 5000000
  36097 multiletter control sequences out of 15000+600000
- 574701 words of font info for 148 fonts, out of 8000000 for 9000
+ 574699 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,79p,1288b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -554,10 +554,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/202
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (11 pages, 720628 bytes).
+Output written on main.pdf (11 pages, 720194 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 281 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
  63 named destinations out of 1000 (max. 500000)
  32895 words of extra memory for PDF output out of 35830 (max. 10000000)
 
