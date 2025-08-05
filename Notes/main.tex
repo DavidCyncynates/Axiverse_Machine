@@ -147,6 +147,168 @@ As expected, for each curve, we see that when the scale of inflation is low rela
 \end{enumerate}\color{black}
 
 \section{GSification}
+Consider a theory of two interacting axions $\varphi_1/f_1\equiv\theta_1$ and $\varphi_2/f_2\equiv\theta_2$ with a Lagrangian of the following form:
+
+\begin{equation}
+    \label{eq:pre-GS-potential}
+    \mathcal{L} = \frac{1}{2}\partial_\mu\theta_1 \partial^\mu\theta_1  + \frac{1}{2}\partial_\mu\theta_2 \partial^\mu\theta_2  + \Lambda_{b}\cos{(a\theta_1+b\theta_2)}+\Lambda_{s}\cos{(c\theta_1+d\theta_2))}
+\end{equation}
+
+\noindent where we can assume $\Lambda_b>\Lambda_s$ and have set $f_1 = f_2 = 1$ for now. The mixing matrix between the two fields can be written as follows:
+\begin{equation}
+A \equiv
+    \begin{pmatrix}
+    a & b\\
+    c & d
+    \end{pmatrix}
+\end{equation}
+
+Following the Gram-Schmidtificaiton (GS) procedure, we want to perform a change of basis in order to rewrite this  matrix as a lower triangular one, call it $T$. In other words, we are looking to redefine the fields in the above Lagrangian, so that the first cosine term contains only one redefined field, say $\phi_1$, while the second contains a linear combination of  $\phi_1$ and the second redefined field, $\phi_2$:
+
+\begin{equation}
+\label{eq:triang}
+    \begin{cases}
+        a\theta_1+b\theta_2 = t_{11} \phi_1 \\ 
+        c\theta_1+d\theta_2 = t_{21} \phi_1 + t_{22} \phi_2
+    \end{cases} \,\,\,\,\,
+    \Leftrightarrow \,\,\,\,\,
+    A \begin{pmatrix}
+        \theta_1 \\
+        \theta_2
+    \end{pmatrix}
+    = 
+    \begin{pmatrix}
+        t_{11} & 0 \\
+        t_{21} &t_{22} 
+    \end{pmatrix} 
+    \begin{pmatrix}
+        \phi_1 \\
+        \phi_2
+    \end{pmatrix}
+\end{equation}
+
+We want to choose the $d_{ij}$ so that the kinetic terms remain in canonical form after redefinition, so we will impose  $\frac{1}{2}\partial_\mu\theta_i \partial^\mu\theta_i = \frac{1}{2}\partial_\mu\phi_i \partial^\mu\phi_i $ and no cross terms. Dropping factors of $1/2$ and derivatives for less cumbersome computation, we impose $\theta_i^2 = \phi^2_i$. Using Eq. \eqref{eq:triang}, we write $\theta_1$ and $\theta_2$ in terms of the redefined fields:
+
+\begin{equation}
+    \begin{pmatrix}
+        \theta_1 \\
+        \theta_2
+    \end{pmatrix}
+    = 
+   A^{-1} T 
+    \begin{pmatrix}
+        \phi_1 \\
+        \phi_2
+    \end{pmatrix}
+\end{equation}
+
+\noindent Using the matrices $A$ and $T$ as defined above, and then perform an inner product of this vector with itself to find:
+
+\begin{align*}
+    \label{eq:dotprod}
+    \theta_1^2+\theta_2^2 = \frac{1}{(\det{A})^2} \big[ 
+    \phi_1^2 \left(t_{21}^2 \left(a^2+b^2\right)-2 t_{11}t_{21} (a c+b d)+t_{11}^2 \left(c^2+d^2\right)\right) \\
+    + 2 t_{22} \phi _2 \phi _1 \left(t_{21}\left(a^2+b^2\right)-t_{11} (a c+b d)\right)+t_{22}^2 \phi _2^2 \left(a^2+b^2\right)
+    \big]
+\end{align*}
+
+The condition from the canonical kinetic terms means that we must impose:
+
+\begin{equation}
+\label{eq:constraints}
+    \begin{cases}
+        \text{coefficient of }\phi_1^2 = (\det{A})^{-2}\big((d-bx)^2+(ax-c)^2\big)= 1 \\
+        \text{coefficient of }\phi_1\phi_2 = (\det{A})^{-2}\big(2(d-bx)by-2(ax-c)ay\big)= 0 \\
+        \text{coefficient of }\phi_2^2 = (\det{A})^{-2}y^2(b^2+a^2) =1 \\
+    \end{cases}
+\end{equation}
+
+Solving for $t_{ij}$, we find:
+
+\begin{equation}
+    \begin{cases}
+        t_{11} = \sqrt{a^2+b^2} \\
+        t_{21} = \frac{ca+db}{(\det{A})^2} \\
+        t_{22} = \pm \frac{\det{A}}{\sqrt{a^2+b^2}}
+    \end{cases}
+\end{equation}
+
+Thus, the Lagrangian is:
+
+\begin{align*}
+   \mathcal{L} = &  \frac{1}{2}\partial_\mu\phi_1\partial^\mu\phi_1+\frac{1}{2}\partial_\mu\phi_2\partial^\mu\phi_2+\Lambda_b\cos{(\sqrt{a^2+b^2}\phi_1)}+\Lambda_s\cos{\bigg(\frac{(ca+db)\phi_1+\det{A}\phi_2}{\sqrt{a^2+b^2}}\bigg)} \\
+   \sim & \frac{1}{2}\partial_\mu\phi_1\partial^\mu\phi_1+\frac{1}{2}\partial_\mu\phi_2\partial^\mu\phi_2+\Lambda_b\cos{(\sqrt{a^2+b^2}\phi_1)}+\Lambda_s\cos{\bigg(\frac{\det{A}}{\sqrt{a^2+b^2}\phi_2}\bigg)}
+\end{align*}
+
+Because $\Lambda_b>\Lambda_s$, $\phi_1$ will receive the significant part of its dynamics from the first cosine term and so we can view this as the Lagrangian for two decoupled axions, $\phi_1$ and $\phi_2$, each in their own cosine potential. The fields have a mass hierarchy set by $\Lambda_b>\Lambda_s$ and have decay constants rescaled from those of the original theory as follows:
+\begin{equation}
+\label{eq:decay-consts-GS}
+    \begin{cases}
+        f_1 \rightarrow f_1/\sqrt{a^2+b^2)} \\
+        f_2 \rightarrow f_2(a^2+b^2)/\det{A}
+    \end{cases}
+\end{equation}
+
+Now consider the slope, $\gamma$, in the $\log{(\rho_2/\rho_1)}$ vs. $\log{(m_2/m_1)}$ plane, where $\rho_{1(2)}\sim m_{1(2)}^{1/2}(f_{1(2)}\theta_{i,1(2)})^2$ is the energy density in the decoupled fields $\phi_{1(2)}$, and $m_{1(2)}$ is its mass. For uniformly distributed misalignment angles, $\phi_{i,1(2)}$, the expectation for this power law is given by:
+
+\begin{equation}
+    \langle \gamma \rangle = \frac{\log{(m_2^{1/2}f_2^2)}-\log{(m_1^{1/2}f_1^2)}}{\log{(m_2/m_1)}}
+\end{equation}
+
+After the GS procedure, we send the decay constants to their rescaled values as given in Eq. \eqref{eq:decay-consts-GS} and we find that we can write:
+
+\begin{equation}
+\label{eq:GS-exp-gamma}
+    \langle \gamma \rangle = \frac{\log{(F(m_2/m_1)^{1/2})}}{\log{(m_2/m_1)}}
+\end{equation}
+ 
+\noindent where $F \equiv ((a^2+b^2)/\det{A})^2$ and we have set the decay constants $f_1=f_2=1$. In our problem, the mixing coefficients $\{a,b,c,d\}$ are each chosen from $\{-1,0,1\}$ with equal probability. We would like to compute an average value of the power law, given that our potential is chosen at random in this manner. We find that there are only four possible values for $F$: 0, undefined,1,1/4. The cases where $F=0$ or $F$ is undefined are not physically interesting as they correspond to cases where either the linear combinations in the cosine terms are linearly dependent, or where too many of these coefficients are zero, and so the fields may not appear at all in the potential, or may not be mixed. If these values of $F$ are drawn, then we redraw mixing coefficients (if the potential had more cosine terms, this would be equivalent to moving to the cosine with the next largest $\Lambda$). We can do this as many times as it takes to get $F=1$ or $F=1/4$, which corresponds to a Markov chain process, and we can calculate the probability of ending up in these configurations by constructing a transition matrix, where the rows correspond to the incoming state, and the columns correspond to the outgoing state. As an example, I will work out the problem for the configuration/potential-choosing method outlined above. 
+
+There are 81 possible choices for the pairs $(a,b)$ and $(c,d)$. Out of those 81, 24 correspond to cases where $F=0$, 9 to $F= \text{ undefined}$, 32 to $F=1$ and 16 to $F=1/4$. The transition probability matrix is given by:
+
+\begin{equation}
+\mathbb{P}=
+    \begin{pmatrix}
+        24/81 & 9/81 & 32/81 & 18/81 \\
+        24/81 & 9/81 & 32/81 & 18/81 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+    \end{pmatrix}
+\end{equation}
+
+\noindent. Here, the choice of basis is such that the probabilities in a row or column correspond to the following order: $(F=0,F=\text{undefined},F=1,F=1/4)$. Notice that the rows add to 1 to conserve probability. The last two rows correspond to the fact that if we chose $a,b,c,$ and $d$ such that $F=1 \text{ or } 1/4$, then we do not re-draw. Probability theory tells us that:
+
+\begin{equation}
+\label{eq:prob-theorem}
+    P(X_t=j \, |\,X_0=i) = (\mathbb{P}^t)_{ij}
+\end{equation}
+
+\noindent and so we can calculate the probability of starting with either $F=0$ or undefined, and ending in either $F=1 \text{ or } 1/4$ by looking at the appropriate entries of some high power of $\mathbb{P}$, which will end up converging to something close to:
+
+\begin{equation}
+        \begin{pmatrix}
+        0 & 0 & 2/3 & 1/3 \\
+        0 & 0 & 2/3 & 1/3 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+    \end{pmatrix}
+\end{equation}
+
+\noindent Therefore the overall probability of having either $F=1$ or $F=1/4$ is (this is bad notation, inconsistent with notation in Eq. \eqref{eq:prob-theorem} but anyway)
+
+\begin{align}
+    P(F=1) & = \frac{32}{81}+ \frac{2}{3}\frac{24+9}{81} = \frac{54}{81}\\
+    P(F=\frac{1}{4}) & = \frac{16}{81}+ \frac{1}{3}\frac{24+9}{81} = \frac{27}{81}
+\end{align}
+
+\noindent where the second terms in the intermediate step of each line correspond to the contribution form choices of $F=0$ or undefined. We can therefore determine the weighted average of $\langle \gamma\rangle$ using Eq. \eqref{eq:GS-exp-gamma} as:
+
+\begin{align*}
+    \langle \gamma\rangle_{GS} & = \frac{54}{81}\frac{1}{2} + \frac{27}{81}\frac{\log{[(1/4)(m_2/m_1)^{1/2}]}}{\log{(m_2/m_1)}} \\
+    & = \frac{1}{3}+\frac{27}{81}\bigg( \frac{-\log{4} + \frac{1}{2}\log{(m_2/m_1)}}{\log{(m_2/m_1)}}\bigg) \\
+    & = \frac{1}{2}-\frac{1}{3}\frac{\log{4}}{\log{(m_2/m_1)}}
+\end{align*}
+
 
 \appendix
 \section{Introduction}
