@@ -144,9 +144,30 @@ As expected, for each curve, we see that when the scale of inflation is low rela
     \item and related to the previous point, what is the bump? what does it looks like with more axions?
     \item visualize/better understand the parts of parameter space that are viable via anthropics using Eq. \eqref{eq:c-condition}
     \item keep in mind dependence of results on choice of measure (causal diamond vs others?)
+    \item how does eq. 7 depend on number of axions?
+    \item fig 3 but same quantities plotted as fig 2 for easier comparison
 \end{enumerate}\color{black}
 
-\section{GSification}
+\section{Energy densities of 2 axions}
+
+David's simulations suggest that when there are couplings between many axions, the relic abundance in each axion no longer follow the expected $m^{1/2}$ scaling that we expect from misalignment (see. Fig. \ref{fig:e-density-uncoupled} vs. Fig. \ref{fig:e-density-coupled}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/Uncoupled_Axions.png}
+    \caption{Energy density of 30 uncoupled axions. Each point corresponds to an axion of mass given by the x-axis (normalized to the heaviest axion) and energy density given by the y-axis (normalized by the total energy density).}
+    \label{fig:e-density-uncoupled}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/Coupled_Axions.png}
+    \caption{Energy density of 30 coupled axions. Same axes as above. It appears that the $m^{1/2}$ scaling falls apart when interactions are present.}
+    \label{fig:e-density-coupled}
+\end{figure}
+
+Our goal is to determine if there really is energy redistribution among interacting axions and if so, what this process physically coresponds to. To do this, we'll start with two axions.
+
+\subsection{Gram–Schmidtification procedure}
 Consider a theory of two interacting axions $\varphi_1/f_1\equiv\theta_1$ and $\varphi_2/f_2\equiv\theta_2$ with a Lagrangian of the following form:
 
 \begin{equation}
@@ -249,9 +270,12 @@ Because $\Lambda_b>\Lambda_s$, $\phi_1$ will receive the significant part of its
     \end{cases}
 \end{equation}
 
+\subsection{From interacting to ``uncoupled" axions: relative energy densities}
+\label{subsec:GS-powerlaw}
 Now consider the slope, $\gamma$, in the $\log{(\rho_2/\rho_1)}$ vs. $\log{(m_2/m_1)}$ plane, where $\rho_{1(2)}\sim m_{1(2)}^{1/2}(f_{1(2)}\theta_{i,1(2)})^2$ is the energy density in the decoupled fields $\phi_{1(2)}$, and $m_{1(2)}$ is its mass. For uniformly distributed misalignment angles, $\phi_{i,1(2)}$, the expectation for this power law is given by:
 
 \begin{equation}
+    \label{eq:power-law}
     \langle \gamma \rangle = \frac{\log{(m_2^{1/2}f_2^2)}-\log{(m_1^{1/2}f_1^2)}}{\log{(m_2/m_1)}}
 \end{equation}
 
@@ -305,10 +329,41 @@ There are 81 possible choices for the pairs $(a,b)$ and $(c,d)$. Out of those 81
 
 \begin{align*}
     \langle \gamma\rangle_{GS} & = \frac{54}{81}\frac{1}{2} + \frac{27}{81}\frac{\log{[(1/4)(m_2/m_1)^{1/2}]}}{\log{(m_2/m_1)}} \\
-    & = \frac{1}{3}+\frac{27}{81}\bigg( \frac{-\log{4} + \frac{1}{2}\log{(m_2/m_1)}}{\log{(m_2/m_1)}}\bigg) \\
-    & = \frac{1}{2}-\frac{1}{3}\frac{\log{4}}{\log{(m_2/m_1)}}
+    & = \frac{1}{3}+\frac{27}{81}\bigg( \frac{-\log{4} + \frac{1}{2}\log{(m_2/m_1)}}{\log{(m_2/m_1)}}\bigg)
 \end{align*}
 
+\begin{equation}
+    \label{eq:GS-powerlaw}
+    \Rightarrow \langle \gamma\rangle_{GS}  = \frac{1}{2}-\frac{1}{3}\frac{\log{4}}{\log{(m_2/m_1)}}
+\end{equation}
+
+\subsection{Comparing with simulation data}
+
+Consider again the most general potential for two interacting axions:
+
+\begin{equation}
+    \label{eq:gen-pot-2axions}
+    \mathcal{L} = \frac{1}{2}\partial_\mu\theta_i\partial^\mu\theta_i-\left[\Lambda_1^4\big(1-\cos{(n_{11}\theta_1+n_{12}\theta_2)}\big) +\Lambda_2^4\big(1-\cos{(n_{21}\theta_1+n_{22}\theta_2)}\big)\right]
+\end{equation}
+
+The below figure shows results from David's simulations: the y-axis shows the power law $\gamma$ as defined in Eq. \eqref{eq:power-law}, for a given mass ratio $1/\log{(m_2/m_1)}$, given on the x-axis. Each point corresponds to a choice of potential, given in Eq. \eqref{eq:gen-pot-2axions}, where the $n_{ij}$'s are chosen at random from $\{-1,0,1\}$ such that each field shows up at least once and each cosine is linearly independent. Each point (i.e. the outcome of a choice of potential) is averaged over 300 initial conditions for the misalignment angles. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/Slope_vs_ApD.png}
+    \caption{The vertical axis shows the power law $\gamma = \log(\rho_2/\rho_1)/\log{(m_2/m_1)}$, and the horizontal axis shows axions per decade of mass, or $1/\log{(m_2/m_1)}$. The red line is the line of best fit, which overlaps with the expression in Eq. \eqref{eq:GS-powerlaw}. The green and orange line correspond to the two cases for the rescaled decay constants discussed in Section \ref{subsec:GS-powerlaw}.}
+    \label{fig:2axions-powerlaw-apd}
+\end{figure}
+
+In Fig. \ref{fig:2axions-powerlaw-apd}, the red line corresponds to the line of best fit for the data points with axions per decade $<2$. It also overlaps with the analytically calculated average given in Eq. \eqref{eq:GS-powerlaw}. The orange line corresponds to the case where $F=1$, and then green line corresponds to the case where $F=1/4$, as discussed in Section. \ref{subsec:GS-powerlaw}. See below Eq. \eqref{eq:GS-exp-gamma} for the definition of $F$. \\
+
+\color{red}\noindent \textbf{Things to do:}
+\begin{enumerate}
+    \item undestand where the triangle closes off, roughly at ApD $\sim 2.5$
+    \item what happens for small mass separations where GS breaks down?
+    \item generalize GS to N axions
+    \item generalize potentials (more general $n_{ij}$ and allow for kinetic mixing) – does the triangle fill in?
+\end{enumerate}\color{black}
 
 \appendix
 \section{Introduction}
