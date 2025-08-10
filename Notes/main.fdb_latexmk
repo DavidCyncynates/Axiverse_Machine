@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1754634577.95523 "main.aux" "main.bbl" "main" 1754634660.04377 0
+["bibtex main"] 1754807881.59581 "main.aux" "main.bbl" "main" 1754807885.10761 0
   "./refs.bib" 1752769880.62153 785 7bb8a57bea7f4c548085a9e40c4ce23b ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1754634659.415 11811 0a1b85ecda6bd34abfc85c0338bb21b7 "pdflatex"
+  "main.aux" 1754807884.46606 14630 93f6adb8860fd3fd2d1ecdeae669e2f0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1754634656.84697 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1754634660.04428 0
-  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1754634659.76243 33315 5720872efb815c0cd0db931199d204b0 ""
+["pdflatex"] 1754807881.83228 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1754807885.10802 0
+  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1754807878 38605 a912f3e2a51de3a7852c262c34ed9a66 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -50,6 +50,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1248133631 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
@@ -132,6 +133,7 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "figs/1axion-prob.jpeg" 1752762327.73596 210852 84d7ce85314a768b7187a6fde5dbeae5 ""
+  "figs/2axion-contour.png" 1754804921.8076 11760 63445de6a48053f281adb0672f18bb35 ""
   "figs/2axion-prob.jpeg" 1752767047.84797 304713 ef125ff8769cd16bd403863bad5d05d8 ""
   "figs/Coupled_Axions.png" 1754633072.58904 124366 36d0476e1dc506a1565755b64895813a ""
   "figs/Screenshot 2024-11-12 at 5.53.04 PM.png" 1752538224.51927 139991 e09bb77707e6058b12ca7692b8f81b49 ""
@@ -139,11 +141,13 @@
   "figs/Screenshot 2024-11-12 at 5.53.14 PM.png" 1752102005.02729 135921 d472df371c219973064d093b72aa209d ""
   "figs/Slope_vs_ApD.png" 1754633810.09313 176036 365d70cdb5296eebe5e42cd8d74d3100 ""
   "figs/Uncoupled_Axions.png" 1754632797.89109 87369 139ae71b3d984ad22b58f6e4da0e0427 ""
+  "figs/ellipses.png" 1754806472 108933 02910b8ccc27cc488cefc1793aecee69 ""
   "figs/low-scale-inf-prob.jpeg" 1752769678.00649 296564 4c35ee3e1ccb8bde6bb456afd4591d87 ""
-  "main.aux" 1754634659.415 11811 0a1b85ecda6bd34abfc85c0338bb21b7 "pdflatex"
-  "main.bbl" 1754634578.19671 377 e654d162f001962756f8f95e7639da96 "bibtex main"
-  "main.out" 1754634659.41702 2665 769c648e85aa825569af66c26f5ad795 "pdflatex"
-  "main.tex" 1754634659.76243 33315 5720872efb815c0cd0db931199d204b0 ""
+  "figs/naxions-equalC.png" 1754804857.49647 356759 37651d67709d86b454b0313c8a550cc6 ""
+  "main.aux" 1754807884.46606 14630 93f6adb8860fd3fd2d1ecdeae669e2f0 "pdflatex"
+  "main.bbl" 1754807881.82661 377 e654d162f001962756f8f95e7639da96 "bibtex main"
+  "main.out" 1754807884.46828 3454 1822fbd75d315e492b6c1c7c52191d2a "pdflatex"
+  "main.tex" 1754807878 38605 a912f3e2a51de3a7852c262c34ed9a66 ""
   (generated)
   "main.aux"
   "main.log"

@@ -26,6 +26,7 @@
 \begin{document}
 
 \maketitle
+
 \section{Anthropics}
 The bounds for the possible ratio of the dark matter abundance to baryon abundance, $\zeta$, are given in \cite{anthropic-explanation} to be $2.5<\zeta <100$. The lower bound is related to the value for which perturbations near the size of our galaxy's stop growing, and the upper bound is related to the value that ultimately prevents star formation. All values within this range are allowed in the sense that they would lead to our existence today, but their likelihoods depend on the theory for dark matter, as we will see below. In section 5 of \cite{exploring-string-axiverse}, the authors consider the case of $n$ axions and the fraction of the dark matter that they constitute. If the axions make up all of the dark matter, then we can write $\zeta$ as:
 
@@ -74,6 +75,7 @@ We can compute this probability for any value of $f(H)$ by rescaling the integra
 \noindent where the $\theta_a$-independent factors out front in Eq. \eqref{eq:prob-deriv} have canceled out with those in the normalization $N$, and so $\mathcal{N}$ is the same as $N$, without those factors. $\Theta$ here is the Heaviside function and $c_a'\equiv c_af(H)^2$.
 
 \subsection{1 axion}
+\label{subsec:1-axion}
 
 The probability for one axion is given by Eq. $\eqref{eq:general-prob}$ for $n=1$ and can be computed numerically as a function of $c_1$. It is plotted below:
 
@@ -93,7 +95,28 @@ Fig. \ref{fig:1axion-prob} shows that once $c_1'>\zeta_\text{upper}=100$, the pr
 
 \noindent In this result, the authors focus on $n$ axions at the GUT scale ($f\sim 10^{16}$ GeV), with masses heavy enough ( $m_a\geq10^{-19}$ eV) so that the axions would find themselves in this constant $P$ regime. Indeed, one can check that for $f\sim 10^{16}$ GeV and $m_a\geq10^{-19}$ eV, the criterion $c_a>100$ is satisfied.
 
+\subsubsection{Exact anthropic probability with low scale inflation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{figs/low-scale-inf-prob.jpeg}
+    \caption{Probability of $2.5<\zeta<5$ for a stochastic axion scenario (low scale, long-lasting inflation), with different vales of $H$ relative to $\Lambda = (mf)^{1/2}$. In this plot, $f=1$.}
+    \label{fig:low-scale-inf-prob}
+\end{figure}
+
+In Section \ref{subsec:1-axion}, we used an approximate form for the distribution of initial conditions from low scale inflation. We can compute the anthropic probability \textit{for one axion} more precisely in the case of low scale inflation by numerically calculating the following:
+
+\begin{equation}
+    \label{eq:inflation-prob-1axion}
+    P = N^{-1}\int_{2.5<\zeta<5} \frac{d\theta}{1+\zeta} \exp{\left(-\frac{8\pi^2V(\theta)}{3H^4}\right)}
+\end{equation}
+
+\noindent where the normalization is the same integral but with integration bound $2.5<\zeta<100$. This probability is plotted against $\sqrt{mf}$ for certain values of $H$ in Fig. \ref{fig:low-scale-inf-prob} (and $f$ is set to 1).
+
+As expected, for each curve, we see that when the scale of inflation is low relative to the size of the potential (i.e. $H<\Lambda$), the probability that $2.5<\zeta<5$ grows, since you are sampling $\theta$ from a distribution peaked closer and closer to zero (effectively acts like a small $c$). When $H>\Lambda$, you recover the expected behavior from flat initial conditions: the probability drops as $\Lambda$ increases (until $\Lambda \sim H$, and then you enter the first regime).
+
 \subsection{2 axions}
+\label{subsec:2-axions}
 
 We can numerically compute the probability in Eq. \eqref{eq:general-prob} now for $n=2$, and plot the results as a function of $c_2'$, for a few chosen values of $c_1'$. This is shown below in Fig. \ref{fig:2axion-prob}
 
@@ -117,25 +140,50 @@ The takeaway is that if the scale of inflation is low, heavier axions will evade
 
 Note that Eq. \eqref{eq:c-condition} is approximate in that: (1) it assumes that $F(\theta_a)\sim\theta^2$, which is not true if $\theta_a \sim O(1)$, in which case there is a small correction; (2) it approximates the distribution of $\theta_a$ in a low scale inflation scenario to be flat between $\pm \sigma$, instead of treating it fully as $\propto \exp{\left(-V(\theta_a)/H^4\right)}$; and (3) it only accounts for regimes where $H<\Lambda$ or $H>\Lambda$, and glosses over the $H\sim\Lambda$ regime.
 
-\subsection{Exact anthropic probability with low scale inflation}
-
-In the previous section, we used an approximate form for the distribution of initial conditions from low scale inflation. We can compute the anthropic probability \textit{for one axion} more precisely in the case of low scale inflation by numerically calculating the following:
-
-\begin{equation}
-    \label{eq:inflation-prob-1axion}
-    P = N^{-1}\int_{2.5<\zeta<5} \frac{d\theta}{1+\zeta} \exp{\left(-\frac{8\pi^2V(\theta)}{3H^4}\right)}
-\end{equation}
-
-\noindent where the normalization is the same integral but with integration bound $2.5<\zeta<100$. This probability is plotted against $\sqrt{mf}$ for certain values of $H$ in Fig. \ref{fig:low-scale-inf-prob} (and $f$ is set to 1).
-
 \begin{figure}[h]
+    \includegraphics[scale=0.6]{figs/2axion-contour.png}
     \centering
-    \includegraphics[width=1\linewidth]{figs/low-scale-inf-prob.jpeg}
-    \caption{Probability of $2.5<\zeta<5$ for a stochastic axion scenario (low scale, long-lasting inflation), with different vales of $H$ relative to $\Lambda = (mf)^{1/2}$. In this plot, $f=1$.}
-    \label{fig:low-scale-inf-prob}
+    \caption{Contour plot for the probability shown in Fig. \ref{fig:2axion-prob} as a function of $c_1$ and $c_2$ (numerically plotted, not amazing resolution and only up to $c=20$)}.
+    \label{fig:2axion-contour}
 \end{figure}
 
-As expected, for each curve, we see that when the scale of inflation is low relative to the size of the potential (i.e. $H<\Lambda$), the probability that $2.5<\zeta<5$ grows, since you are sampling $\theta$ from a distribution peaked closer and closer to zero (effectively acts like a small $c$). When $H>\Lambda$, you recover the expected behavior from flat initial conditions: the probability drops as $\Lambda$ increases (until $\Lambda \sim H$, and then you enter the first regime). \\
+\subsubsection{Geometric interpretation}
+\label{subsubsec:geom-interpret}
+The challenge of computing the integrals in Eq. \eqref{eq:general-prob} comes from the bounds of integration: the integrand is integrated over each angle $\theta_a$ from $-1$ to $1$, but the integrand is only nonzero for $2.5<\sum_a c_a\theta_a^2<b$, where $b=5$ for the numerator in Eq. \eqref{eq:general-prob} and $b=100$ in the normalization.
+
+To understand what this region of integration looks like, let's go back to the case of 2 axions. In the 2-dimensional space defined by the variables $\theta_1$ and $\theta_2$, the area over which the two dimensional integral in Eq. \eqref{eq:general-prob} is to be computed corresponds to that of an elliptical ring (the $2.5<c_1\theta_1^2+c_2\theta_2^2<b$ constraint), cut off by a square of side length 2 (the bounds of integration for each angle). If $c_1>c_2$, the semi-major axis of the inner (outer) ellipse is determined by $2.5/c_1$ ($b/c_1$), while the semi-minor axis of the inner (outer) ellipse is given by $2.5/c_2$ ($b/c_2$). The values of $c_1$ and $c_2$ therefore determine the size of the elliptical ring. This area is illustrated in Fig. \ref{fig:2d-integration-area} for a few choices of $c_1$ and $c_2$.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.5]{figs/ellipses.png}
+    \centering
+    \caption{(this is a bad figure but just for illustrative purposes for now) First row corresponds to $c_1 = 100, c_2=110$; middle row is $c_1 = 4.5, c_2=50$; bottom row is $c_1 = 2, c_2=110$.}
+    \label{fig:2d-integration-area}
+\end{figure}
+
+
+While ultimately each point on the integration region will be weighted by the integrand (points away from the origin will carry less weight), having a sense of how this region is altered as $c_1$ and $c_2$ vary is important in understanding the resulting integral. There are a few regimes of interest that we will see can be mapped onto the behavior that appears in Fig. \ref{fig:2axion-prob}. These depend on regions of integration of both the numerator and normalization integrals. These are:
+\begin{enumerate}
+    \item \textbf{when the elliptical ring is fully inside the square in both integrals}: This happens when either $c_1$ or $c_2 > 100$. This is set by the value of semi-major(minor) axes needed for the ellipses to fit inside the square in both integrals. This case corresponds to the case where the axions are heavy enough that they contribute to the anthropic measure, i.e. the result from \cite{exploring-string-axiverse} given in Eq. \eqref{eq:bookkeeping-result}. The result of the integrations is independent of the $c$'s, since the dependence cancels out in numerator and the normalizaiton
+    \item \textbf{when the outer edge of the ellipitcal ring touches the square in the numerator integral}: This happens when the semi-major axis of the outer ellipse is equal to 1, i.e. when $c_1$ (or $c_2$) $=5$. This corresponds to the edge of the bumps in Fig. \ref{fig:2axion-prob}. As $c$ gets smaller, the ellipses get more elongated and the area enclosed in the elliptical ring grows. When $c=5$, this is still the case, but at some point as the ellipses start to exit the square, the rate at which the area grows becomes matched and eventually overtaken by the rate at which area exits the square boundary. This explains the bump behavior.
+    \item \textbf{when the inner edge of the elliptical ring touches the square in the numerator integral}: This happens when the semi-major axis of the inner ellipse is equal to 1, i.e. when $c_1$ (or $c_2$) $=2.5$. As $c$ gets smaller after this, the region of integration corresponds to two separate curved bands; as the ellipses get streched out futher and further, they asymptotically get closer to looking like two flat rectangles. At this point, the axion with this small value of $c$ is almost ``decoupled" and irrelevant to the anthropic measure (although not quite, since there is still some curvature to the band for a while). This explains the asymptotic behavior of the curves in Fig. \ref{fig:2axion-prob} at small $c_2$, rather than the exactly flat behavior when $c_2>100$.
+\end{enumerate}
+
+\subsection{$n$ axions}
+\subsubsection{Thresholds}
+Following the discussion in Section \ref{subsubsec:geom-interpret}, we can understand the interesting threshold regimes of Eq. \eqref{eq:general-prob} for $n$ axions. In $n$-dimensions, the elliptical ring inside the square from the 2-dimensional case becomes an hyperellipsoidal (?) shell within a hypercube. ... \\
+Range of intermediate c's that we don't understand
+
+\subsubsection{All equal $c$'s}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.45]{figs/naxions-equalC.png}
+    \centering
+    \caption{Eq. \eqref{eq:general-prob} for different choices of $n$ axions, where all axions have the same $c$.}
+    \label{fig:n-prob-equalC}
+\end{figure}
+\dots Scaling with n
+
+\subsection{Allowed parts of parameter space}
 
 \color{red}\noindent \textbf{Things to do:}
 \begin{enumerate}
