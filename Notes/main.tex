@@ -6,6 +6,8 @@
 \usepackage{bm}
 \usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{soul}
+
 
 
 \definecolor{navyblue}{rgb}{0.0, 0.0, 0.5}
@@ -174,6 +176,14 @@ Following the discussion in Section \ref{subsubsec:geom-interpret}, we can under
 Range of intermediate c's that we don't understand
 
 \subsubsection{All equal $c$'s}
+The easiest case to consider for $n$ axions is when all of them have the same $c$. In this case, the integrals in Eq. \eqref{eq:general-prob} reduce to 1-dimensional integrals in hyperspherical coordinates, over the radial coordinate ($r\equiv\sum_a\theta_a^2$):
+
+\begin{equation}
+    \label{eq:nAxions-equalC}
+         P = \mathcal{N'}^{-1} \int_{0}^1 \frac{r^{n-1} dr}{1+c r^2}\Theta(c r^2-2.5)\Theta(5-c r^2)
+\end{equation}
+
+The plot below (Fig. \ref{fig:n-prob-equalC}) shows the result of Eq. \eqref{eq:nAxions-equalC} for chosen values of $n$. The behavior is as expected: as the number of axions increases, the probability drops to zero more and more quickly. The two regimes to notice are firstly, when $c<5$, the axions are all light enough that we can ignore them in the anthropic measure, and secondly, when $c>100$, the probability reaches its $c-$-independent value, as calculated in \cite{exploring-string-axiverse}. These two thersholds are valid for all values of $n$ (the second thershold when $c>100$ is not so obvious for larger $n$, but I checked this numerically.)
 
 \begin{figure}[h]
     \includegraphics[scale=0.45]{figs/naxions-equalC.png}
@@ -181,18 +191,38 @@ Range of intermediate c's that we don't understand
     \caption{Eq. \eqref{eq:general-prob} for different choices of $n$ axions, where all axions have the same $c$.}
     \label{fig:n-prob-equalC}
 \end{figure}
-\dots Scaling with n
+
+More quantitatively, for the values $5<c\leq 100$, Eq. \eqref{eq:nAxions-equalC} evaluates to the following:
+
+\begin{equation}
+    P = \frac{B(-2/5;1-n/2,0)-B(-1/5;1-n/2,0)}{B(-2/5;1-n/2,0)-B(-1/c;1-n/2,0)}
+\end{equation}
+
+\noindent where $B(x;a,b)$ is the incomplete beta function: $\int_0^x t^{a-1}(1-t)^{b-1} dt$.
+\emph{Also thought about perturbing away from equal c's to get slightly different c's for each axions; finding probability for scenarios where one group of axions has 1 value of c and the remaining have another value.}
 
 \subsection{Allowed parts of parameter space}
 
+Eq. \eqref{eq:c-condition} tells us that certain choices of $m, f$ and $H_I$ will lead to an axion contributing to the anthropic probability. The plot below shows the part of parameter space that are allowed by anthropics for a single axion with mass $m$ and decay constant $f$, for different fixed values of $H_I$. The part of parameter space that lies above the lines leads to values of $c>100$ and thus corresponds to parts of parameter space where the axion contributes to the anthropic measure.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{figs/f-vs-a.png}
+    \centering
+    \caption{}
+    \label{fig:f-vs-a}
+\end{figure}
+
+The downward sloping line corresponds to Eq. \eqref{eq:c-condition} when $\min{ \Bigl\{ \pi^2,\frac{3H^4}{8\pi^2m^2f^2}\Bigr\}} = \pi^2$, while the vertical lines correspond to the second case (which, notice in Eq. \eqref{eq:c-condition}, leads to a value of $c$ that does not depend on $f$). 
+
+\break
 \color{red}\noindent \textbf{Things to do:}
 \begin{enumerate}
     \item could include correction to the energy density from cosine potential in the probability calc
-    \item what happens below $c=\zeta_\text{upper}$?
-    \item and related to the previous point, what is the bump? what does it looks like with more axions?
-    \item visualize/better understand the parts of parameter space that are viable via anthropics using Eq. \eqref{eq:c-condition}
+    \item \st{what happens below $c=\zeta_\text{upper}$?}
+    \item \st{and related to the previous point, what is the bump? what does it looks like with more axions?}
+    \item \st{visualize}/better understand the parts of parameter space that are viable via anthropics using Eq. \eqref{eq:c-condition}
     \item keep in mind dependence of results on choice of measure (causal diamond vs others?)
-    \item how does eq. 7 depend on number of axions?
+    \item how does Eq. \eqref{eq:c-condition} depend on number of axions?
     \item fig 3 but same quantities plotted as fig 2 for easier comparison
 \end{enumerate}\color{black}
 
