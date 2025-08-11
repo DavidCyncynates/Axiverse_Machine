@@ -1,8 +1,8 @@
-PWD /Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes
+PWD /Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex
+INPUT /Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls

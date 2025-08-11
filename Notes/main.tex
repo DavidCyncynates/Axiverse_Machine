@@ -183,14 +183,7 @@ The easiest case to consider for $n$ axions is when all of them have the same $c
          P = \mathcal{N'}^{-1} \int_{0}^1 \frac{r^{n-1} dr}{1+c r^2}\Theta(c r^2-2.5)\Theta(5-c r^2)
 \end{equation}
 
-The plot below (Fig. \ref{fig:n-prob-equalC}) shows the result of Eq. \eqref{eq:nAxions-equalC} for chosen values of $n$. The behavior is as expected: as the number of axions increases, the probability drops to zero more and more quickly. The two regimes to notice are firstly, when $c<5$, the axions are all light enough that we can ignore them in the anthropic measure, and secondly, when $c>100$, the probability reaches its $c-$-independent value, as calculated in \cite{exploring-string-axiverse}. These two thersholds are valid for all values of $n$ (the second thershold when $c>100$ is not so obvious for larger $n$, but I checked this numerically.)
-
-\begin{figure}[h]
-    \includegraphics[scale=0.45]{figs/naxions-equalC.png}
-    \centering
-    \caption{Eq. \eqref{eq:general-prob} for different choices of $n$ axions, where all axions have the same $c$.}
-    \label{fig:n-prob-equalC}
-\end{figure}
+Fig. \ref{fig:n-prob-equalC} shows the result of Eq. \eqref{eq:nAxions-equalC} for chosen values of $n$. The behavior is as expected: as the number of axions increases, the probability drops to zero more and more quickly. The two regimes to notice are firstly, when $c<5$, the axions are all light enough that we can ignore them in the anthropic measure, and secondly, when $c>100$, the probability reaches its $c-$-independent value, as calculated in \cite{exploring-string-axiverse}. These two thersholds are valid for all values of $n$ (the second thershold when $c>100$ is not so obvious for larger $n$, but I checked this numerically.)
 
 More quantitatively, for the values $5<c\leq 100$, Eq. \eqref{eq:nAxions-equalC} evaluates to the following:
 
@@ -201,18 +194,36 @@ More quantitatively, for the values $5<c\leq 100$, Eq. \eqref{eq:nAxions-equalC}
 \noindent where $B(x;a,b)$ is the incomplete beta function: $\int_0^x t^{a-1}(1-t)^{b-1} dt$.
 \emph{Also thought about perturbing away from equal c's to get slightly different c's for each axions; finding probability for scenarios where one group of axions has 1 value of c and the remaining have another value.}
 
+\begin{figure}[h]
+    \includegraphics[scale=0.45]{figs/naxions-equalC.png}
+    \includegraphics[scale=0.5]{figs/naxions-equalC-vsN.png}
+    \centering
+    \caption{Top: Eq. \eqref{eq:general-prob} for different choices of $n$ axions, where all axions have the same $c$. Bottom: Probability versus number of axions $n$, for chosen fixed values of $c$. For all values of $c<5$, the probability curve lies on top of the blue curve, and for all values of $c>100$, the curve lies on top of the purple curve.}
+    \label{fig:n-prob-equalC}
+\end{figure}
+
+\break
+
+\begin{figure}[h]
+    \includegraphics[scale=0.45]{figs/naxions-equalC-loglog1.png}
+    \includegraphics[scale=0.45]{figs/naxions-equalC-loglog2.png}
+    \centering
+    \caption{Same as Fig. \ref{fig:n-prob-equalC} (probability vs. common $c$) but on a log-log scale, and for larger values of $n$.}
+    \label{fig:n-prob-equalC-loglog}
+\end{figure}
+
 \subsection{Allowed parts of parameter space}
 
 Eq. \eqref{eq:c-condition} tells us that certain choices of $m, f$ and $H_I$ will lead to an axion contributing to the anthropic probability. The plot below shows the part of parameter space that are allowed by anthropics for a single axion with mass $m$ and decay constant $f$, for different fixed values of $H_I$. The part of parameter space that lies above the lines leads to values of $c>100$ and thus corresponds to parts of parameter space where the axion contributes to the anthropic measure.
 
 \begin{figure}[h]
-    \includegraphics[scale=0.4]{figs/f-vs-a.png}
+    \includegraphics[scale=0.6]{figs/f-vs-m-anthropic.png}
     \centering
-    \caption{}
+    \caption{The grey shaded regions show the parts of parameter space that contribute to the anthropic probability, delimited by different colored lines corresponding to different choices of $H_I$. The white region corresponds to choices of axion parameters that do not contribute to the anthropic probability. The colorful bands correspond to the range $5<c<100$ over which we do not really understand the contribution to the anthropic measure.}
     \label{fig:f-vs-a}
 \end{figure}
 
-The downward sloping line corresponds to Eq. \eqref{eq:c-condition} when $\min{ \Bigl\{ \pi^2,\frac{3H^4}{8\pi^2m^2f^2}\Bigr\}} = \pi^2$, while the vertical lines correspond to the second case (which, notice in Eq. \eqref{eq:c-condition}, leads to a value of $c$ that does not depend on $f$). 
+The black dashed line goes like $m^{-1/4}$ and corresponds to Eq. \eqref{eq:c-condition} when $\min{ \Bigl\{ \pi^2,\frac{3H^4}{8\pi^2m^2f^2}\Bigr\}} = \pi^2$, while the vertical lines correspond to the second case (which, notice in Eq. \eqref{eq:c-condition}, leads to a value of $c$ that does not depend on $f$). The grey shaded region corresponds to the ``anthropic region" for a given choice of $H_I$– the part of parameter space in which an axion would contribute to the anthropic measure. As the scale of inflation decreases, the anthropic region gets smaller since for low $H_I$, smaller misalignment angles are allowed, meaning that heavier axions can evade the requirement for contributing to the anthropic measure. The colorful shaded regions correspond to the intermediate range of $c$'s for which we do not fully understand the probability distribution (i.e. $5<c<100$). The white region of the plot correspond to choices of $(m,f)$ which do not contribute to the anthropic measure.
 
 \break
 \color{red}\noindent \textbf{Things to do:}

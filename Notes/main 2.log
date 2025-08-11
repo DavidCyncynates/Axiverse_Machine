@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 AUG 2025 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 AUG 2025 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -507,36 +507,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 178.
 
+<figs/naxions-equalC.png, id=202, 697.60625pt x 402.50375pt>
+File: figs/naxions-equalC.png Graphic file (type png)
+<use figs/naxions-equalC.png>
+Package pdftex.def Info: figs/naxions-equalC.png  used on input line 189.
+(pdftex.def)             Requested size: 313.9199pt x 181.125pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 [8]
-<figs/naxions-equalC.png, id=212, 697.60625pt x 402.50375pt>
-File: figs/naxions-equalC.png Graphic file (type png)
-<use figs/naxions-equalC.png>
-Package pdftex.def Info: figs/naxions-equalC.png  used on input line 198.
-(pdftex.def)             Requested size: 313.9199pt x 181.125pt.
-<figs/naxions-equalC-vsN.png, id=213, 643.40375pt x 352.31625pt>
-File: figs/naxions-equalC-vsN.png Graphic file (type png)
-<use figs/naxions-equalC-vsN.png>
-Package pdftex.def Info: figs/naxions-equalC-vsN.png  used on input line 199.
-(pdftex.def)             Requested size: 321.70108pt x 176.15768pt.
-
-
-[9 <./figs/naxions-equalC.png> <./figs/naxions-equalC-vsN.png>]
-<figs/naxions-equalC-loglog1.png, id=222, 702.625pt x 392.46625pt>
-File: figs/naxions-equalC-loglog1.png Graphic file (type png)
-<use figs/naxions-equalC-loglog1.png>
-Package pdftex.def Info: figs/naxions-equalC-loglog1.png  used on input line 208.
-(pdftex.def)             Requested size: 316.17833pt x 176.60817pt.
-<figs/naxions-equalC-loglog2.png, id=223, 727.71875pt x 400.49625pt>
-File: figs/naxions-equalC-loglog2.png Graphic file (type png)
-<use figs/naxions-equalC-loglog2.png>
-Package pdftex.def Info: figs/naxions-equalC-loglog2.png  used on input line 209.
-(pdftex.def)             Requested size: 327.47041pt x 180.22165pt.
-<figs/f-vs-m-anthropic.png, id=227, 570.13pt x 425.59pt>
+<figs/f-vs-m-anthropic.png, id=216, 570.13pt x 425.59pt>
 File: figs/f-vs-m-anthropic.png Graphic file (type png)
 <use figs/f-vs-m-anthropic.png>
-Package pdftex.def Info: figs/f-vs-m-anthropic.png  used on input line 220.
+Package pdftex.def Info: figs/f-vs-m-anthropic.png  used on input line 209.
 (pdftex.def)             Requested size: 342.08064pt x 255.35596pt.
 
 
@@ -544,84 +529,84 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[10 <./figs/naxions-equalC-loglog1.png> <./figs/naxions-equalC-loglog2.png>]
+[9 <./figs/naxions-equalC.png>]
 
-[11 <./figs/f-vs-m-anthropic.png>]
-<figs/Uncoupled_Axions.png, id=247, 551.05875pt x 367.3725pt>
+[10 <./figs/f-vs-m-anthropic.png>]
+<figs/Uncoupled_Axions.png, id=241, 551.05875pt x 367.3725pt>
 File: figs/Uncoupled_Axions.png Graphic file (type png)
 <use figs/Uncoupled_Axions.png>
-Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 246.
+Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 235.
 (pdftex.def)             Requested size: 310.4979pt x 207.00526pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/Coupled_Axions.png, id=248, 540.0175pt x 361.35pt>
+<figs/Coupled_Axions.png, id=242, 540.0175pt x 361.35pt>
 File: figs/Coupled_Axions.png Graphic file (type png)
 <use figs/Coupled_Axions.png>
-Package pdftex.def Info: figs/Coupled_Axions.png  used on input line 252.
+Package pdftex.def Info: figs/Coupled_Axions.png  used on input line 241.
 (pdftex.def)             Requested size: 310.4979pt x 207.76912pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[12]
+[11 <./figs/Uncoupled_Axions.png>]
 
-[13 <./figs/Uncoupled_Axions.png>]
-Overfull \hbox (36.51083pt too wide) detected at line 351
+[12 <./figs/Coupled_Axions.png>]
+Overfull \hbox (36.51083pt too wide) detected at line 340
 []
  []
 
 
 
-[14 <./figs/Coupled_Axions.png>]
+[13]
 
-[15]
-
-[16]
-<figs/Slope_vs_ApD.png, id=304, 733.74126pt x 486.81876pt>
+[14]
+<figs/Slope_vs_ApD.png, id=285, 733.74126pt x 486.81876pt>
 File: figs/Slope_vs_ApD.png Graphic file (type png)
 <use figs/Slope_vs_ApD.png>
-Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 442.
+Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 431.
 (pdftex.def)             Requested size: 310.4979pt x 206.00755pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
 
 
-[17 <./figs/Slope_vs_ApD.png>]
+[15]
 
-[18]
-<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=336, 563.10374pt x 428.60126pt>
+[16 <./figs/Slope_vs_ApD.png>]
+
+[17]
+<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=327, 563.10374pt x 428.60126pt>
 File: figs/Screenshot 2024-11-12 at 5.53.04 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.04 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 513.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 502.
 (pdftex.def)             Requested size: 345.0pt x 262.59741pt.
-
-
-[19]
-<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=347, 572.1375pt x 426.59375pt>
+<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=328, 572.1375pt x 426.59375pt>
 File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 519.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 508.
 (pdftex.def)             Requested size: 345.0pt x 257.24054pt.
-<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=348, 574.145pt x 429.605pt>
+<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=329, 574.145pt x 429.605pt>
 File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 525.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 514.
 (pdftex.def)             Requested size: 345.0pt x 258.15173pt.
 
 
-[20 <./figs/Screenshot 2024-11-12 at 5.53.04 PM.png>]
+[18]
 
-[21 <./figs/Screenshot 2024-11-12 at 5.53.09 PM.png>]
+[19 <./figs/Screenshot 2024-11-12 at 5.53.04 PM.png>]
 
-[22 <./figs/Screenshot 2024-11-12 at 5.53.14 PM.png>] (./main.bbl)
+[20 <./figs/Screenshot 2024-11-12 at 5.53.09 PM.png>]
 
-[23] (./main.aux)
+[21 <./figs/Screenshot 2024-11-12 at 5.53.14 PM.png>] (./main.bbl)
+
+[22] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -634,18 +619,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1822FBD75D315E492B6C1C7C52191D2A;3454.
  ) 
 Here is how much of TeX's memory you used:
- 14703 strings out of 473190
- 241706 string characters out of 5715801
+ 14676 strings out of 473190
+ 240850 string characters out of 5715801
  704914 words of memory out of 5000000
- 37508 multiletter control sequences out of 15000+600000
- 576596 words of font info for 162 fonts, out of 8000000 for 9000
+ 37485 multiletter control sequences out of 15000+600000
+ 576545 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1427b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (23 pages, 1493047 bytes).
+Output written on main.pdf (22 pages, 1220213 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 33009 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 32994 words of extra memory for PDF output out of 35830 (max. 10000000)
 

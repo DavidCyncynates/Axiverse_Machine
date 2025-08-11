@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 AUG 2025 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 AUG 2025 14:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,20 +331,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box57
-) (./main.aux
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
-
 )
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -365,7 +353,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count301
 \scratchdimen=\dimen169
@@ -405,7 +393,6 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 Package hyperref Info: Link coloring ON on input line 28.
- (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -422,22 +409,55 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
+LaTeX Warning: Citation `anthropic-explanation' on page 1 undefined on input line 33.
+
+
+LaTeX Warning: Citation `exploring-string-axiverse' on page 1 undefined on input line 33.
+
+
+LaTeX Warning: Citation `exploring-string-axiverse' on page 1 undefined on input line 44.
+
+
+LaTeX Warning: Citation `anthropic-explanation' on page 1 undefined on input line 44.
+
+
+LaTeX Warning: Citation `anthropic-explanation' on page 1 undefined on input line 44.
+
+
+
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/1axion-prob.jpeg, id=112, 554.07pt x 361.35pt>
+
+LaTeX Warning: Reference `eq:prob-deriv' on page 2 undefined on input line 77.
+
+
+LaTeX Warning: Reference `eq:general-prob' on page 2 undefined on input line 82.
+
+<figs/1axion-prob.jpeg, id=23, 554.07pt x 361.35pt>
 File: figs/1axion-prob.jpeg Graphic file (type jpg)
 <use figs/1axion-prob.jpeg>
 Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 85.
 (pdftex.def)             Requested size: 277.03432pt x 180.67456pt.
 
+LaTeX Warning: Citation `exploring-string-axiverse' on page 2 undefined on input line 87.
+
+
+LaTeX Warning: Citation `exploring-string-axiverse' on page 2 undefined on input line 87.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `fig:1axion-prob' on page 2 undefined on input line 91.
+
+
+LaTeX Warning: Citation `exploring-string-axiverse' on page 2 undefined on input line 91.
+
+
 
 [2]
-<figs/low-scale-inf-prob.jpeg, id=129, 659.46375pt x 363.3575pt>
+<figs/low-scale-inf-prob.jpeg, id=36, 659.46375pt x 363.3575pt>
 File: figs/low-scale-inf-prob.jpeg Graphic file (type jpg)
 <use figs/low-scale-inf-prob.jpeg>
 Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 104.
@@ -447,9 +467,21 @@ Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 104.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `subsec:1-axion' on page 3 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:low-scale-inf-prob' on page 3 undefined on input line 116.
+
+
 
 [3 <./figs/1axion-prob.jpeg>]
-<figs/2axion-prob.jpeg, id=145, 714.67pt x 391.4625pt>
+
+LaTeX Warning: Reference `eq:general-prob' on page 4 undefined on input line 123.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 4 undefined on input line 123.
+
+<figs/2axion-prob.jpeg, id=48, 714.67pt x 391.4625pt>
 File: figs/2axion-prob.jpeg Graphic file (type jpg)
 <use figs/2axion-prob.jpeg>
 Package pdftex.def Info: figs/2axion-prob.jpeg  used on input line 126.
@@ -460,44 +492,109 @@ Overfull \hbox (12.33412pt too wide) in paragraph at lines 126--128
  []
 
 
+LaTeX Warning: Reference `eq:bookkeeping-result' on page 4 undefined on input line 128.
+
+
+LaTeX Warning: Reference `eq:bookkeeping-result' on page 4 undefined on input line 128.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 4 undefined on input line 132.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 4 undefined on input line 132.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 4 undefined on input line 132.
+
+
+LaTeX Warning: Reference `eq:bookkeeping-result' on page 4 undefined on input line 132.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 4 undefined on input line 132.
+
+
+LaTeX Warning: Reference `eq:f(H)' on page 4 undefined on input line 134.
 
 
 
 [4 <./figs/low-scale-inf-prob.jpeg>]
-<figs/2axion-contour.png, id=161, 502.87875pt x 382.42876pt>
+
+LaTeX Warning: Reference `eq:c-condition' on page 5 undefined on input line 143.
+
+<figs/2axion-contour.png, id=56, 502.87875pt x 382.42876pt>
 File: figs/2axion-contour.png Graphic file (type png)
 <use figs/2axion-contour.png>
 Package pdftex.def Info: figs/2axion-contour.png  used on input line 146.
 (pdftex.def)             Requested size: 301.72957pt x 229.45901pt.
 
+LaTeX Warning: Reference `fig:2axion-prob' on page 5 undefined on input line 148.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 5 undefined on input line 148.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `eq:general-prob' on page 5 undefined on input line 154.
+
+
+LaTeX Warning: Reference `eq:general-prob' on page 5 undefined on input line 154.
+
+
 
 [5 <./figs/2axion-prob.jpeg>]
-<figs/ellipses.png, id=174, 471.7625pt x 625.33624pt>
+
+LaTeX Warning: Reference `eq:general-prob' on page 6 undefined on input line 156.
+
+
+LaTeX Warning: Reference `fig:2d-integration-area' on page 6 undefined on input line 156.
+
+<figs/ellipses.png, id=64, 471.7625pt x 625.33624pt>
 File: figs/ellipses.png Graphic file (type png)
 <use figs/ellipses.png>
 Package pdftex.def Info: figs/ellipses.png  used on input line 159.
 (pdftex.def)             Requested size: 235.88066pt x 312.66736pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:2axion-prob' on page 6 undefined on input line 166.
+
+
+LaTeX Warning: Citation `exploring-string-axiverse' on page 6 undefined on input line 168.
+
+
+LaTeX Warning: Reference `eq:bookkeeping-result' on page 6 undefined on input line 168.
 
 
 
 [6 <./figs/2axion-contour.png>]
 
+LaTeX Warning: Reference `fig:2axion-prob' on page 7 undefined on input line 169.
+
+
+
 [7 <./figs/ellipses.png>]
 
+LaTeX Warning: Reference `fig:2axion-prob' on page 8 undefined on input line 170.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 173.
+
+
+LaTeX Warning: Reference `subsubsec:geom-interpret' on page 8 undefined on input line 175.
+
+
+LaTeX Warning: Reference `eq:general-prob' on page 8 undefined on input line 175.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -506,114 +603,243 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 178.
+
+
+LaTeX Warning: Reference `eq:general-prob' on page 8 undefined on input line 179.
+
+
+LaTeX Warning: Reference `fig:n-prob-equalC' on page 8 undefined on input line 186.
+
+
+LaTeX Warning: Reference `eq:nAxions-equalC' on page 8 undefined on input line 186.
+
+
+LaTeX Warning: Citation `exploring-string-axiverse' on page 8 undefined on input line 186.
+
+<figs/naxions-equalC.png, id=81, 697.60625pt x 402.50375pt>
+File: figs/naxions-equalC.png Graphic file (type png)
+<use figs/naxions-equalC.png>
+Package pdftex.def Info: figs/naxions-equalC.png  used on input line 189.
+(pdftex.def)             Requested size: 313.9199pt x 181.125pt.
+
+LaTeX Warning: Reference `eq:general-prob' on page 8 undefined on input line 191.
+
+
+LaTeX Warning: Reference `eq:general-prob' on page 8 undefined on input line 191.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figs/naxions-equalC-loglog1.png, id=82, 702.625pt x 392.46625pt>
+File: figs/naxions-equalC-loglog1.png Graphic file (type png)
+<use figs/naxions-equalC-loglog1.png>
+Package pdftex.def Info: figs/naxions-equalC-loglog1.png  used on input line 196.
+(pdftex.def)             Requested size: 316.17833pt x 176.60817pt.
+<figs/naxions-equalC-loglog2.png, id=83, 727.71875pt x 400.49625pt>
+File: figs/naxions-equalC-loglog2.png Graphic file (type png)
+<use figs/naxions-equalC-loglog2.png>
+Package pdftex.def Info: figs/naxions-equalC-loglog2.png  used on input line 197.
+(pdftex.def)             Requested size: 327.47041pt x 180.22165pt.
+
+LaTeX Warning: Reference `fig:n-prob-equalC' on page 8 undefined on input line 199.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: File `figs/naxions-equalC-vsN.png' not found on input line 204.
+
+
+/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex:204: Package pdftex.def Error: File `figs/naxions-equalC-vsN.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...[scale=0.45]{figs/naxions-equalC-vsN.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+LaTeX Warning: Reference `fig:n-prob-equalC' on page 8 undefined on input line 206.
+
+
+LaTeX Warning: Reference `fig:n-prob-equalC' on page 8 undefined on input line 206.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `eq:nAxions-equalC' on page 8 undefined on input line 210.
 
 
 
 [8]
-<figs/naxions-equalC.png, id=212, 697.60625pt x 402.50375pt>
-File: figs/naxions-equalC.png Graphic file (type png)
-<use figs/naxions-equalC.png>
-Package pdftex.def Info: figs/naxions-equalC.png  used on input line 198.
-(pdftex.def)             Requested size: 313.9199pt x 181.125pt.
-<figs/naxions-equalC-vsN.png, id=213, 643.40375pt x 352.31625pt>
-File: figs/naxions-equalC-vsN.png Graphic file (type png)
-<use figs/naxions-equalC-vsN.png>
-Package pdftex.def Info: figs/naxions-equalC-vsN.png  used on input line 199.
-(pdftex.def)             Requested size: 321.70108pt x 176.15768pt.
 
+LaTeX Warning: Reference `eq:c-condition' on page 9 undefined on input line 221.
 
-[9 <./figs/naxions-equalC.png> <./figs/naxions-equalC-vsN.png>]
-<figs/naxions-equalC-loglog1.png, id=222, 702.625pt x 392.46625pt>
-File: figs/naxions-equalC-loglog1.png Graphic file (type png)
-<use figs/naxions-equalC-loglog1.png>
-Package pdftex.def Info: figs/naxions-equalC-loglog1.png  used on input line 208.
-(pdftex.def)             Requested size: 316.17833pt x 176.60817pt.
-<figs/naxions-equalC-loglog2.png, id=223, 727.71875pt x 400.49625pt>
-File: figs/naxions-equalC-loglog2.png Graphic file (type png)
-<use figs/naxions-equalC-loglog2.png>
-Package pdftex.def Info: figs/naxions-equalC-loglog2.png  used on input line 209.
-(pdftex.def)             Requested size: 327.47041pt x 180.22165pt.
-<figs/f-vs-m-anthropic.png, id=227, 570.13pt x 425.59pt>
+<figs/f-vs-m-anthropic.png, id=95, 570.13pt x 425.59pt>
 File: figs/f-vs-m-anthropic.png Graphic file (type png)
 <use figs/f-vs-m-anthropic.png>
-Package pdftex.def Info: figs/f-vs-m-anthropic.png  used on input line 220.
+Package pdftex.def Info: figs/f-vs-m-anthropic.png  used on input line 224.
 (pdftex.def)             Requested size: 342.08064pt x 255.35596pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `eq:c-condition' on page 9 undefined on input line 230.
+
+
+LaTeX Warning: Reference `eq:c-condition' on page 9 undefined on input line 230.
+
+
+
+[9 <./figs/naxions-equalC.png>]
+
+LaTeX Warning: Reference `eq:c-condition' on page 10 undefined on input line 238.
+
+
+LaTeX Warning: Reference `eq:c-condition' on page 10 undefined on input line 240.
 
 
 
 [10 <./figs/naxions-equalC-loglog1.png> <./figs/naxions-equalC-loglog2.png>]
 
-[11 <./figs/f-vs-m-anthropic.png>]
-<figs/Uncoupled_Axions.png, id=247, 551.05875pt x 367.3725pt>
+LaTeX Warning: Reference `fig:e-density-uncoupled' on page 11 undefined on input line 246.
+
+
+LaTeX Warning: Reference `fig:e-density-coupled' on page 11 undefined on input line 246.
+
+<figs/Uncoupled_Axions.png, id=115, 551.05875pt x 367.3725pt>
 File: figs/Uncoupled_Axions.png Graphic file (type png)
 <use figs/Uncoupled_Axions.png>
-Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 246.
+Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 250.
 (pdftex.def)             Requested size: 310.4979pt x 207.00526pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/Coupled_Axions.png, id=248, 540.0175pt x 361.35pt>
+<figs/Coupled_Axions.png, id=116, 540.0175pt x 361.35pt>
 File: figs/Coupled_Axions.png Graphic file (type png)
 <use figs/Coupled_Axions.png>
-Package pdftex.def Info: figs/Coupled_Axions.png  used on input line 252.
+Package pdftex.def Info: figs/Coupled_Axions.png  used on input line 256.
 (pdftex.def)             Requested size: 310.4979pt x 207.76912pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `eq:triang' on page 11 undefined on input line 304.
 
-[12]
 
-[13 <./figs/Uncoupled_Axions.png>]
-Overfull \hbox (36.51083pt too wide) detected at line 351
+
+[11]
+
+[12 <./figs/f-vs-m-anthropic.png>]
+Overfull \hbox (36.51083pt too wide) detected at line 355
 []
  []
 
 
 
+[13 <./figs/Uncoupled_Axions.png>]
+
+LaTeX Warning: Reference `eq:decay-consts-GS' on page 14 undefined on input line 375.
+
+
+
 [14 <./figs/Coupled_Axions.png>]
+
+LaTeX Warning: Reference `eq:prob-theorem' on page 15 undefined on input line 414.
+
+
+LaTeX Warning: Reference `eq:GS-exp-gamma' on page 15 undefined on input line 421.
+
+
 
 [15]
 
-[16]
-<figs/Slope_vs_ApD.png, id=304, 733.74126pt x 486.81876pt>
+LaTeX Warning: Reference `eq:power-law' on page 16 undefined on input line 442.
+
+
+LaTeX Warning: Reference `eq:gen-pot-2axions' on page 16 undefined on input line 442.
+
+<figs/Slope_vs_ApD.png, id=167, 733.74126pt x 486.81876pt>
 File: figs/Slope_vs_ApD.png Graphic file (type png)
 <use figs/Slope_vs_ApD.png>
-Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 442.
+Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 446.
 (pdftex.def)             Requested size: 310.4979pt x 206.00755pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+LaTeX Warning: Reference `eq:GS-powerlaw' on page 16 undefined on input line 447.
+
+
+LaTeX Warning: Reference `subsec:GS-powerlaw' on page 16 undefined on input line 447.
+
+
+LaTeX Warning: Reference `eq:GS-powerlaw' on page 16 undefined on input line 447.
+
+
+LaTeX Warning: Reference `subsec:GS-powerlaw' on page 16 undefined on input line 447.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:2axions-powerlaw-apd' on page 16 undefined on input line 451.
+
+
+LaTeX Warning: Reference `eq:GS-powerlaw' on page 16 undefined on input line 451.
+
+
+LaTeX Warning: Reference `subsec:GS-powerlaw' on page 16 undefined on input line 451.
+
+
+LaTeX Warning: Reference `eq:GS-exp-gamma' on page 16 undefined on input line 451.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
 
 
+[16]
+
+LaTeX Warning: Reference `eqn:canonical' on page 1 undefined on input line 475.
+
+
+LaTeX Warning: Reference `eqn:fundamental' on page 1 undefined on input line 475.
+
+
+
 [17 <./figs/Slope_vs_ApD.png>]
 
+LaTeX Warning: Reference `sec:separable-energy-density' on page 1 undefined on input line 504.
+
+
+
 [18]
-<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=336, 563.10374pt x 428.60126pt>
+<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=201, 563.10374pt x 428.60126pt>
 File: figs/Screenshot 2024-11-12 at 5.53.04 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.04 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 513.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 517.
 (pdftex.def)             Requested size: 345.0pt x 262.59741pt.
+<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=202, 572.1375pt x 426.59375pt>
+File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
+<use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 523.
+(pdftex.def)             Requested size: 345.0pt x 257.24054pt.
+<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=203, 574.145pt x 429.605pt>
+File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
+<use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 529.
+(pdftex.def)             Requested size: 345.0pt x 258.15173pt.
 
 
 [19]
-<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=347, 572.1375pt x 426.59375pt>
-File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
-<use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 519.
-(pdftex.def)             Requested size: 345.0pt x 257.24054pt.
-<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=348, 574.145pt x 429.605pt>
-File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
-<use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 525.
-(pdftex.def)             Requested size: 345.0pt x 258.15173pt.
-
 
 [20 <./figs/Screenshot 2024-11-12 at 5.53.04 PM.png>]
 
@@ -628,24 +854,33 @@ L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1822FBD75D315E492B6C1C7C52191D2A;3454.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1822FBD75D315E492B6C1C7C52191D2A;3454.
  ) 
 Here is how much of TeX's memory you used:
- 14703 strings out of 473190
- 241706 string characters out of 5715801
- 704914 words of memory out of 5000000
- 37508 multiletter control sequences out of 15000+600000
- 576596 words of font info for 162 fonts, out of 8000000 for 9000
+ 14708 strings out of 473190
+ 242352 string characters out of 5715801
+ 702914 words of memory out of 5000000
+ 37517 multiletter control sequences out of 15000+600000
+ 576766 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1427b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (23 pages, 1493047 bytes).
+ 75i,13n,79p,1427b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (23 pages, 1412306 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 33009 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 352 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 33356 words of extra memory for PDF output out of 35830 (max. 10000000)
 

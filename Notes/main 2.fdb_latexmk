@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1754948938.3819 "main.aux" "main.bbl" "main" 1754948940.21098 0
+["bibtex main"] 1754940313.48303 "main.aux" "main.bbl" "main" 1754944556.50112 0
   "./refs.bib" 1752769880 785 7bb8a57bea7f4c548085a9e40c4ce23b ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1754948940.03254 16880 8952c97e2fbed4aab14189982e340ac2 "pdflatex"
+  "main.aux" 1754944556.31933 15043 f3c5ab17614bebd455812bc98d16e11f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1754948938.44661 "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1754948940.21112 0
-  "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1754948932 42984 71f18540cb26690dcc841da7fa51aa7c ""
+["pdflatex"] 1754944555.06507 "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1754944556.50123 2
+  "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1754944547 41630 017c739f2cefdfb7fdc0ee7ae02fdad6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -146,16 +146,13 @@
   "figs/Slope_vs_ApD.png" 1754633810 176036 365d70cdb5296eebe5e42cd8d74d3100 ""
   "figs/Uncoupled_Axions.png" 1754632797 87369 139ae71b3d984ad22b58f6e4da0e0427 ""
   "figs/ellipses.png" 1754806472.46191 108933 02910b8ccc27cc488cefc1793aecee69 ""
-  "figs/f-vs-m-anthropic.png" 1754945416 31409 6dc93f00725bc9a3f6f7aca7c69f6089 ""
+  "figs/f-vs-m-anthropic.png" 1754940496 24170 dc7b1b3de589cd70884c93a72f0cd1d6 ""
   "figs/low-scale-inf-prob.jpeg" 1752769678 296564 4c35ee3e1ccb8bde6bb456afd4591d87 ""
-  "figs/naxions-equalC-loglog1.png" 1754946913 300529 a6dfbbfb65b90369f17901bf01a396de ""
-  "figs/naxions-equalC-loglog2.png" 1754946920 321040 49d44a980dd1376342904ffa834ed4fa ""
-  "figs/naxions-equalC-vsN.png" 1754947638 279011 201194eea3ac5e5f7f4cd8c493c60e1c ""
   "figs/naxions-equalC.png" 1754804857 356759 37651d67709d86b454b0313c8a550cc6 ""
-  "main.aux" 1754948940.03254 16880 8952c97e2fbed4aab14189982e340ac2 "pdflatex"
-  "main.bbl" 1754948938.44491 377 e654d162f001962756f8f95e7639da96 "bibtex main"
-  "main.out" 1754948940.03348 3454 1822fbd75d315e492b6c1c7c52191d2a "pdflatex"
-  "main.tex" 1754948932 42984 71f18540cb26690dcc841da7fa51aa7c ""
+  "main.aux" 1754944556.31933 15043 f3c5ab17614bebd455812bc98d16e11f "pdflatex"
+  "main.bbl" 1754940313.54768 377 e654d162f001962756f8f95e7639da96 "bibtex main"
+  "main.out" 1754944556.32003 3454 1822fbd75d315e492b6c1c7c52191d2a "pdflatex"
+  "main.tex" 1754944547 41630 017c739f2cefdfb7fdc0ee7ae02fdad6 ""
   (generated)
   "main.aux"
   "main.log"
