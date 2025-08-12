@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1754949111.85562 "main.aux" "main.bbl" "main" 1754949212.39722 0
+["bibtex main"] 1754974277.96299 "main.aux" "main.bbl" "main" 1754974624.26029 0
   "./refs.bib" 1752769880 785 7bb8a57bea7f4c548085a9e40c4ce23b ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1754949212.21221 16880 8952c97e2fbed4aab14189982e340ac2 "pdflatex"
+  "main.aux" 1754974624.06862 18548 ffefb390b407b99f9ffe2bf9eb75654d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1754949210.52367 "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1754949212.39734 0
-  "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1754949207 42984 71f18540cb26690dcc841da7fa51aa7c ""
+["pdflatex"] 1754974622.29258 "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1754974624.26046 0
+  "/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1754974622.19193 45118 b56d6bde923adf182df334f84ff59967 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -64,6 +64,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -148,14 +149,15 @@
   "figs/ellipses.png" 1754806472.46191 108933 02910b8ccc27cc488cefc1793aecee69 ""
   "figs/f-vs-m-anthropic.png" 1754945416 31409 6dc93f00725bc9a3f6f7aca7c69f6089 ""
   "figs/low-scale-inf-prob.jpeg" 1752769678 296564 4c35ee3e1ccb8bde6bb456afd4591d87 ""
+  "figs/n-axions-2groups2.png" 1754959013 319838 1a367ecd3d539e204e08c1895a9cefe2 ""
   "figs/naxions-equalC-loglog1.png" 1754946913 300529 a6dfbbfb65b90369f17901bf01a396de ""
   "figs/naxions-equalC-loglog2.png" 1754946920 321040 49d44a980dd1376342904ffa834ed4fa ""
   "figs/naxions-equalC-vsN.png" 1754947638 279011 201194eea3ac5e5f7f4cd8c493c60e1c ""
   "figs/naxions-equalC.png" 1754804857 356759 37651d67709d86b454b0313c8a550cc6 ""
-  "main.aux" 1754949212.21221 16880 8952c97e2fbed4aab14189982e340ac2 "pdflatex"
-  "main.bbl" 1754949112 377 e654d162f001962756f8f95e7639da96 "bibtex main"
-  "main.out" 1754949212.21315 3454 1822fbd75d315e492b6c1c7c52191d2a "pdflatex"
-  "main.tex" 1754949207 42984 71f18540cb26690dcc841da7fa51aa7c ""
+  "main.aux" 1754974624.06862 18548 ffefb390b407b99f9ffe2bf9eb75654d "pdflatex"
+  "main.bbl" 1754974278.03208 377 e654d162f001962756f8f95e7639da96 "bibtex main"
+  "main.out" 1754974624.06943 3890 101a2c8e58810f48cb0f5ad0a89525f6 "pdflatex"
+  "main.tex" 1754974622.19193 45118 b56d6bde923adf182df334f84ff59967 ""
   (generated)
   "main.aux"
   "main.log"

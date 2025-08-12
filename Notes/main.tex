@@ -175,7 +175,7 @@ While ultimately each point on the integration region will be weighted by the in
 Following the discussion in Section \ref{subsubsec:geom-interpret}, we can understand the interesting threshold regimes of Eq. \eqref{eq:general-prob} for $n$ axions. In $n$-dimensions, the elliptical ring inside the square from the 2-dimensional case becomes an hyperellipsoidal (?) shell within a hypercube. ... \\
 Range of intermediate c's that we don't understand
 
-\subsubsection{All equal $c$'s}
+\subsubsection{Probability for $n$ axions with equal $c$'s}
 The easiest case to consider for $n$ axions is when all of them have the same $c$. In this case, the integrals in Eq. \eqref{eq:general-prob} reduce to 1-dimensional integrals in hyperspherical coordinates, over the radial coordinate ($r\equiv\sum_a\theta_a^2$):
 
 \begin{equation}
@@ -183,7 +183,7 @@ The easiest case to consider for $n$ axions is when all of them have the same $c
          P = \mathcal{N'}^{-1} \int_{0}^1 \frac{r^{n-1} dr}{1+c r^2}\Theta(c r^2-2.5)\Theta(5-c r^2)
 \end{equation}
 
-Fig. \ref{fig:n-prob-equalC} shows the result of Eq. \eqref{eq:nAxions-equalC} for chosen values of $n$. The behavior is as expected: as the number of axions increases, the probability drops to zero more and more quickly. The two regimes to notice are firstly, when $c<5$, the axions are all light enough that we can ignore them in the anthropic measure, and secondly, when $c>100$, the probability reaches its $c-$-independent value, as calculated in \cite{exploring-string-axiverse}. These two thersholds are valid for all values of $n$ (the second thershold when $c>100$ is not so obvious for larger $n$, but I checked this numerically.)
+Fig. \ref{fig:n-prob-equalC} shows the result of Eq. \eqref{eq:nAxions-equalC} for chosen values of $n$. The behavior is as expected: as the number of axions increases, the probability drops to zero more and more quickly. The two regimes to notice are firstly, when $c<5$, the axions are all light enough that we can ignore them in the anthropic measure, and secondly, when $c>100$, the probability reaches its $c$-independent value, as calculated in \cite{exploring-string-axiverse}. These two thersholds are valid for all values of $n$ (the second thershold when $c>100$ is not so obvious for larger $n$, but I checked this numerically.)
 
 More quantitatively, for the values $5<c\leq 100$, Eq. \eqref{eq:nAxions-equalC} evaluates to the following:
 
@@ -211,6 +211,27 @@ More quantitatively, for the values $5<c\leq 100$, Eq. \eqref{eq:nAxions-equalC}
     \caption{Same as Fig. \ref{fig:n-prob-equalC} (probability vs. common $c$) but on a log-log scale, and for larger values of $n$.}
     \label{fig:n-prob-equalC-loglog}
 \end{figure}
+
+\subsubsection{Probability for $n$ axions in two $c$ regimes}
+
+Because the anthropic probability has these two regimes when $c<5$ and when $c>100$, we can neglect the regime where $5<c<100$ which we do not understand very well, and simplify the integrals in Eq. \eqref{eq:general-prob} as follows. If we are interested in $n$ axions, and a fraction $\mathcal{F}$ of them have $c>100$, while a fraction $1-\mathcal{F}$ of them have $c<5$, then we can separate the integration variables into two sets, such that the heavy ones can be written in spherical coordinates with $r_1 \equiv \sum_{i=1}^{\mathcal{F}n} \theta_i^2$ and the light ones as $r_2 \equiv \sum_{i=\mathcal{F}n+1}^{n} \theta_i^2$. Then Eq. \eqref{eq:general-prob} can be written:
+
+\begin{equation}
+    \label{eq:2groups-naxions}
+    P = \mathcal{N}^{-1}\int_{0}^1\int_{0}^1 \frac{r_1^{\mathcal{F}n-1} r_2^{(1-\mathcal{F})n-1} dr_1 dr_2}{1+c_{H}r_1^2+c_{L}r_2^2}
+    \Theta(2.5<1+c_{H}r_1^2+c_{L}r_2^2<5)
+\end{equation}
+
+\noindent where the normalization $\mathcal{N}$ is the same integral but with the constraint $2.5<1+c_{H}r_1^2+c_{L}r_2^2<100$. This integral can be computed numerically and its result is shown in Fig. \ref{fig:n-axions-2groups.png} below for $n=4$ and a few choices of $\mathcal{F}$.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.55]{figs/n-axions-2groups2.png}
+    \centering
+    \caption{The result of Eq. \eqref{eq:2groups-naxions} fo $n=4$ and $c_H=100$. The dashed lines show the probabilities for 1,2,3, and 4 axions contributing to the anthropic measure. The x-axis is $c_L$ and the fraction of axions that have this value of $c$ is given by $1-\mathcal{F}$. If $c_L>100$, we see the probability is equal to that of 4 axions for all choices of $\mathcal{F}$, while if $c_L<5$, the probabiltiy approaches that for $\mathcal{F}n$ axions for each chosen value of $\mathcal{F}$ and $n=4$.}
+    \label{fig:n-axions-2groups.png}
+\end{figure}
+
+We can therefore conclude that for all $n$, if an axion is light ($c\lesssim2.5-5$), it will not contribute to the anthropic measure, while if it is heavy ($c>100$), it will.
 
 \subsection{Allowed parts of parameter space}
 
