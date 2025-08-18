@@ -63,6 +63,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/bbold.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/bbold.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/soul/soul.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/soul/soul.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/soul/soul-ori.sty
@@ -280,11 +282,22 @@ INPUT ./figs/Coupled_Axions.png
 INPUT ./figs/Coupled_Axions.png
 INPUT ./figs/Coupled_Axions.png
 INPUT ./figs/Coupled_Axions.png
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold5.tfm
 INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
+INPUT ./figs/f-vs-axions.png
+INPUT ./figs/f-vs-axions.png
+INPUT ./figs/f-vs-axions.png
+INPUT ./figs/f-vs-axions.png
+INPUT ./figs/f-vs-axions.png
 INPUT ./figs/Screenshot 2024-11-12 at 5.53.04 PM.png
 INPUT ./figs/Screenshot 2024-11-12 at 5.53.04 PM.png
 INPUT ./figs/Screenshot 2024-11-12 at 5.53.04 PM.png
@@ -306,6 +319,7 @@ INPUT main.bbl
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -324,4 +338,3 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
