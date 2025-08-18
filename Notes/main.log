@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  18 AUG 2025 07:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  18 AUG 2025 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex
-(/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex
+**/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex
+(/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -632,60 +632,58 @@ Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 465.
 [18 <./figs/Slope_vs_ApD.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 518.
+(hyperref)                removing `math shift' on input line 519.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 518.
+(hyperref)                removing `math shift' on input line 519.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 518.
+(hyperref)                removing `math shift' on input line 519.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 518.
-
-<figs/f-vs-axions.png, id=354, 659.46375pt x 488.82625pt>
-File: figs/f-vs-axions.png Graphic file (type png)
-<use figs/f-vs-axions.png>
-Package pdftex.def Info: figs/f-vs-axions.png  used on input line 526.
-(pdftex.def)             Requested size: 310.4979pt x 230.1586pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+(hyperref)                removing `math shift' on input line 519.
 
 
 
 [19]
+<figs/f-vs-axions.png, id=367, 659.46375pt x 488.82625pt>
+File: figs/f-vs-axions.png Graphic file (type png)
+<use figs/f-vs-axions.png>
+Package pdftex.def Info: figs/f-vs-axions.png  used on input line 527.
+(pdftex.def)             Requested size: 310.4979pt x 230.1586pt.
+
 
 [20 <./figs/f-vs-axions.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 546.
+(hyperref)                removing `math shift' on input line 547.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 546.
+(hyperref)                removing `math shift' on input line 547.
 
 
 
 [21]
 
 [22]
-<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=403, 563.10374pt x 428.60126pt>
+<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=402, 563.10374pt x 428.60126pt>
 File: figs/Screenshot 2024-11-12 at 5.53.04 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.04 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 622.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 623.
 (pdftex.def)             Requested size: 345.0pt x 262.59741pt.
-<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=404, 572.1375pt x 426.59375pt>
+<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=403, 572.1375pt x 426.59375pt>
 File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 628.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 629.
 (pdftex.def)             Requested size: 345.0pt x 257.24054pt.
-<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=405, 574.145pt x 429.605pt>
+<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=404, 574.145pt x 429.605pt>
 File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
 <use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 634.
+Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 635.
 (pdftex.def)             Requested size: 345.0pt x 258.15173pt.
 
 
@@ -710,18 +708,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 124877DC61430112E9F14B12F901E89C;5067.
  ) 
 Here is how much of TeX's memory you used:
- 14812 strings out of 473190
- 243997 string characters out of 5715801
+ 14811 strings out of 473190
+ 243989 string characters out of 5715801
  704038 words of memory out of 5000000
  37583 multiletter control sequences out of 15000+600000
- 577208 words of font info for 166 fonts, out of 8000000 for 9000
+ 577157 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1427b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1426b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (27 pages, 1732449 bytes).
+Output written on main.pdf (27 pages, 1733663 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 436 compressed objects within 5 object streams
- 140 named destinations out of 1000 (max. 500000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
+ 141 named destinations out of 1000 (max. 500000)
  33051 words of extra memory for PDF output out of 35830 (max. 10000000)
 
