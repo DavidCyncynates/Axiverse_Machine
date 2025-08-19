@@ -529,13 +529,13 @@ The general behavior of the curve is in agreement with the 2-axion result, where
     \label{fig:f-vs-axions}
 \end{figure}
 
-To understand the general shape of the above curve, let's focus on the denominator of the expression for $(f^i)^{2}$ given in Eq. \eqref{eq:f-matrix-version}. It can be shown that $[Q^{-1}]_{00} \equiv [[S^T k S]^{-1}]_{00} = \vec{n}^T k^{-1} \vec{n}$ (see Ella's note), where $\vec{n} \equiv n_{0i}$. This can be rewritten in the following way:
+To understand the general shape of the above curve, let's focus on the denominator of the expression for $f_{(i)}^{2}$ given in Eq. \eqref{eq:f-matrix-version}. It can be shown that $[Q^{-1}]_{00} \equiv [[S^T k S]^{-1}]_{00} = \vec{n}^T k^{-1} \vec{n}$ (see Ella's note), where $\vec{n} \equiv n_{0i}$. This can be rewritten in the following way:
 
 \begin{equation}
-    \displaystyle \operatorname {E} \left[\vec{n} ^{T} k^{-1} \vec{n} \right]=\operatorname {tr} \left[k \Sigma \right]+\vec{\mu} ^{T} k \vec{\mu}
+    \displaystyle \operatorname {E} \left[\vec{n} ^{T} k^{-1} \vec{n} \right]=\operatorname {tr} \left[k^{-1} \Sigma \right]+\vec{\mu} ^{T} k^{-1} \vec{\mu}
 \end{equation}
 
-\noindent where $\Sigma = \vec{n}\cdot \vec{n}^T$ is the covariance matrix of $\vec{n}$ and $\mu$ is the average value of $\vec{n}$ (according to wikipedia, Quadratic form (Statistics)). Assuming that $\mu=0$, that $\Sigma$ is roughly diagonal and does not change much between neighboring iterations, and that the primary difference between $k$'s of neighboring iterations (i.e. $k_{(i+1)}$ and $k_{(i)}$) is the difference in dimensionality (i.e. they are matrices of size $(N-i)\times (N-i)$ and $(N-i-1)\times (N-i-1)$ respectively), we can write the ratio of two successive decay constants post GS-ification as:
+\noindent where $\Sigma = \vec{n}\cdot \vec{n}^T$ is the covariance matrix of $\vec{n}$ and $\vec{\mu}$ is the average value of $\vec{n}$ (according to wikipedia, Quadratic form (Statistics)). Assuming that $\vec{\mu}=0$, that $\Sigma$ is roughly diagonal and does not change much between neighboring iterations, and that the primary difference between $k$'s of neighboring iterations (i.e. $k_{(i+1)}$ and $k_{(i)}$) is the difference in dimensionality (i.e. they are matrices of size $(N-i)\times (N-i)$ and $(N-i-1)\times (N-i-1)$ respectively), we can write the ratio of two successive decay constants post GS-ification as:
 
 \begin{align}
     \frac{f_{(i+1)}^2}{f_{(i)}^2} & \sim \frac{ \operatorname {tr} \left[(k_{(i)})^{-1} \Sigma \right]}{\operatorname {tr} \left[(k_{(i+1)})^{-1} \Sigma \right]} \sim \frac{N-i}{N-i-1} \\
