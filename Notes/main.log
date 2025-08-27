@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  18 AUG 2025 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  26 AUG 2025 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex
-(/Users/ellahenry/Documents/GitHub/Axiverse_Machine/Notes/main.tex
+**/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex
+(/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -334,20 +334,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 21.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box57
-) (./main.aux
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
-LaTeX Warning: Label `fig:enter-label@cref' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -428,7 +415,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/1axion-prob.jpeg, id=128, 554.07pt x 361.35pt>
+<figs/1axion-prob.jpeg, id=120, 554.07pt x 361.35pt>
 File: figs/1axion-prob.jpeg Graphic file (type jpg)
 <use figs/1axion-prob.jpeg>
 Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 86.
@@ -440,7 +427,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [2]
-<figs/low-scale-inf-prob.jpeg, id=145, 659.46375pt x 363.3575pt>
+<figs/low-scale-inf-prob.jpeg, id=137, 659.46375pt x 363.3575pt>
 File: figs/low-scale-inf-prob.jpeg Graphic file (type jpg)
 <use figs/low-scale-inf-prob.jpeg>
 Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 105.
@@ -452,7 +439,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [3 <./figs/1axion-prob.jpeg>]
-<figs/2axion-prob.jpeg, id=161, 714.67pt x 391.4625pt>
+<figs/2axion-prob.jpeg, id=153, 714.67pt x 391.4625pt>
 File: figs/2axion-prob.jpeg Graphic file (type jpg)
 <use figs/2axion-prob.jpeg>
 Package pdftex.def Info: figs/2axion-prob.jpeg  used on input line 127.
@@ -468,7 +455,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [4 <./figs/low-scale-inf-prob.jpeg>]
-<figs/2axion-contour.png, id=177, 502.87875pt x 382.42876pt>
+<figs/2axion-contour.png, id=169, 502.87875pt x 382.42876pt>
 File: figs/2axion-contour.png Graphic file (type png)
 <use figs/2axion-contour.png>
 Package pdftex.def Info: figs/2axion-contour.png  used on input line 147.
@@ -480,7 +467,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [5 <./figs/2axion-prob.jpeg>]
-<figs/ellipses.png, id=191, 471.7625pt x 625.33624pt>
+<figs/ellipses.png, id=182, 471.7625pt x 625.33624pt>
 File: figs/ellipses.png Graphic file (type png)
 <use figs/ellipses.png>
 Package pdftex.def Info: figs/ellipses.png  used on input line 160.
@@ -521,12 +508,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [8]
-<figs/naxions-equalC.png, id=228, 697.60625pt x 402.50375pt>
+<figs/naxions-equalC.png, id=220, 697.60625pt x 402.50375pt>
 File: figs/naxions-equalC.png Graphic file (type png)
 <use figs/naxions-equalC.png>
 Package pdftex.def Info: figs/naxions-equalC.png  used on input line 199.
 (pdftex.def)             Requested size: 313.9199pt x 181.125pt.
-<figs/naxions-equalC-vsN.png, id=229, 643.40375pt x 352.31625pt>
+<figs/naxions-equalC-vsN.png, id=221, 643.40375pt x 352.31625pt>
 File: figs/naxions-equalC-vsN.png Graphic file (type png)
 <use figs/naxions-equalC-vsN.png>
 Package pdftex.def Info: figs/naxions-equalC-vsN.png  used on input line 200.
@@ -534,12 +521,12 @@ Package pdftex.def Info: figs/naxions-equalC-vsN.png  used on input line 200.
 
 
 [9 <./figs/naxions-equalC.png> <./figs/naxions-equalC-vsN.png>]
-<figs/naxions-equalC-loglog1.png, id=238, 702.625pt x 392.46625pt>
+<figs/naxions-equalC-loglog1.png, id=230, 702.625pt x 392.46625pt>
 File: figs/naxions-equalC-loglog1.png Graphic file (type png)
 <use figs/naxions-equalC-loglog1.png>
 Package pdftex.def Info: figs/naxions-equalC-loglog1.png  used on input line 209.
 (pdftex.def)             Requested size: 316.17833pt x 176.60817pt.
-<figs/naxions-equalC-loglog2.png, id=239, 727.71875pt x 400.49625pt>
+<figs/naxions-equalC-loglog2.png, id=231, 727.71875pt x 400.49625pt>
 File: figs/naxions-equalC-loglog2.png Graphic file (type png)
 <use figs/naxions-equalC-loglog2.png>
 Package pdftex.def Info: figs/naxions-equalC-loglog2.png  used on input line 210.
@@ -564,7 +551,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [10 <./figs/naxions-equalC-loglog1.png> <./figs/naxions-equalC-loglog2.png>]
-<figs/n-axions-2groups2.png, id=252, 723.70375pt x 399.4925pt>
+<figs/n-axions-2groups2.png, id=244, 723.70375pt x 399.4925pt>
 File: figs/n-axions-2groups2.png Graphic file (type png)
 <use figs/n-axions-2groups2.png>
 Package pdftex.def Info: figs/n-axions-2groups2.png  used on input line 229.
@@ -574,7 +561,7 @@ Overfull \hbox (53.03828pt too wide) in paragraph at lines 229--231
  [][] 
  []
 
-<figs/f-vs-m-anthropic.png, id=256, 570.13pt x 425.59pt>
+<figs/f-vs-m-anthropic.png, id=248, 570.13pt x 425.59pt>
 File: figs/f-vs-m-anthropic.png Graphic file (type png)
 <use figs/f-vs-m-anthropic.png>
 Package pdftex.def Info: figs/f-vs-m-anthropic.png  used on input line 242.
@@ -587,7 +574,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [11 <./figs/n-axions-2groups2.png>]
 
 [12 <./figs/f-vs-m-anthropic.png>]
-<figs/Uncoupled_Axions.png, id=277, 551.05875pt x 367.3725pt>
+<figs/Uncoupled_Axions.png, id=269, 551.05875pt x 367.3725pt>
 File: figs/Uncoupled_Axions.png Graphic file (type png)
 <use figs/Uncoupled_Axions.png>
 Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 268.
@@ -596,7 +583,7 @@ Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 268.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/Coupled_Axions.png, id=278, 540.0175pt x 361.35pt>
+<figs/Coupled_Axions.png, id=270, 540.0175pt x 361.35pt>
 File: figs/Coupled_Axions.png Graphic file (type png)
 <use figs/Coupled_Axions.png>
 Package pdftex.def Info: figs/Coupled_Axions.png  used on input line 274.
@@ -622,7 +609,7 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 40
 [16]
 
 [17]
-<figs/Slope_vs_ApD.png, id=334, 733.74126pt x 486.81876pt>
+<figs/Slope_vs_ApD.png, id=326, 733.74126pt x 486.81876pt>
 File: figs/Slope_vs_ApD.png Graphic file (type png)
 <use figs/Slope_vs_ApD.png>
 Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 465.
@@ -649,7 +636,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [19]
-<figs/f-vs-axions.png, id=367, 659.46375pt x 488.82625pt>
+<figs/f-vs-axions.png, id=359, 659.46375pt x 488.82625pt>
 File: figs/f-vs-axions.png Graphic file (type png)
 <use figs/f-vs-axions.png>
 Package pdftex.def Info: figs/f-vs-axions.png  used on input line 527.
@@ -665,61 +652,45 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 547.
 
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
 
 [21]
 
 [22]
-<figs/Screenshot 2024-11-12 at 5.53.04 PM.png, id=402, 563.10374pt x 428.60126pt>
-File: figs/Screenshot 2024-11-12 at 5.53.04 PM.png Graphic file (type png)
-<use figs/Screenshot 2024-11-12 at 5.53.04 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.04 PM.png  used on input line 623.
-(pdftex.def)             Requested size: 345.0pt x 262.59741pt.
-<figs/Screenshot 2024-11-12 at 5.53.09 PM.png, id=403, 572.1375pt x 426.59375pt>
-File: figs/Screenshot 2024-11-12 at 5.53.09 PM.png Graphic file (type png)
-<use figs/Screenshot 2024-11-12 at 5.53.09 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.09 PM.png  used on input line 629.
-(pdftex.def)             Requested size: 345.0pt x 257.24054pt.
-<figs/Screenshot 2024-11-12 at 5.53.14 PM.png, id=404, 574.145pt x 429.605pt>
-File: figs/Screenshot 2024-11-12 at 5.53.14 PM.png Graphic file (type png)
-<use figs/Screenshot 2024-11-12 at 5.53.14 PM.png>
-Package pdftex.def Info: figs/Screenshot 2024-11-12 at 5.53.14 PM.png  used on input line 635.
-(pdftex.def)             Requested size: 345.0pt x 258.15173pt.
-
 
 [23]
 
-[24 <./figs/Screenshot 2024-11-12 at 5.53.04 PM.png>]
+[24]
 
-[25 <./figs/Screenshot 2024-11-12 at 5.53.09 PM.png>]
+[25] (./main.bbl
 
-[26 <./figs/Screenshot 2024-11-12 at 5.53.14 PM.png>] (./main.bbl)
+[26])
 
 [27] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 124877DC61430112E9F14B12F901E89C;5067.
+(rerunfilecheck)             Checksum: C58F03716BC23A2F607D9295C01B1D41;4932.
  ) 
 Here is how much of TeX's memory you used:
- 14811 strings out of 473190
- 243992 string characters out of 5715801
+ 14803 strings out of 473190
+ 243148 string characters out of 5715801
  704038 words of memory out of 5000000
- 37583 multiletter control sequences out of 15000+600000
- 577157 words of font info for 165 fonts, out of 8000000 for 9000
+ 37569 multiletter control sequences out of 15000+600000
+ 577533 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1427b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (27 pages, 1733680 bytes).
+ 75i,13n,79p,1426b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (27 pages, 1496817 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 141 named destinations out of 1000 (max. 500000)
- 33051 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 434 compressed objects within 5 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 33532 words of extra memory for PDF output out of 35830 (max. 10000000)
 

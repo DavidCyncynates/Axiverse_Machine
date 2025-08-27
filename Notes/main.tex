@@ -565,94 +565,127 @@ The distribution of the $k$ matrices seem to be following a two-sided exponentia
 \end{enumerate}\color{black}
 
 \appendix
-\section{Introduction}
-Consider the general task of determining how the initial condition of a collection of scalar fields $\bm \theta(0)$ maps onto the final partition of energy density among the various mass eigenstates, where the dynamics are controlled by the following Lagrangian:
-\begin{align}\label{eqn:fundamental}
-    {\cal L} = \frac{1}{2}\dot{\bm \theta}^T {\bm K}\dot{\bm\theta} - V(\bm\theta)\,.
-\end{align}
-The kinetic term matrix $\bm K$ may be diagonalized through the following field redefinition
+\section{Numerical Strategies}
+
+At the level of homogeneous fields, the axiverse consists of a large number of damped oscillators with hierarchical masses, coupled through a joint potential. Even this relatively simple setup poses significant practical challenges when attempting to simulate its dynamics in full. A central concern when studying any subset of axions is whether they can truly be treated as independent of the rest. Even neglecting the possibility of direct interactions between the heaviest and lightest states, energy may cascade from heavy to light axions through ``nearest-neighbor'' interactions. While there are special cases where factorization is possible, a systematic toolkit is required to study generic, hierarchical axions in a cosmological setting. In this appendix, we introduce the \texttt{Axiverse Machine}, a numerical framework designed to approximate the dynamics of large axiverse systems in the preinflationary setting. 
+
+This framework addresses two distinct problems. The first is that of timescales: heavy axions oscillate many times during a single oscillation of a light axion. Accurately resolving these dynamics would otherwise require prohibitively many time steps. On the other hand, heavy fields are expected to relax to the minimum of their potential, where their mixing with other axions is suppressed by their small amplitude. The challenge, then, is to integrate out these axions in a generic potential without detailed knowledge of the potential’s form or the locations of its minima, which may be numerous. We present a simple numerical procedure to achieve this in \cref{sec:integrating_out_heavy_modes}.
+
+The second problem concerns the resolution of the axion potential itself, which can span many orders of magnitude—well beyond the \texttt{Float64} (standard double precision) limit of roughly $10^{16}$. Even after integrating out the heavy axions according to the procedure of \cref{sec:integrating_out_heavy_modes}, large hierarchies remain in the potential, preventing reliable simulations across mass ratios greater than about $10^8$. To address this, we exploit the structure of the joint axion potential: using an approach inspired by Gram--Schmidt reduction, we dynamically rescale the dominant terms in the potential that give mass to heavy, irrelevant modes. This relaxes the large hierarchies while preserving the dynamics of the light, active fields. We describe this procedure in \cref{sec:double_precision_over_cosmic_time}.
+
+Finally, in \cref{sec:documentation}, we provide detailed documentation for the end user of our \texttt{julia} package, along with detailed installation instructions for those unfamiliar with the \texttt{julia} ecosystem.
+
+\section{Integrating out heavy modes}\label{sec:integrating_out_heavy_modes}
+Let us assume that the axion Lagrangian has the following generic form
 \begin{align}
-    \bm\psi \equiv \bm F \bm R^T \bm\theta\,,\hspace{1cm}\bm F^2\equiv \bm R^T \bm K \bm R\,,
+    {\cal L} = \frac12\dot{\bm\theta}^T{\bm K}\dot{\bm\theta} - V(\bm\theta)\,,
 \end{align}
-where $\bm R^T \bm R  = 1$, and $\bm F^2$ is the diagonal matrix of $\bm K$ eigenvalues. In this basis, the Lagrangian becomes
-\begin{align}\label{eqn:canonical}
-    {\cal L} = \frac12\dot{\bm\psi}^T\dot{\bm\psi} - V(\bm R\bm F^{-1}\bm\psi)\,.
-\end{align}
-Although one may as well have started with \Cref{eqn:canonical}, starting with \Cref{eqn:fundamental} is essential if the form of $V$ is specified, since mixing induced by the off-diagonal kinetic terms will play an important role in the dynamics.
-
-The potential $V(\bm\psi)\equiv V(\bm R\bm F^{-1}\bm\psi)$ is in general an arbitrarily complicated function of the fields, and it may have multiple, physically inequivalent minima, from which $\bm\psi$ may be initialized arbitrarily far away. Therefore, at early times there is no sense in which one may define any particular linear combination of the fields to carry some definite fraction of the energy density of the system. Only at asymptotically late times is one guaranteed that the fields settle into a local minimum of the potential, though I emphasize that one does not know the location or curvature of this part of the potential \emph{a priori}. Therefore, our algorithm to separate out the various late-time mass eigenstates of the fields must avoid making explicit reference to the shape of the potential about any particular point.
-
-
-\subsection{Separable energy density}\label{sec:separable-energy-density}
-To simplify notation, we will use $\bm V''$ and $\bm V'$ to refer to the second and first derivatives $\partial^2 V(\bm\psi)/\partial\bm\psi\partial\bm\psi$ and $\partial V(\bm\psi)/\partial\bm\psi$ respectively. The matrix $\bm V''$ defines the square of the local mass eigenvalues, and so we must redefine the fields to work in the mass eigenstates:
+where we assume that the kinetic matrix ${\bm K}$ is constant with respect to $\bm\theta$. We may then define the canonically normalized fields
 \begin{align}
-    \bm\phi\equiv \bm S^T\bm\psi \,,\hspace{1cm} \bm M^2\equiv \bm S^T\bm V''(\psi)\bm S\,,
+    {\bm\theta}\equiv \bm R\bm f^{-1}\bm \psi\,,
 \end{align}
-where $\bm S^T\bm S = 1$ and $\bm M^2$ is the diagonal matrix of $\bm V''(\psi)$ eigenvalues. The energy density contained in the field oscillations is then
+where $\bm f^2$ is the diagonal matrix of $\bm K$'s eigenvalues and $\bm R\in O(N)$ where $N$ is the number of axions (i.e. the length of the $\bm\theta$-vector). The utility of working with canonically normalized fields is that the finite-difference equations are simple to implement numerically.
+
+To simplify our notation, we define the potential gradient and Hessian
 \begin{align}
-    \rho_{\rm tot}\equiv \frac12 \dot{\bm\phi}^T\dot{\bm\phi} + \frac12 (\bm\phi - \bm\phi_0)\bm M^2(\bm\phi - \bm\phi_0)\,,
+    [\bm G(\bm\psi)]_i&\equiv \frac{\partial V[{\bm R}{\bm f}^{-1}{\bm \psi}]}{\partial{[\bm \psi]_i}}\,,\\
+    [\bm H(\bm\psi)]_{ij}&\equiv \frac{\partial^2 V[{\bm R}{\bm f}^{-1}{\bm \psi}]}{\partial{[\bm \psi]_i}\partial{[\bm \psi]_j}}\,.
 \end{align}
-where $\bm\phi_0$ is the location of the minimum of the potential, which approximately satisfies
+As is, the system of equations governing $\bm\psi$
 \begin{align}
-    0&=\bm V''(\bm\psi)(\bm \psi - \bm\psi_0) + \bm V'(\psi) = \bm S \bm M^2 (\bm\phi - \bm \phi_0) + \bm S\bm V'(\bm\phi)
+    0&=\ddot{\bm\psi} + 3 H\dot{\bm\psi} + \bm G[{\bm\psi}]
 \end{align}
-Thus, the energy density is
+can be put directly into a finite difference solver. The issues of finite precision will ultimately limit ones ability to resolve the dynamics of the light fields, but even before this concern is relevant, the practical issue of resolving $10^8$ oscillations of the heavy field per single oscillation of the lightest resolved field will make numerical evaluation impossible. On the other hand, it is quite intuitive that the heavy field should be of little relevance. 
+
+Ultimately, heavy fields will always play some small role in the light field dynamics, though it should become asymptotically small at late times when the field amplitudes are tiny. Therefore, we must determine at when a heavy field has become negligible to within some acceptable tolerance, and then remove the fast timescale from the problem so that the finite difference timestep may be taken to be comparable to the inverse mass of the heaviest dynamically relevant mode.
+
+Our metric for whether a heavy field is decoupled will be its quality factor (with geometric redshifting factored out):
 \begin{align}
-    \rho_{\rm tot}\equiv \frac12 \dot{\bm\phi}^T\dot{\bm\phi} + \frac12\bm V'(\bm\phi)^T\bm M^{-2}\bm V'(\bm\phi)\,.
+    {\cal Q}_i\equiv \left|\frac{P_i^{\rm flat}}{m_i\rho_i^{\rm flat}}\right|\,,
 \end{align}
-Labeling each of the mass eigenstates by their mass eigenvalue $m$, we may decompose the energy density:
-\begin{align}\label{eqn:separated-energy-densities}
-    \rho_{m}\equiv \frac12 \dot{\bm\phi}_m^2 + \frac12 [\bm M^{-2}(\bm V'(\bm\phi))^2]_m\,.
-\end{align}
-I assume a convention where the modes are sorted from lightest to heaviest, with $m = m_0$ being the lightest eigenvalue and $m_{-1}$ the heaviest.
+where $i$ labels the mass eigenstates about the final vacuum from heaviest ($i = 0$) to lightest $(i = N)$, $m_i$ is its mass, $\rho_i^{\rm flat}$ is its energy density with $a^3$ redshifting factored out, and $P_i^{\rm flat}$ is the energy flux out of this eigenstate, again with $a^3$ redshifting factored out. Our goal is to define these quantities without reference to the particular form of the potential.
 
-\subsection{Pruning trivial modes}
-The procedure of \Cref{sec:separable-energy-density} is sufficient to determine the final partition of energy densities at asymptotically late times. In practice, integrating the equations of motion to very late times where one may assume that all states have settled to the bottom of some local minimum is impossible if the masses span more than a few orders of magnitude, since the number of time steps that must be taken is proportional to the ratio of the largest to smallest masses. On the other hand, heavy particles will settle to the minimum of their potential long before the lightest mass eigenstates have begun to oscillate, and so we may remove them from the integration by carefully checking that these modes are dynamically decoupled from all others.
-
-To eliminate the heavy modes, it is enough to replace the damping term $3 H \dot{\bm \phi}_{m_i}$ with the critically damped term $2m_i\dot{\bm \phi}_{m_i}$. Note, though, that at every step, the heavy modes will still involve the heavy mass scale. Therefore, one should re-scale the heavy-mode EOM by the mass (squared) of the lightest mode that has been integrated out. This will keep the heavy modes dynamically forced to the bottom of their potentials, while removing any fast timescales.
-
-\section{Coupling to photons}
-In the interaction basis, there is a single mode that couples to photons, which we take to be $\theta_1$ without loss of generality:
+We begin by rotating to the local mass eigenbasis:
 \begin{align}
-    {\cal L}_{\rm int} = \frac{\alpha_{\rm EM}}{8\pi}\theta_1\tilde F F =\frac{\alpha_{\rm EM}}{8\pi} [\bm R\bm F^{-1}\bm S \bm \phi]_1 \tilde F F.
+    \bm H = \bm S^T \bm m^2 \bm S
 \end{align}
-For each mass eigenstate, the coupling to the photon is then given by the corresponding coefficient in the first row of this matrix.
+where $\bm S$ is an orthogonal transformation, and $\bm m^2$ is the diagonal matrix of mass-squared eigenvalues $m_i^2$ sorted from heaviest to lightest, and 
+\begin{align}
+    \bm\psi\equiv \bm S{\bm\psi}'\,,
+\end{align}
+defines the local mass eigenstates $\bm\psi'$.
+Under the assumption that the local mass eigenstates are indeed approximately true mass eigenstates, and that their oscillations are perturbatively small, the energy density factorizes neatly into the energy densities of each mass eigenstate
+\begin{align}\label{eqn:local_energy_density}
+    \rho_i = \frac12 [\dot{\bm\psi}']_i^2 + \frac12m_i^{-2}[\bm G(\bm\psi')]_i^2\,.
+\end{align}
+One can understand the second term by recognizing that if $V = \frac12m^2(\psi - \psi_0)^2$ then $\frac12(V')^2/m^2\approx \frac12m^2(\psi-\psi_0)^2$. Importantly, one does not need to know the location of the minimum for this formula to work. \Cref{eqn:local_energy_density} has the additional nice property that even if some of the local mass eigenstates are not true mass eigenstates or are not performing perturbative oscillations around a minimum, the energy density of the heavy states which \emph{are} perturbative \emph{will} be accurate. Of course, $\rho_i^{\rm flat} = a^3\rho_i$.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{figs/Screenshot 2024-11-12 at 5.53.04 PM.png}
-    \caption{This is a simulation of the trivial case where each axion has its own instanton and the kinetic term is diagonal. The blue line represents the expectation that $\rho\propto m^{1/2}$. The horizontal axis is the log of the masses normalized against some arbitrary mass scale, while the vertical axis is the asymptotic relic abundance of each mass eigenstate normalized against some arbitrary energy density.}
-    \label{fig:enter-label}
-\end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{figs/Screenshot 2024-11-12 at 5.53.09 PM.png}
-    \caption{40 axions!}
-    \label{fig:enter-label}
-\end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{figs/Screenshot 2024-11-12 at 5.53.14 PM.png}
-    \caption{20 axions!}
-    \label{fig:enter-label}
-\end{figure}
+Let us now consider the power transferred into or out of an oscillating axion. Consider a single axion undergoing nonlinear oscillations in a flat universe. In this case
+\begin{align}\label{eqn:single_axion}
+    0&=\ddot\psi + V'(\psi)\,.
+\end{align}
+Since energy is conserved, $\psi$ undergoes periodic oscillations, and therefore the period average is zero:
+\begin{align}
+    \langle\dot\psi V'(\psi)\rangle_T = \int_t^{t + T}{\rm d}\tau \psi'(\tau)V'(\psi(\tau)) = V(\psi(t + T)) - V(\psi(t)) = 0\,,
+\end{align}
+where $T$ is the oscillation period.
+On the other hand, in the presence of damping, energy is not conserved and the oscillations are not periodic. Nonetheless, if we integrate over $\psi$'s zero-crossings, the integral vanishes
+\begin{align}
+    \langle\dot\psi V'(\psi)\rangle_{t_k,t_{{k + 2}}} = \int_{t_k}^{t_{k + 2}}{\rm d}\tau \dot\psi(\tau) V'(\psi(\tau)) = V(0) - V(0) = 0\,,
+\end{align}
+where $t_k$ denotes the $k$th zero crossing.
 
-\section{Directions}
-\begin{enumerate}
-    \item Plot: $g_{a\gamma\gamma}\sqrt{\rho/\rho_{\rm DM}}$ vs mass (like what we have in the friendship paper) for all the axions.
-    \item Theoretical expectation for thermalization rate of nonlinearly coupled chain of oscillators -- extend to time-varying parameters with adiabatic approximation
-    \item Theoretical expectations for the distribution of energy density among the mass eigenstates
-    \item Effect of QCD Axion?
-    \item Statistics of the CC (what is the distribution of vacuum energies?)
-\end{enumerate}
+Now consider a multi-axion system:
+\begin{align}
+    [\dot{\bm\psi}]_i[\bm G]_i = \dot \psi_i\partial_{\psi_i}V(\psi_1,\dots,\psi_N)
+\end{align}
+is not a total derivative in general. This is easy to see by taking the total derivative of $V$ directly:
+\begin{align}
+    \frac{d}{dt}V(\psi_1,\dots,\psi_N) = \dot\psi_1\partial_{\psi_1}V + \dots+\dot\psi_N\partial_{\psi_N}V\,.
+\end{align}
+Only if
+\begin{align}
+    V(\psi_1,\dots,\psi_N) = V_1(\psi_1) + V_{\rm others}(\psi_2,\dots,\psi_N)
+\end{align}
+does $\dot\psi_1\partial_{\psi_1}V$ become a total derivative, in which case
+\begin{align}
+    P_i\equiv \langle[\dot{\bm \psi'}]_i [\bm G[\bm\psi']]_i\rangle_{t_k,t_{k + 2}} = 0\,.
+\end{align}
+We identify $P_i$ as the time-averaged energy flux out of the axion $i$, which comes from observing that this is simply the expression for the work done by $\psi_i$ on the other axions (the work done on itself is manifestly zero because we measure at the zero crossings). Of course, $P_i^{\rm flat} = a^3 P_i$.
 
-\section{Being more clever}
-Let us consider the algorithm more carefully, and consider how it may be improved.
-\begin{enumerate}
-    \item Heavy modes are still kept. Can we drop them entirely using an analytical method without introducing numerical error? Perhaps we simply don't include them in the rotation matrix?
-    \item Light modes are included in the rotation matrix even though they don't need to be included. Perhaps only including the oscillating modes in the rotation matrix would improve numerical stability.
-    \item In order to avoid using arbitrary precision during numerical integration, consider why arbitrary precision may be considered necessary at all. It is only the case that arbitrary precision would be necessary if terms with a huge dynamical range entered into the light field equations of motion in the first place. These terms necessarily cancel -- how can we eliminate them without losing precision? IDEA: Suppose there are N dynamical degrees of freedom -- using arbitrary precision, precompute an N dimensional subvolume of the potential
-\end{enumerate}
+For the heavy axions, the quantity ${\cal Q}_i$ is well defined (the notion of zero-crossing of the $i$th axion may be sensibly generalized to the times when where $[\bm G]_i = 0$, which again does not make reference to the specific form of the potential or the locations of its minima). Once ${\cal Q}_i$ is below a threshold, say $10^{2}$, we say that the axion $i$ is decoupled and we may integrate it out.
+
+Because we do not know the specific form of the potential, integrating out a field isn't a matter of removing it from the equations of motion. From a numerical perspective, whether the equations of motion are for 30 axions or 29 axions isn't a huge change in complexity. The presence of the fast time scale for the heavy axion, however, does slow down numerical integration considerably, since its oscillations must still be resolved. Therefore, once we have determined that the $i$th axions oscillations are no longer relevant, we modify the finite difference equation in the following way
+\begin{align}\label{eqn:critical_damping_modification}
+    \ddot\psi_i' = -[\bm G(\bm\psi')]_i - 3 H\dot\psi_i'\to -\left(\frac{D}{m_it}\right)^2[\bm G(\bm\psi')]_i - \left(\frac{1 + 2 D}{t}\right)\dot\psi_i'\,,
+\end{align}
+where $D$ is a hyperparameter we use to control how fast $\dot\psi'$ rolls to its minimum. This form of the equation of motion is that of an approximately critically damped oscillator, which goes to zero in proportion to $t^{-D/2}$. The only timescale remaining in the heavy axion equation of motion is then $t$ itself, and a larger time step may be taken $\Delta t\propto 1/m_{i + 1}$.
+
+[TO DO: WRITE DOWN ALGORITHM]
+
+\section{Double precision over cosmic time}\label{sec:double_precision_over_cosmic_time}
+Our discussion in the previous section illustrated how heavy modes, which bottleneck the finite difference integration time step, can be eliminated once we are confident that they no longer play an important role in the dynamics of the lighter fields. Further, this technique is completely general, since it made no reference to the specific form of the axion potential. On the other hand, the axion potential which still enters the equation of motion (even after the critical damping modification \cref{eqn:critical_damping_modification}) still contains the hierarchical parameters responsible for the hierarchical axion mass spectrum. Further, rotation to the local mass basis depends on diagonalizing the Hessian---if the Hessian eigenvalues are spread out by more than 16 orders of magnitude, double precision is insufficient to resolve them and both the eigenvalues and eigenvectors of the light fields will be catastrophically wrong. In this section, we introduce a simple procedure which dynamically relaxes the hierarchical scales in the potential, enabling the light fields to be resolved without resorting to arbitrary precision libraries. Unfortunately, this technique will rely on the specific form of the axion potential, though for most practical implementations this is not a limitation.
+
+Our discussion of the Gram-Schmidt basis earlier highlighted the fact that, so long as the cosine coefficients are hierarchical, it is a good approximation to assume that each cosine gives mass to at most one field. While the accuracy of this assumption may vary depending on the particular axion system under consideration, we can use this expectation as motivation for the following approach to relax the hierarchical potential:
+\begin{align}
+    V({\bm\theta}) = \sum_{i = 1}^{M\geq N}\Lambda_i^4\cos\left(\sum_{j = 1}^N n_{ij}\theta_j + \delta_j\right)\,.
+\end{align}
+
+Consider the mass basis, where the first $N_{\rm heavy}$ fields are heavy and have been integrated out according to the procedure in \cref{sec:integrating_out_heavy_modes}. Even once integrated out, these fields can contribute perturbatively to the light dynamics, since their expectation values are dependent on the light fields. At some point, however, this effect is small enough that it may be neglected. Said another way, we do not care about the precise expectation value of the heavy fields after a certain point, and their potentials can be modified while only perturbatively changing the effective potentials of the light fields.
+
+We will consider a field to be irrelevant if it satisfies two conditions: its mass exceeds some large multiple of the Hubble rate:
+\begin{align}
+    m_i \geq R H\,,
+\end{align}
+where $R\gg1$ may be $10^3$ or so, and it has been integrated out, i.e. ${\cal Q}_i$ is larger than some threshold. Typically, we would want a field to be declared irrelevant only a long time after it has been integrated out. Once $N_{\rm irr}$ fields have been identified as irrelevant, we then modify the potential, shrinking the largest $N_\Lambda$ instanton coefficients $\Lambda_i$ until all the irrelevant mass eigenstates have masses approximately at the threshold. The integer $N_\Lambda$ is determined in the following way: pick the $N_{\Lambda}$ largest $\Lambda_i$ as follows. Begin by taking the $N_{\rm irr}$ largest $\Lambda_i$. If the corresponding $n_{ij}$ are linearly independent, then set $N_{\Lambda} = N_{\rm irr}$. Otherwise, continue adding the next largest $\Lambda_i$ until the selected $n_{ij}$ span a subspace of dimension $N_{\rm irr}$, and define $N_{\Lambda}$ to be the total number chosen.  
+
+
+Importantly, by raising the threshold $R$, one can measure the change in the final field energy densities to confirm whether there is sensitivity to these heavy states. In principle, one would recover the true evolution in the limit $R\to\infty$, but $R$ is bounded because of the limitation of double precision.
+
+[TO DO: WRITE DOWN ALGORITHM]
+
+\section{Julia Documentation}\label{sec:documentation}
+[To be settled]
 
 \bibliography{refs}
 
