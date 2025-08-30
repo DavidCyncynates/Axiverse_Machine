@@ -277,11 +277,11 @@ INPUT ./figs/Uncoupled_Axions.png
 INPUT ./figs/Uncoupled_Axions.png
 INPUT ./figs/Uncoupled_Axions.png
 INPUT ./figs/Uncoupled_Axions.png
-INPUT ./figs/Coupled_Axions.png
-INPUT ./figs/Coupled_Axions.png
-INPUT ./figs/Coupled_Axions.png
-INPUT ./figs/Coupled_Axions.png
-INPUT ./figs/Coupled_Axions.png
+INPUT ./figs/Coupled_Axions_With_GS.pdf
+INPUT ./figs/Coupled_Axions_With_GS.pdf
+INPUT ./figs/Coupled_Axions_With_GS.pdf
+INPUT ./figs/Coupled_Axions_With_GS.pdf
+INPUT ./figs/Coupled_Axions_With_GS.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd

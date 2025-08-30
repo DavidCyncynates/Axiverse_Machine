@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  26 AUG 2025 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  30 AUG 2025 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,11 +583,11 @@ Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 268.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/Coupled_Axions.png, id=270, 540.0175pt x 361.35pt>
-File: figs/Coupled_Axions.png Graphic file (type png)
-<use figs/Coupled_Axions.png>
-Package pdftex.def Info: figs/Coupled_Axions.png  used on input line 274.
-(pdftex.def)             Requested size: 310.4979pt x 207.76912pt.
+<figs/Coupled_Axions_With_GS.pdf, id=270, 602.25pt x 401.5pt>
+File: figs/Coupled_Axions_With_GS.pdf Graphic file (type pdf)
+<use figs/Coupled_Axions_With_GS.pdf>
+Package pdftex.def Info: figs/Coupled_Axions_With_GS.pdf  used on input line 274.
+(pdftex.def)             Requested size: 310.4979pt x 207.00453pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -602,7 +602,7 @@ Overfull \hbox (36.51083pt too wide) detected at line 374
 
 
 
-[15 <./figs/Coupled_Axions.png>]
+[15 <./figs/Coupled_Axions_With_GS.pdf>]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 406.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd)
 
@@ -619,19 +619,19 @@ Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 465.
 [18 <./figs/Slope_vs_ApD.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 519.
+(hyperref)                removing `math shift' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 519.
+(hyperref)                removing `math shift' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 519.
+(hyperref)                removing `math shift' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 519.
+(hyperref)                removing `math shift' on input line 520.
 
 
 
@@ -639,26 +639,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 <figs/f-vs-axions.png, id=359, 659.46375pt x 488.82625pt>
 File: figs/f-vs-axions.png Graphic file (type png)
 <use figs/f-vs-axions.png>
-Package pdftex.def Info: figs/f-vs-axions.png  used on input line 527.
+Package pdftex.def Info: figs/f-vs-axions.png  used on input line 528.
 (pdftex.def)             Requested size: 310.4979pt x 230.1586pt.
 
 
 [20 <./figs/f-vs-axions.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 549.
 
+
+
+[21]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-
-[21]
 
 [22]
 
@@ -666,9 +667,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 [24]
 
-[25] (./main.bbl
+[25]
 
-[26])
+[26] (./main.bbl)
 
 [27] (./main.aux)
  ***********
@@ -679,18 +680,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C58F03716BC23A2F607D9295C01B1D41;4932.
  ) 
 Here is how much of TeX's memory you used:
- 14803 strings out of 473190
- 243148 string characters out of 5715801
+ 14805 strings out of 473190
+ 243242 string characters out of 5715801
  704038 words of memory out of 5000000
  37569 multiletter control sequences out of 15000+600000
- 577533 words of font info for 170 fonts, out of 8000000 for 9000
+ 577586 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1426b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (27 pages, 1496817 bytes).
+Output written on main.pdf (27 pages, 1550341 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 434 compressed objects within 5 object streams
+ 552 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
  138 named destinations out of 1000 (max. 500000)
  33532 words of extra memory for PDF output out of 35830 (max. 10000000)
 
