@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.10)  30 AUG 2025 12:49
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  30 AUG 2025 09:44
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -835,6 +839,18 @@ File: figs/Uncoupled_Axions.png Graphic file (type png)
 Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 268.
 (pdftex.def)             Requested size: 310.4979pt x 207.00526pt.
 
+<<<<<<< HEAD
+=======
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figs/Coupled_Axions_With_GS.pdf, id=270, 602.25pt x 401.5pt>
+File: figs/Coupled_Axions_With_GS.pdf Graphic file (type pdf)
+<use figs/Coupled_Axions_With_GS.pdf>
+Package pdftex.def Info: figs/Coupled_Axions_With_GS.pdf  used on input line 274.
+(pdftex.def)             Requested size: 310.4979pt x 207.00453pt.
+
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
@@ -872,6 +888,7 @@ Overfull \hbox (36.51083pt too wide) detected at line 374
 LaTeX Warning: Reference `eq:decay-consts-GS' on page 15 undefined on input lin
 e 394.
 
+<<<<<<< HEAD
 [15]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 4
 06.
@@ -883,6 +900,11 @@ LaTeX Warning: Reference `eq:prob-theorem' on page 16 undefined on input line 4
 
 LaTeX Warning: Reference `eq:GS-exp-gamma' on page 16 undefined on input line 4
 40.
+=======
+[15 <./figs/Coupled_Axions_With_GS.pdf>]
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 406.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd)
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
 [16]
 
@@ -903,6 +925,7 @@ LaTeX Warning: Reference `eq:GS-powerlaw' on page 17 undefined on input line 46
 6.
 
 
+<<<<<<< HEAD
 LaTeX Warning: Reference `subsec:GS-powerlaw' on page 17 undefined on input lin
 e 466.
 
@@ -945,6 +968,10 @@ line 509.
 
 LaTeX Warning: Reference `eq:remaining-n-matrix' on page 18 undefined on input 
 line 509.
+=======
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 520.
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -977,6 +1004,7 @@ Package pdftex.def Info: figs/f-vs-axions.png  used on input line 528.
 LaTeX Warning: Reference `eq:scaling-f-vs.iaxion' on page 19 undefined on input
  line 529.
 
+<<<<<<< HEAD
 
 LaTeX Warning: Reference `eq:scaling-f-vs.iaxion' on page 19 undefined on input
  line 529.
@@ -995,11 +1023,25 @@ line 545.
 
 LaTeX Warning: Reference `eq:scaling-f-vs.iaxion' on page 1 undefined on input 
 line 547.
+=======
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 549.
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 549.
 
+<<<<<<< HEAD
+=======
+
+
+[21]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 549.
@@ -1022,19 +1064,29 @@ fined on input line 576.
 LaTeX Warning: Reference `sec:documentation' on page 1 undefined on input line 
 578.
 
+<<<<<<< HEAD
 [21]
 
 LaTeX Warning: Reference `eqn:local_energy_density' on page 1 undefined on inpu
 t line 623.
+=======
+[22]
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
 [22] [23]
 
 LaTeX Warning: Reference `eqn:critical_damping_modification' on page 1 undefine
 d on input line 669.
 
+<<<<<<< HEAD
 
 LaTeX Warning: Reference `sec:integrating_out_heavy_modes' on page 1 undefined 
 on input line 676.
+=======
+[25]
+
+[26] (./main.bbl)
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
 [24] (./main.bbl
 
@@ -1058,6 +1110,7 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  C58F03716BC23A2F607D9295C01B1D41;4932.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  14456 strings out of 478268
  239164 string characters out of 5846347
  584766 words of memory out of 5000000
@@ -1091,4 +1144,20 @@ PDF statistics:
  291 compressed objects within 3 object streams
  137 named destinations out of 1000 (max. 500000)
  33351 words of extra memory for PDF output out of 35830 (max. 10000000)
+=======
+ 14805 strings out of 473190
+ 243242 string characters out of 5715801
+ 704038 words of memory out of 5000000
+ 37569 multiletter control sequences out of 15000+600000
+ 577586 words of font info for 171 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,13n,79p,1426b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (27 pages, 1550341 bytes).
+PDF statistics:
+ 552 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 33532 words of extra memory for PDF output out of 35830 (max. 10000000)
+>>>>>>> a7901cc98b54025c6d5dd6d428bea7dd6c2c9761
 
