@@ -673,7 +673,7 @@ Our discussion of the Gram-Schmidt basis earlier highlighted the fact that, so l
     V({\bm\theta}) = \sum_{i = 1}^{M\geq N}\Lambda_i^4\cos\left(\sum_{j = 1}^N n_{ij}\theta_j + \delta_j\right)\,.
 \end{align}
 
-Consider the mass basis, where the first $N_{\rm heavy}$ fields are heavy and have been integrated out according to the procedure in \cref{sec:integrating_out_heavy_modes}. Even once integrated out, these fields can contribute perturbatively to the light dynamics, since their expectation values are dependent on the light fields. At some point, however, this effect is small enough that it may be neglected. Said another way, we do not care about the precise expectation value of the heavy fields after a certain point, and their potentials can be modified while only perturbatively changing the effective potentials of the light fields.
+Consider the mass basis, where the first $N_{\rm heavy}$ fields are heavy and have been integrated out according to the procedure in \cref{sec:integrating_out_heavy_modes}. Even once integrated out, these fields can contribute perturbatively to the light dynamics, since their expectation values are dependent on the light fields. At some point, however, the effect of the heavy fields is small enough that it may be neglected. Said another way, we do not care about the precise expectation value of the heavy fields after a certain point, and their potentials can be modified while only perturbatively changing the effective potentials of the light fields.
 
 We will consider a field to be irrelevant if it satisfies two conditions: its mass exceeds some large multiple of the Hubble rate:
 \begin{align}
@@ -684,7 +684,16 @@ where $R\gg1$ may be $10^3$ or so, and it has been integrated out, i.e. ${\cal Q
 
 Importantly, by raising the threshold $R$, one can measure the change in the final field energy densities to confirm whether there is sensitivity to these heavy states. In principle, one would recover the true evolution in the limit $R\to\infty$, but $R$ is bounded because of the limitation of double precision.
 
-[TO DO: WRITE DOWN ALGORITHM]
+\subsection{Algorithm}
+We want to reduce the largest instanton coefficients only just enough so that the masses are near the threshold within some tolerance. Thus, we need to determine how much to decrease each $\Lambda_i$. We compute a quantity which characterizes the dependence of each $m_i$ on each $\Lambda_j$
+\begin{align}
+	\gamma_{ij} = \frac{d\log m_i^2}{d\log\Lambda_j^4}.
+\end{align}
+In the Gram-Schmidt limit, $\gamma_{ij} = \delta_{ij}$ up to a shuffling of indices. Using the fact that $m^2\propto\Lambda^4$ in the single axion case, a sensible guess is
+\begin{align}
+	[\Lambda_i^4]_{\rm new} =  \frac{[m^2]_{\rm target}}{[m_i^2]_{\rm old}}\sum_j(\gamma_{ij})[\Lambda_j^4]_{\rm old}
+\end{align}
+We only modify the $N_\Lambda$ largest $\Lambda$'s, and they can only become smaller. These large $\Lambda$'s likely correspond to the largest $m$'s.
 
 \section{Julia Documentation}\label{sec:documentation}
 [To be settled]
