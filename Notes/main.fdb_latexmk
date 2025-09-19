@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1758324592.31905 "main.aux" "main.bbl" "main" 1758324680.68081 0
+["bibtex main"] 1758324973.47349 "main.aux" "main.bbl" "main" 1758324981.89749 0
   "./refs.bib" 1758324553.90164 1587 dcdae317dfec1e8cd942cbfa644b90fa ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1758324680.05117 26078 1e2b65e150d33e2251c7d7280915ddbd "pdflatex"
+  "main.aux" 1758324981.17034 26195 c7c6f8d743a42ffc937bcbc0f86da514 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758324672.57636 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1758324680.68116 0
-  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1758324664.36504 72913 31ee131fc6db2e073e8da04caaac4110 ""
+["pdflatex"] 1758324973.71361 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1758324981.89784 0
+  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1758324887.73778 73757 6a545c78db6d4a0ddd119192b4ecd5c0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -163,10 +163,10 @@
   "figs/naxions-equalC-vsN.png" 1754947638.67055 279011 201194eea3ac5e5f7f4cd8c493c60e1c ""
   "figs/naxions-equalC.png" 1754804857.49647 356759 37651d67709d86b454b0313c8a550cc6 ""
   "figs/nvec_sig_dist.png" 1758241212.43842 463275 77eaa75334a2bde882a8a20819143327 ""
-  "main.aux" 1758324680.05117 26078 1e2b65e150d33e2251c7d7280915ddbd "pdflatex"
-  "main.bbl" 1758324592.55824 862 2d3227ff8dc04b74c98d6660cbd45816 "bibtex main"
-  "main.out" 1758324680.05452 5157 d0e3e1b802fd8548b8851bbbcc27ecfe "pdflatex"
-  "main.tex" 1758324664.36504 72913 31ee131fc6db2e073e8da04caaac4110 ""
+  "main.aux" 1758324981.17034 26195 c7c6f8d743a42ffc937bcbc0f86da514 "pdflatex"
+  "main.bbl" 1758324973.70733 862 2d3227ff8dc04b74c98d6660cbd45816 "bibtex main"
+  "main.out" 1758324981.17347 5261 986b968a0a8f81eed7fe924f039adf7a "pdflatex"
+  "main.tex" 1758324887.73778 73757 6a545c78db6d4a0ddd119192b4ecd5c0 ""
   (generated)
   "main.aux"
   "main.log"

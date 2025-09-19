@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  19 SEP 2025 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  19 SEP 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,7 +469,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/1axion-prob.jpeg, id=130, 554.07pt x 361.35pt>
+<figs/1axion-prob.jpeg, id=134, 554.07pt x 361.35pt>
 File: figs/1axion-prob.jpeg Graphic file (type jpg)
 <use figs/1axion-prob.jpeg>
 Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 87.
@@ -477,7 +477,7 @@ Package pdftex.def Info: figs/1axion-prob.jpeg  used on input line 87.
 
 
 [2 <./figs/1axion-prob.jpeg>]
-<figs/low-scale-inf-prob.jpeg, id=146, 659.46375pt x 363.3575pt>
+<figs/low-scale-inf-prob.jpeg, id=150, 659.46375pt x 363.3575pt>
 File: figs/low-scale-inf-prob.jpeg Graphic file (type jpg)
 <use figs/low-scale-inf-prob.jpeg>
 Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 106.
@@ -485,7 +485,7 @@ Package pdftex.def Info: figs/low-scale-inf-prob.jpeg  used on input line 106.
 
 
 [3 <./figs/low-scale-inf-prob.jpeg>]
-<figs/2axion-prob.jpeg, id=162, 714.67pt x 391.4625pt>
+<figs/2axion-prob.jpeg, id=166, 714.67pt x 391.4625pt>
 File: figs/2axion-prob.jpeg Graphic file (type jpg)
 <use figs/2axion-prob.jpeg>
 Package pdftex.def Info: figs/2axion-prob.jpeg  used on input line 128.
@@ -493,12 +493,12 @@ Package pdftex.def Info: figs/2axion-prob.jpeg  used on input line 128.
 
 
 [4 <./figs/2axion-prob.jpeg>]
-<figs/2axion-contour.png, id=179, 502.87875pt x 382.42876pt>
+<figs/2axion-contour.png, id=184, 502.87875pt x 382.42876pt>
 File: figs/2axion-contour.png Graphic file (type png)
 <use figs/2axion-contour.png>
 Package pdftex.def Info: figs/2axion-contour.png  used on input line 148.
 (pdftex.def)             Requested size: 301.72957pt x 229.45901pt.
-<figs/ellipses.png, id=186, 471.7625pt x 625.33624pt>
+<figs/ellipses.png, id=191, 471.7625pt x 625.33624pt>
 File: figs/ellipses.png Graphic file (type png)
 <use figs/ellipses.png>
 Package pdftex.def Info: figs/ellipses.png  used on input line 161.
@@ -537,12 +537,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 180.
 
-<figs/naxions-equalC.png, id=215, 697.60625pt x 402.50375pt>
+<figs/naxions-equalC.png, id=219, 697.60625pt x 402.50375pt>
 File: figs/naxions-equalC.png Graphic file (type png)
 <use figs/naxions-equalC.png>
 Package pdftex.def Info: figs/naxions-equalC.png  used on input line 200.
 (pdftex.def)             Requested size: 313.9199pt x 181.125pt.
-<figs/naxions-equalC-vsN.png, id=216, 643.40375pt x 352.31625pt>
+<figs/naxions-equalC-vsN.png, id=220, 643.40375pt x 352.31625pt>
 File: figs/naxions-equalC-vsN.png Graphic file (type png)
 <use figs/naxions-equalC-vsN.png>
 Package pdftex.def Info: figs/naxions-equalC-vsN.png  used on input line 201.
@@ -553,12 +553,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [7]
-<figs/naxions-equalC-loglog1.png, id=228, 702.625pt x 392.46625pt>
+<figs/naxions-equalC-loglog1.png, id=232, 702.625pt x 392.46625pt>
 File: figs/naxions-equalC-loglog1.png Graphic file (type png)
 <use figs/naxions-equalC-loglog1.png>
 Package pdftex.def Info: figs/naxions-equalC-loglog1.png  used on input line 210.
 (pdftex.def)             Requested size: 316.17833pt x 176.60817pt.
-<figs/naxions-equalC-loglog2.png, id=229, 727.71875pt x 400.49625pt>
+<figs/naxions-equalC-loglog2.png, id=233, 727.71875pt x 400.49625pt>
 File: figs/naxions-equalC-loglog2.png Graphic file (type png)
 <use figs/naxions-equalC-loglog2.png>
 Package pdftex.def Info: figs/naxions-equalC-loglog2.png  used on input line 211.
@@ -583,7 +583,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 217.
 
-<figs/n-axions-2groups2.png, id=235, 723.70375pt x 399.4925pt>
+<figs/n-axions-2groups2.png, id=239, 723.70375pt x 399.4925pt>
 File: figs/n-axions-2groups2.png Graphic file (type png)
 <use figs/n-axions-2groups2.png>
 Package pdftex.def Info: figs/n-axions-2groups2.png  used on input line 230.
@@ -594,7 +594,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [8 <./figs/naxions-equalC.png> <./figs/naxions-equalC-vsN.png>]
-<figs/f-vs-m-anthropic.png, id=248, 570.13pt x 425.59pt>
+<figs/f-vs-m-anthropic.png, id=252, 570.13pt x 425.59pt>
 File: figs/f-vs-m-anthropic.png Graphic file (type png)
 <use figs/f-vs-m-anthropic.png>
 Package pdftex.def Info: figs/f-vs-m-anthropic.png  used on input line 243.
@@ -608,7 +608,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [9 <./figs/naxions-equalC-loglog1.png> <./figs/naxions-equalC-loglog2.png>]
 
 [10 <./figs/n-axions-2groups2.png>]
-<figs/Uncoupled_Axions.png, id=267, 551.05875pt x 367.3725pt>
+<figs/Uncoupled_Axions.png, id=271, 551.05875pt x 367.3725pt>
 File: figs/Uncoupled_Axions.png Graphic file (type png)
 <use figs/Uncoupled_Axions.png>
 Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 269.
@@ -617,7 +617,7 @@ Package pdftex.def Info: figs/Uncoupled_Axions.png  used on input line 269.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/Coupled_Axions_With_GS.pdf, id=268, 602.25pt x 401.5pt>
+<figs/Coupled_Axions_With_GS.pdf, id=272, 602.25pt x 401.5pt>
 File: figs/Coupled_Axions_With_GS.pdf Graphic file (type pdf)
 <use figs/Coupled_Axions_With_GS.pdf>
 Package pdftex.def Info: figs/Coupled_Axions_With_GS.pdf  used on input line 275.
@@ -638,7 +638,7 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 40
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bbold/Ubbold.fd)
 
 [15]
-<figs/Slope_vs_ApD.png, id=327, 733.74126pt x 486.81876pt>
+<figs/Slope_vs_ApD.png, id=331, 733.74126pt x 486.81876pt>
 File: figs/Slope_vs_ApD.png Graphic file (type png)
 <use figs/Slope_vs_ApD.png>
 Package pdftex.def Info: figs/Slope_vs_ApD.png  used on input line 466.
@@ -662,7 +662,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 521.
 
-<figs/f-vs-axions.png, id=346, 659.46375pt x 488.82625pt>
+<figs/f-vs-axions.png, id=350, 659.46375pt x 488.82625pt>
 File: figs/f-vs-axions.png Graphic file (type png)
 <use figs/f-vs-axions.png>
 Package pdftex.def Info: figs/f-vs-axions.png  used on input line 529.
@@ -675,7 +675,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [17]
 
 [18 <./figs/f-vs-axions.png>]
-<figs/kinv-distributions.png, id=372, 681.54625pt x 519.9425pt>
+<figs/kinv-distributions.png, id=376, 681.54625pt x 519.9425pt>
 File: figs/kinv-distributions.png Graphic file (type png)
 <use figs/kinv-distributions.png>
 Package pdftex.def Info: figs/kinv-distributions.png  used on input line 562.
@@ -683,7 +683,7 @@ Package pdftex.def Info: figs/kinv-distributions.png  used on input line 562.
 
 
 [19 <./figs/kinv-distributions.png>]
-<figs/nvec_sig_dist.png, id=383, 711.65875pt x 540.0175pt>
+<figs/nvec_sig_dist.png, id=387, 711.65875pt x 540.0175pt>
 File: figs/nvec_sig_dist.png Graphic file (type png)
 <use figs/nvec_sig_dist.png>
 Package pdftex.def Info: figs/nvec_sig_dist.png  used on input line 588.
@@ -691,7 +691,7 @@ Package pdftex.def Info: figs/nvec_sig_dist.png  used on input line 588.
 
 
 [20 <./figs/nvec_sig_dist.png>]
-<figs/approach1.png, id=394, 738.76pt x 542.025pt>
+<figs/approach1.png, id=398, 738.76pt x 542.025pt>
 File: figs/approach1.png Graphic file (type png)
 <use figs/approach1.png>
 Package pdftex.def Info: figs/approach1.png  used on input line 611.
@@ -699,7 +699,7 @@ Package pdftex.def Info: figs/approach1.png  used on input line 611.
 
 
 [21 <./figs/approach1.png>]
-<figs/approach2.png, id=409, 725.71124pt x 539.01375pt>
+<figs/approach2.png, id=413, 725.71124pt x 539.01375pt>
 File: figs/approach2.png Graphic file (type png)
 <use figs/approach2.png>
 Package pdftex.def Info: figs/approach2.png  used on input line 626.
@@ -712,12 +712,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
 
 [22 <./figs/approach2.png>]
-<figs/k-depends-on-n.png, id=425, 1156.32pt x 433.62pt>
+<figs/k-depends-on-n.png, id=429, 1156.32pt x 433.62pt>
 File: figs/k-depends-on-n.png Graphic file (type png)
 <use figs/k-depends-on-n.png>
 Package pdftex.def Info: figs/k-depends-on-n.png  used on input line 643.
 (pdftex.def)             Requested size: 446.2658pt x 167.34451pt.
-<figs/f_comparisons.png, id=433, 997.5669pt x 857.1222pt>
+<figs/f_comparisons.png, id=437, 997.5669pt x 857.1222pt>
 File: figs/f_comparisons.png Graphic file (type png)
 <use figs/f_comparisons.png>
 Package pdftex.def Info: figs/f_comparisons.png  used on input line 659.
@@ -726,7 +726,7 @@ Package pdftex.def Info: figs/f_comparisons.png  used on input line 659.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/f_ratios_comparisons.png, id=436, 997.5669pt x 857.1222pt>
+<figs/f_ratios_comparisons.png, id=440, 997.5669pt x 857.1222pt>
 File: figs/f_ratios_comparisons.png Graphic file (type png)
 <use figs/f_ratios_comparisons.png>
 Package pdftex.def Info: figs/f_ratios_comparisons.png  used on input line 666.
@@ -737,7 +737,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [23 <./figs/k-depends-on-n.png>]
-<figs/different-potential-dists.png, id=449, 724.7075pt x 536.0025pt>
+<figs/different-potential-dists.png, id=453, 724.7075pt x 536.0025pt>
 File: figs/different-potential-dists.png Graphic file (type png)
 <use figs/different-potential-dists.png>
 Package pdftex.def Info: figs/different-potential-dists.png  used on input line 679.
@@ -763,29 +763,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 [28]
 
-[29] (./main.bbl)
+[29] (./main.bbl
 
-[30] (./main.aux)
+[30])
+
+[31] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D0E3E1B802FD8548B8851BBBCC27ECFE;5157.
+(rerunfilecheck)             Checksum: 986B968A0A8F81EED7FE924F039ADF7A;5261.
  ) 
 Here is how much of TeX's memory you used:
- 15324 strings out of 473190
- 252403 string characters out of 5715801
+ 15329 strings out of 473190
+ 252462 string characters out of 5715801
  719143 words of memory out of 5000000
- 38102 multiletter control sequences out of 15000+600000
+ 38103 multiletter control sequences out of 15000+600000
  574815 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1426b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1426b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (30 pages, 4608308 bytes).
+Output written on main.pdf (31 pages, 4610907 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
- 156 named destinations out of 1000 (max. 500000)
- 25396 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 25404 words of extra memory for PDF output out of 29859 (max. 10000000)
 
