@@ -6,4 +6,14 @@ B.~Freivogel, ``{Anthropic Explanation of the Dark Matter Abundance},'' {\em JCA
 \bibitem{exploring-string-axiverse}
 A.~Arvanitaki and S.~Dubovsky, ``Exploring the string axiverse with precision black hole physics,'' {\em Phys. Rev. D}, vol.~83, p.~044026, Feb 2011.
 
+\bibitem{RMTguide}
+K.~Andersson, ``A review of gaussian random matrices.'' Available at \url{https://www.diva-portal.org/smash/get/diva2:1504625/FULLTEXT01.pdf}.
+
+\bibitem{Livan_2018}
+G.~Livan, M.~Novaes, and P.~Vivo, {\em Introduction to Random Matrices}.
+\newblock Springer International Publishing, 2018.
+
+\bibitem{WignerMPThms}
+S.~P. Lalley, ``Random matrices: Wigner and marchenko-pastur theorems.'' Available at \url{https://galton.uchicago.edu/~lalley/Courses/383/Wigner.pdf}.
+
 \end{thebibliography}

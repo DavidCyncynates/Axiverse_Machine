@@ -1,5 +1,6 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[11pt]{article}
+\usepackage[text={6.5in,9in},centering]{geometry}               % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}     \usepackage{graphicx} % Required for inserting images
 \usepackage{amsmath,amssymb}
 \usepackage{enumerate}
 \usepackage{dcolumn}
@@ -370,7 +371,7 @@ Thus, the Lagrangian is:
 
 \begin{align*}
    \mathcal{L} = &  \frac{1}{2}\partial_\mu\phi_1\partial^\mu\phi_1+\frac{1}{2}\partial_\mu\phi_2\partial^\mu\phi_2+\Lambda_b\cos{(\sqrt{a^2+b^2}\phi_1)}+\Lambda_s\cos{\bigg(\frac{(ca+db)\phi_1+\det{A}\phi_2}{\sqrt{a^2+b^2}}\bigg)} \\
-   \sim & \frac{1}{2}\partial_\mu\phi_1\partial^\mu\phi_1+\frac{1}{2}\partial_\mu\phi_2\partial^\mu\phi_2+\Lambda_b\cos{(\sqrt{a^2+b^2}\phi_1)}+\Lambda_s\cos{\bigg(\frac{\det{A}}{\sqrt{a^2+b^2}\phi_2}\bigg)}
+   \sim & \frac{1}{2}\partial_\mu\phi_1\partial^\mu\phi_1+\frac{1}{2}\partial_\mu\phi_2\partial^\mu\phi_2+\Lambda_b\cos{(\sqrt{a^2+b^2}\phi_1)}+\Lambda_s\cos{\bigg(\frac{\det{A}\phi_2}{\sqrt{a^2+b^2}}\bigg)}
 \end{align*}
 
 Because $\Lambda_b>\Lambda_s$, $\phi_1$ will receive the significant part of its dynamics from the first cosine term and so we can view this as the Lagrangian for two decoupled axions, $\phi_1$ and $\phi_2$, each in their own cosine potential. The fields have a mass hierarchy set by $\Lambda_b>\Lambda_s$ and have decay constants rescaled from those of the original theory as follows:
@@ -533,10 +534,15 @@ The general behavior of the curve is in agreement with the 2-axion result, where
 To understand the general shape of the above curve, let's focus on the denominator of the expression for $f_{(i)}^{2}$ given in Eq. \eqref{eq:f-matrix-version}. It can be shown that $[Q^{-1}]_{00} \equiv [[S^T k S]^{-1}]_{00} = \vec{n}^T k^{-1} \vec{n}$ (see Ella's note), where $\vec{n} \equiv n_{0i}$. If we imagine that $\vec n$ is a random vector drawn from some distribution, then the expectation value of $f^{2}$ is determined by the statistical properties of $\vec n$
 
 \begin{equation}
+    \label{eq:f-matrix-stats}
      \displaystyle \operatorname {E}[2f^{-2}] = \displaystyle \operatorname {E} \left[\vec{n} ^{T} k^{-1} \vec{n} \right]=\operatorname {tr} \left[k^{-1} \Sigma \right]+\vec{\mu} ^{T} k^{-1} \vec{\mu}
 \end{equation}
 
-\noindent where $\Sigma = {\rm E}[\vec{n}\cdot \vec{n}^T]$ is the covariance matrix of $\vec{n}$ and $\vec{\mu}$ is the average value of $\vec{n}$ (according to wikipedia, Quadratic form (Statistics)). Assuming that $\vec{\mu}=0$, that $\Sigma = \sigma^2 I$ (where $\sigma$ is the standard deviation of the elements of $\vec n$) does not change much between neighboring iterations, and that the $k$ matrices do not change much from iteration to iteration i.e. the main difference between $k_{(i+1)}$ and $k_{(i)}$ is the difference in dimensionality (they are matrices of size $(N-i)\times (N-i)$ and $(N-i-1)\times (N-i-1)$ respectively), we can write the ratio of two successive decay constants post GS-ification as:
+\noindent where $\Sigma = {\rm E}[\vec{n}\cdot \vec{n}^T]$ is the covariance matrix of $\vec{n}$ and $\vec{\mu}$ is the average value of $\vec{n}$ (according to wikipedia, Quadratic form (Statistics)). 
+
+\subsubsection{Naive guess}
+
+Assuming that $\vec{\mu}=0$, that $\Sigma = \sigma^2 I$ (where $\sigma$ is the standard deviation of the elements of $\vec n$) does not change much between neighboring iterations, and that the $k$ matrices do not change much from iteration to iteration i.e. the main difference between $k_{(i+1)}$ and $k_{(i)}$ is the difference in dimensionality (they are matrices of size $(N-i)\times (N-i)$ and $(N-i-1)\times (N-i-1)$ respectively), we can write the ratio of two successive decay constants post GS-ification as:
 
 \begin{align}
     \frac{{\rm E}[f_{(i+1)}^2]}{{\rm E}[f_{(i)}^2]} & \sim \frac{ \operatorname {tr} \left[(k_{(i)})^{-1} \Sigma \right]}{\operatorname {tr} \left[(k_{(i+1)})^{-1} \Sigma \right]} \sim \frac{\sigma_{(i)}^2{\rm tr}[k_{(i)}^{-1}]}{\sigma_{(i + 1)}^2{\rm tr}[k_{(i+1)}^{-1}]}\sim \frac{{\rm tr}[k_{(i)}^{-1}]}{{\rm tr}[k_{(i+1)}^{-1}]}\sim \frac{N-i}{N-i-1} \\
@@ -546,17 +552,136 @@ where in \cref{eq:scaling-f-vs.iaxion} we solved the finite difference equation 
 
 The orange line shows this naive guess for the scaling of $f_{(i)}^2$ with the $i$-th axion. It shows rather good agreement for a large number of axions $N$, but not at lower $i$ (i.e. the heaviest axions ($i\ll N$) have decay constants which do not satisfy the scaling relationship \cref{eq:scaling-f-vs.iaxion}). We're currently thinking about what could explain this part of the shape of the curve, and it doing so, we're thinking about what part of the assumptions outlined in the above paragraph are not quite true, starting with the last one. That is, we are thinking about how the $k^{-1}_{(i)}$ matrix evolves over iterations and whether there is a large enough change in this evolution that would make the contribution from $\operatorname {tr} \left[(k_{(i)})^{-1}\right]$ more complicated than simply $\sim N-i$
 
-\subsubsection{An application of random matrix theory: understanding the evolution of the $k$ matrices over iterations}
+\subsubsection{Revisiting assumptions using random matrix theory}
+
+It is clear that the naive guess for the scaling of $f^2$ with the iteration number does not capture the behavior for the first half of the iterations. In addition, most if not all of the assumptions made to arrive to this guess were made to simplify the problem and have not been checked. We can verify these assumptions by studying the matrix element distributions and their statistical properties at each step.
 
 
-To actually understand what's going on, we need to understand how the distribution of the $k$ matrix changes as we iterate through the GS-ification process.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figs/kinv-distributions.png}
+    \caption{Density distribution for the elements of $k^{-1}$ at iterations 200, 400, 600 and 800. This follows the distribution of Wishart matrix elements.}
+    \label{fig:kinv-dist}
+\end{figure}
 
-The distribution of the $k$ matrices seem to be following a two-sided exponential distribution (Laplace distribution), centered at zero:
+\begin{center}
+    \underline{\textit{Study of the inverse kinetic matrices} $k^{-1}$}
+\end{center}
+
+Let's start with the $k^{-1}$ matrices. Plotting the density distribution of their elements, we see that $k^{-1}$ is a Wishart matrix, in that it follows the Wishart distribution. A Wishart matrix $W$ is a $p\times p$ square matrix that can be written in the form $W = XX^T$, where $X$ is a $p \times n$ matrix with elements $x_{ij} \sim \mathcal{N}(\mu_{ij},\sigma_{ij} ^2)$. The details of the distribution can be found here \cite{RMTguide}. The density of the elements for some $k^{-1}$ at a few different iterations are shown below, along with those of a randomly generated Wishart matrix. The two most important features are that, (1) the location of the second, smaller peak gives the standard deviation of the Gaussian matrix $X$ underlying the Wishart matrix $W$ and, (2) the first peak corresponds to the off diagonal elements, while the second peak corresponds to the diagonal elements. 
+
+There are two things that we learn from this. Fristly, the standard deviation of the underlying Gaussian $X$ matrix that gives rise to each $k^{-1}$ matrix, slowly decreases from one iteration to the next (see Fig. \ref{fig:kinv-dist}). Secondly, the eigenvalues of Wishart matrix follow a well known distribution REF, and in the limit where the dimension of the matrix approaches $\infty$, the distribution of the eigenvalues follows the Marcenko-Pastur law.
+
+\begin{center}
+    \noindent \underline{\textit{Study of the heaviest potential vectors} $\vec{n}$}
+    
+\end{center}
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.8\linewidth]{figs/nvecs-distributions.png}
+%     \caption{}
+%     \label{fig:nvec-dist}
+% \end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figs/nvec_sig_dist.png}
+    \caption{Log of the variances of the distribution of the elements in $\vec{n}$ at each iteration.}
+    \label{fig:nvec_sig_dist}
+\end{figure}
+
+Now let's study the statistical properties of the $\vec{n}$'s at each iteration. The distributions of the elements in each $\vec{n}$ appear to be roughly Gaussian, although it is hard to tell given the small sample size, especially at later iterations.
+% Some ways we could check this more rigorously if we wanted to would be to check if their outerproducts form matrices that follow a Wishart distribution (since these would indeed be Gaussian matrices of dimension $p\times 1$, multiplied with their transpose), or that their inner products follow a two-sided exponential distribution, which is the expected distribution for Gaussian 
+If we assume that they are Gaussian, we can plot the standard deviation of the distributions of $\vec{n}$ elements as a function of iteration number, as shown in Fig. \ref{fig:nvec_sig_dist}. It is obvious from this figure that the assumption that the $\sigma^2$ do not change much from iteration to iteration is incorrect.
+
+Ignoring this crazy variance in the $\sigma^2$ over iteration number for a second, if we take what we know about the $k^{-1}$ matrices and continue with the assumption that the $\vec{n}$ are normally distributed, we can do two things: Firstly, we can try to extract a general trend in the $\sigma^2$ as a function of iteration number, ignoring the variance, and incorporate this changing $\sigma^2$ in our naive estimate we initially did. Secondly, we can extract the evolution of the parameters underlying both the $k^{-1}$ and $\vec{n}$ distributions, namely the standard deviations $\sigma_X$ of the Gaussian matrices $X$ underlying each $k^{-1}$ (see above section) and the standard deviations of each $\vec{n}$. Using these, we should be able to reconstruct the decay constant curve by generating random Gaussian matrices with the appropriate parameters. 
+
+The first approach does not account for any of the extreme variation in the $\vec{n}$ and assumes that these are normally distirbuted. The second approach tests the assumption that the $k^{-1}$ and $\vec{n}$ truly are Gaussian. Let's take a look at the results of each.
+
+A straight line fit to the $\sigma^2$ vs. iteration number plot gives $\sigma^2 = 10^{m\times i + b}$, where $i$ is the iteration number, and $m=6.08\times 10^{-4}$ and $b= 2.06$ are from the fit. Then we can write the expected decay constant as in Eq. \eqref{eq:f-matrix-stats} as:
 
 \begin{equation}
-    \label{eq:laplace-dist}
-    f(x) = \frac{1}{2b}e^{-|x|/b}
+    \text{E}[2f^{-2}] = \text{tr}[k^{-1}\Sigma] = \sigma^2 \text{tr}[k^{-1}] = (10^{m i + b})\text{tr}[k^{-1}]
+    \label{eq:f-estimate-approach1}
 \end{equation}
+where we use the assumption that $n_i \sim \mathcal{N}(0,\sigma^2)$ so that $E[\vec{n}\cdot\vec{n}^T] = \sigma^2\mathbb{1}$. Fig. \ref{fig:approach1} below shows this estimate overlaid with the data. The $\text{tr}[k^{-1}]$ was calculated by summing the eigenvalues of $k^{-1}$, which in theory, could be drawn from a Marcenko-Pastur law.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figs/approach1.png}
+    \caption{Approach 1– decay constants as calculated in Eq. \eqref{eq:f-estimate-approach1}, fitting a straight line to the standard deviations of $\vec{n}$ over iterations. See text around Eq. \eqref{eq:f-estimate-approach1}}
+    \label{fig:approach1}
+\end{figure}
+
+Now we can try the second approach. Here, I extract the variance $\sigma_X^2$ of the Gaussian matrices that make up $k^{-1}$ from the data, and extract the variance $\sigma_n^2$ of the $\vec{n}$'s. I then draw random matrices and vectors from Gaussian distributions at each iteration of the GS-ification proedure, with the coresponding variances, and use these as the inputs to calculate an estimate of the decay constant as given in Eq. \eqref{eq:f-matrix-version}. Using the fact that each $k^{-1}=X^TX$ for some Gaussian matrix $X$, we can rewrite the matrix contraction $\vec{n}^Tk^{-1}\vec{n}=\vec{n}^TX^TX\vec{n} = (X\vec{n})^TX\vec{n}$. This is the inner product of a vector $X\vec{n}$, whose elements are the sum of products of two Gaussian random variables with variance $\sigma_X$ and $\sigma_n$. For large dimension $p$, the distribution of such elements approaches a Gaussian by the Central Limit Theorem, with variance given by $p\sigma_X^2\sigma_n^2$. We can use this to approximate the expectation value of the inner product $(X\vec{n})^TX\vec{n}$ for large dimension $p$:
+
+\begin{equation}
+    \text{E}[(X\vec{n})^TX\vec{n}] = p\sigma_X\sigma_n
+    \label{eq:approach2}
+\end{equation}
+The reciprocal of Eq. \eqref{eq:approach2} is plotted in Fig. \ref{fig:approach2}, using standard deviations extracted from the data.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figs/approach2.png}
+    \caption{Approach 2– calculating decay constants using random matrix theory. See text around Eq. \eqref{eq:approach2}}
+    \label{fig:approach2}
+\end{figure}
+
+We can see that the first approach does not account for any of the variation that we see in Fig. \ref{fig:nvec_sig_dist}, and doesn't seem to fully match up with the data. The second approach, while roughly reconstructing the shape of the decay constant curve, does not see the same smooth behavior from one iteration to the next. \\
+
+\noindent Some useful random matrix theory references: \cite{Livan_2018},\cite{WignerMPThms},\cite{RMTguide}
+
+\begin{center}
+    \noindent \underline{\textit{Dependence of $k^{-1}$ on $\vec{n}$}}
+\end{center}
+
+The only way this could smooth out is if the $k^{-1}$ actually depend on the $\vec{n}$. We can test this idea by perturbing the $\vec{n}$ at each step so that they retain the same magnitude, but have a different structure. Permuting the elements of $\vec{n}$ achieves just this. Fig. FIGG shows the decay constants calculated using the normal procedure as outlined at the beginning of this section, along with the same calculation with the small modification whereby the $\vec{n}$ used to evaluate $2f^{-2}=\vec{n}^Tk^{-1}\vec{n}$ are permuted versions of the original $\vec{n}$. We see that all of the smoothness goes away, and that there must be some implicit dependence on the kinetic matrices and potential vectors that are being contracted at adjacent steps.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figs/k-depends-on-n.png}
+    \caption{The plot on the left shows the decay constants calculated in the correct GS-ification procedure (in blue), along with those calculated using permuted $\vec{n}$ in Eq. \eqref{eq:f-matrix-version}. The plot on the right shows how different they are by plotting their ratio.}
+    \label{fig:permuted-n}
+\end{figure}
+
+In retrospect, this dependence of $k^{-1}$ on the $\vec{n}$'s seems a little obvious. If we look at Eq. \eqref{eq:Q}, the kinetic matrix at the next iteration, $\tilde{k}$, is given by the $Q_{\alpha\beta}$ submatrix, reproduced below:
+
+\begin{equation}
+    \label{eq:ktilde}
+    \tilde{k} = k_{\alpha\beta} - \frac{k_{0\alpha}n_{0\beta}}{n_{00}} - \frac{k_{0\beta}n_{0\alpha}}{n_{00}} + \frac{k_{00} n_{0\alpha}n_{0\beta}}{n_{00}^2}
+\end{equation}
+
+We can test out which terms in Eq. \eqref{eq:ktilde} are responsible for the supression of the variance in the decay constants by artificially modifying the definition of $\tilde{k}$. In Fig. \ref{fig:fs-modifying-k}, I plot the decay constants calculated for different modified versions of the $k$ matrices, indicated in the legend of each plot. It appears that the $k_{\alpha\beta}$ term in $\tilde{k}$ is crucial in preserving the general shape of the curve (see bottom left subplot of Fig. \ref{fig:fs-modifying-k}, versus the two right subplots). This makes sense because $k$ at one iteration is determined by the $n$ matrices from the previous iteration, and it therefore carries some memory of the previous step. On the other hand, the presence of one of the other two terms involving $\vec{n}$ is required to supress the variation that is inherited from the crazy behavior of $\vec{n}$ from one iteration to the next. (I still need to think more about why only one of these terms is enough to smooth out the curve, as in the top right subplot of Fig. \ref{fig:fs-modifying-k})
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figs/f_comparisons.png}
+    \caption{The following short hand is used to refer to the following terms in Eq. \eqref{eq:ktilde}: ``$k_{ab}$" corresponds to $k_{\alpha\beta}$, ``outer(k,n)" corresponds to $- \frac{k_{0\alpha}n_{0\beta}}{n_{00}} - \frac{k_{0\beta}n_{0\alpha}}{n_{00}} $, and ``outer(n,n)" corresponds to $\frac{k_{00} n_{0\alpha}n_{0\beta}}{n_{00}^2}$.}
+    \label{fig:fs-modifying-k}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figs/f_ratios_comparisons.png}
+    \caption{Same as Fig. \ref{fig:fs-modifying-k}, except plotting the ratio of the decay constants using the modified $k$ matrices to the decay constant from the correct GS-ification procedure.}
+    \label{fig:fs-modifying-k-ratios}
+\end{figure}
+
+\pagebreak 
+
+\subsection{GSification with potentials drawn from different distributions}
+
+We would like our results to be as general as possible, and so we can test how the prediction for the decay constants from GS-ification changes when we modify the distribution from which we are drawing the potential matrix from. Previously, we drew each element from a flat distribution of integers $\in [-n_{max},n_{max}]$. From more realistic scenarios, we may expect a more sparse matrix, and so we can instead drawn matrices from distributions where 0 entries are more likely. Fig. \ref{fig:f-with-sparse-n} shows the resulting effect of modifying the probability of drawing a 0 as an element of the potential matrix, call it $p_0$. The choices of $p_0$ are shown in the legend. The overall behavior makes sense: when the potential matrix becomes more sparse, there are fewer interactions among axions, and so the decay constants should become less affected. In each of these runs, $n_{max}=10$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figs/different-potential-dists.png}
+    \caption{}
+    \label{fig:f-with-sparse-n}
+\end{figure}
+
+\pagebreak
 
 \color{red}\noindent \textbf{Things to do:}
 \begin{enumerate}
