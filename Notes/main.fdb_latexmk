@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1758324973.47349 "main.aux" "main.bbl" "main" 1758325452.32286 0
+["bibtex main"] 1759255577.54059 "main.aux" "main.bbl" "main" 1759255829.36705 0
   "./refs.bib" 1758324553.90164 1587 dcdae317dfec1e8cd942cbfa644b90fa ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1758325451.53141 26195 c7c6f8d743a42ffc937bcbc0f86da514 "pdflatex"
+  "main.aux" 1759255828.72698 26927 b90225b1813c8e76e848d1350f129207 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758325443.53555 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1758325452.32321 0
-  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1758325342.27215 73757 6a545c78db6d4a0ddd119192b4ecd5c0 ""
+["pdflatex"] 1759255822.70398 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1759255829.3676 0
+  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1759255822.22016 81794 24f6d4cdd0833b07339ad8a056828c0f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -153,7 +153,6 @@
   "figs/f-vs-axions.png" 1755528048.04647 164748 f7ef58a6459be3bb588c3c7fcda4492e ""
   "figs/f-vs-m-anthropic.png" 1754945416.14454 31409 6dc93f00725bc9a3f6f7aca7c69f6089 ""
   "figs/f_comparisons.png" 1758321344.84072 729929 0e99744c959d63622ebbf0e820c81d26 ""
-  "figs/f_ratios_comparisons.png" 1758321296.22338 674146 3c9709e0dd8d093c4693922e3dfe3e5e ""
   "figs/k-depends-on-n.png" 1758319040.43032 80951 3004a4ab3faa3bfcf6de9380965d3d27 ""
   "figs/kinv-distributions.png" 1758258535.61841 224202 9c72788b89b87b095e7193ca811e36fd ""
   "figs/low-scale-inf-prob.jpeg" 1752769678.00649 296564 4c35ee3e1ccb8bde6bb456afd4591d87 ""
@@ -163,13 +162,15 @@
   "figs/naxions-equalC-vsN.png" 1754947638.67055 279011 201194eea3ac5e5f7f4cd8c493c60e1c ""
   "figs/naxions-equalC.png" 1754804857.49647 356759 37651d67709d86b454b0313c8a550cc6 ""
   "figs/nvec_sig_dist.png" 1758241212.43842 463275 77eaa75334a2bde882a8a20819143327 ""
-  "main.aux" 1758325451.53141 26195 c7c6f8d743a42ffc937bcbc0f86da514 "pdflatex"
-  "main.bbl" 1758324973.70733 862 2d3227ff8dc04b74c98d6660cbd45816 "bibtex main"
-  "main.out" 1758325451.53449 5261 986b968a0a8f81eed7fe924f039adf7a "pdflatex"
-  "main.tex" 1758325342.27215 73757 6a545c78db6d4a0ddd119192b4ecd5c0 ""
+  "main.aux" 1759255828.72698 26927 b90225b1813c8e76e848d1350f129207 "pdflatex"
+  "main.bbl" 1759255577.76122 862 2d3227ff8dc04b74c98d6660cbd45816 "bibtex main"
+  "main.out" 1759255828.7303 6211 771c724b63d073f5051c705f1569af81 "pdflatex"
+  "main.tex" 1759255822.22016 81794 24f6d4cdd0833b07339ad8a056828c0f ""
+  "main.toc" 1759255828.73164 2848 886c6a3aaebc45e5325a7c9fb1cf0529 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
   "main.out"
   "main.pdf"
+  "main.toc"
   (rewritten before read)

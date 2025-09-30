@@ -31,6 +31,8 @@
 
 \maketitle
 
+\tableofcontents
+
 \section{Anthropics}
 The bounds for the possible ratio of the dark matter abundance to baryon abundance, $\zeta$, are given in \cite{anthropic-explanation} to be $2.5<\zeta <100$. The lower bound is related to the value for which perturbations near the size of our galaxy's stop growing, and the upper bound is related to the value that ultimately prevents star formation. All values within this range are allowed in the sense that they would lead to our existence today, but their likelihoods depend on the theory for dark matter, as we will see below. In section 5 of \cite{exploring-string-axiverse}, the authors consider the case of $n$ axions and the fraction of the dark matter that they constitute. If the axions make up all of the dark matter, then we can write $\zeta$ as:
 
@@ -628,9 +630,9 @@ The reciprocal of Eq. \eqref{eq:approach2} is plotted in Fig. \ref{fig:approach2
     \label{fig:approach2}
 \end{figure}
 
-We can see that the first approach does not account for any of the variation that we see in Fig. \ref{fig:nvec_sig_dist}, and doesn't seem to fully match up with the data. The second approach, while roughly reconstructing the shape of the decay constant curve, does not see the same smooth behavior from one iteration to the next. \\
+We can see that the first approach does not account for any of the variation that we see in Fig. \ref{fig:nvec_sig_dist}, and doesn't seem to fully match up with the data. The second approach, while roughly reconstructing the shape of the decay constant curve, does not see the same smooth behavior from one iteration to the next.
 
-\noindent Some useful random matrix theory references: \cite{Livan_2018},\cite{WignerMPThms},\cite{RMTguide}
+Some useful random matrix theory references: \cite{Livan_2018},\cite{WignerMPThms},\cite{RMTguide}.
 
 \begin{center}
     \noindent \underline{\textit{Dependence of $k^{-1}$ on $\vec{n}$}}
@@ -661,12 +663,12 @@ We can test out which terms in Eq. \eqref{eq:ktilde} are responsible for the sup
     \label{fig:fs-modifying-k}
 \end{figure}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.95\linewidth]{figs/f_ratios_comparisons.png}
-    \caption{Same as Fig. \ref{fig:fs-modifying-k}, except plotting the ratio of the decay constants using the modified $k$ matrices to the decay constant from the correct GS-ification procedure.}
-    \label{fig:fs-modifying-k-ratios}
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.95\linewidth]{figs/f_ratios_comparisons.png}
+%     \caption{Same as Fig. \ref{fig:fs-modifying-k}, except plotting the ratio of the decay constants using the modified $k$ matrices to the decay constant from the correct GS-ification procedure.}
+%     \label{fig:fs-modifying-k-ratios}
+% \end{figure}
 
 \pagebreak 
 
@@ -677,9 +679,135 @@ We would like our results to be as general as possible, and so we can test how t
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\linewidth]{figs/different-potential-dists.png}
-    \caption{}
+    \caption{The result of the GS procedure with sparser initial potential matrices. The probability of drawing 0 is given by $p0$ in the legend.}
     \label{fig:f-with-sparse-n}
 \end{figure}
+
+\subsection{Uncovering the structure of the GS calculation of decay cosntants}
+
+\subsubsection{Recap of the GS procedure}
+We are interested in the general axion theory
+\begin{align}\label{eqn:fundamental_basis}
+    {\cal L} = \frac12 K_{ij}\partial_\mu\theta_i\partial^\mu\theta_j - \Lambda_i^4(1 - \cos(N_{ij}\theta_j + \delta_i)\,.
+\end{align}
+Assuming the $\Lambda_i$ are hierarchical, we can work in the Gram-Schmidt basis. In this basis, the axion interaction matrix $N_{ij}$ is upper triangular, with the heaviest axions along the diagonal. In the limit that the axion masses are hierarchical, this basis is also the mass eigenbasis. ({\color{red} Discuss size of corrections due to finite ${\Lambda_{i + 1}^4}/\Lambda_i^4$}\color{black}).
+
+To go from the general ``fundamental'' basis of \cref{eqn:fundamental_basis} to the Gram-Schmidt basis, we follow the procedure discussed in my/Ella's other notes:
+\begin{enumerate}
+    \item The decay constant (maximum field excursion) of the heaviest axion is 
+    \begin{align}\label{eqn:decay_constants}
+        2f_{(i)}^{-2} = \vec n_{(i)}^T K_{(i)}^{-1}\vec n_{(i)}\,,
+    \end{align}
+    where
+    \begin{align}
+        \vec n_{(i)}= N_{(i)}^T\vec e_0
+    \end{align}
+    \item Define the update matrix (note that it is rectangular)
+    \begin{align}
+        R_{(i)} = \left[\begin{array}{c}-\frac{[N_{(i)}]_{0,1\dots n-i}}{[N_{(i)}]_{0,0}}\\{\mathbb I}_{n-i-1\times n-i-1}\end{array}\right]
+    \end{align}
+    \item Update:
+    \begin{align}
+        N_{(i + 1)} &= R_{(i)}^T N_{(i)}R_{(i)}\,,\\
+        K_{(i + 1)} &= R_{(i)}^T K_{(i)}R_{(i)}
+    \end{align}
+\end{enumerate}
+In the Gram-Schmidt (i.e.\ hierarchical) limit, the resulting axion theory is effectively
+\begin{align}
+    {\cal L}_{\rm GS} = \frac12 f_{(i)}^2\partial_\mu\theta_i\partial^\mu\theta_i - \Lambda_i^4(1 - \cos\theta_i)\,.
+\end{align}
+\subsubsection{An important simplification}
+Let us now consider the update procedure. We can define the matrix $Q_{(i)}$ which maps from the fundamental basis to the basis of the remaining $n - i$ light axions:
+\begin{align}
+    Q_{(i)} = R_{(0)}\cdots R_{(i)}\,.
+\end{align}
+In this language
+\begin{align}
+    N_{(i + 1)} &= Q_{(i)}^T N_{(0)}Q_{(i)}\,,\\
+    K_{(i + 1)} &= Q_{(i)}^T K_{(0)}Q_{(i)}\,.
+\end{align}
+We are interested in computing $2f_{(i + 1)}^{-2}$, and therefore the inverse of $K_{(i + 1)}$. While $K_{(0)}$ is full rank and invertible, the same is not true of $Q_{(i)}$, since it is rectangular and by construction throws out information at each step. This is where the notion of a pseudoinverse is useful. We utilize the weighted Moore-Penrose (left) pseudoinverse:
+\begin{align}
+    Q_{(i),K}^+\equiv(Q_{(i)}^T K Q_{(i)})^{-1}Q_{(i)}^TK\,,
+\end{align}
+which can be verified as a left-inverse by multiplication on the right by $Q_{(i)}$:
+\begin{align}
+    Q_{(i),K}^+Q_{(i),K}&= {\mathbb I}\,,\\
+    Q_{(i),K}Q_{(i),K}^+&= P_{(i),K}\,,
+\end{align}
+where ${\mathbb I}$ is the identity on the row space spanned by $Q_{(i)}$ and $P_{(i)}$ is the orthogonal projector onto the column space of $Q_{(i)}$ weighted by $K$ (i.e.\ the eigenvalues of $P_{(i),K}$ are either zero or one).
+
+Using the $K$-weighted pseudo-inverse, we may write
+\begin{align}
+    K_{(i + 1)}^{-1} &= (Q_{(i)}^TK_{(0)}Q_{(i)})^{-1}=Q_{(i)}^+K_{(0)}^{-1}[Q_{(i)}^+]^T\,.
+\end{align}
+where I have dropped the $K$ subscript for brevity, though it is always implied.
+
+Let us now expand the expression for the $i+1$th decay constant in terms of the fundamental parameters
+\begin{align}
+    2 f_{(i + 1)}^{-2} &= \vec n_{(i + 1)}^TK_{(i + 1)}^{-1}\vec n_{(i + 1)}\,,\\
+    &=\vec e_0^T N_{(i)} K_{(i + 1)}^{-1}N_{(i)}^T \vec e_0\,,\\
+    &=\vec e_0^T \{Q_{(i)}^TN_{(0)}Q_{(i)}\} \{Q_{(i)}^+K_{(0)}^{-1}[Q_{(i)}^+]^T\}\{Q_{(i)}^TN_{(0)}^TQ_{(i)}\} \vec e_0\,,\\
+    &=\vec e_0^T X_{(i)} K_{(0)}^{-1}X_{(i)}^T\vec e_0\,,
+\end{align}
+where
+\begin{align}
+    X_{(i)} = Q_{(i)}^T N_{(0)}P_{(i)}\,.
+\end{align}
+
+
+The product defining $X_{(i)}$ is critical to the statistical properties of $f_{(i)}$. Let us now consider the structure of the matrices composing $X_{(i)}$. First, $Q_{(i)}$ has a very particular structure:
+\begin{align}
+    Q_{(i)}^T = (\vec q_1,\dots,\vec q_{i},\vec e_0,\dots,\vec e_{n - i-1})\,.
+\end{align}
+The value of the $\vec q_{j}$ are given by the iterative step defining $Q_{(i)} = \prod_{j = 1}^i R_{(j)}$. Let us now focus on $\vec q_j$. At the first iteration
+\begin{align}
+    Q_{(0)} = R_{(0)}\,,
+\end{align}
+and by its construction, the columns of $R$ are orthogonal to the space spanned by the first row of $N_{(0)}$. As a result, the projector $P_{(0)}$ eliminates the first row of $N_{(0)}$, so that
+\begin{align}
+    N_{(0)}P_{(0)} = \left[\begin{array}{c}\vec 0^T\\\,
+    [N_{(0)}]_{1\dots n,0\dots n}\end{array}\right]\,.
+\end{align}
+Thus,
+\begin{align}
+    Q_{(0)}^T N_{(0)}P_{(0)} = \left[\begin{array}{cc}\vec q_1,{\mathbb I}_{n-1\times n-1}\end{array}\right]\left[\begin{array}{c}\vec 0^T\\\,
+    [N_{(0)}]_{1\dots n,0\dots n}\end{array}\right] = [N_{(0)} P_{(0)}]_{1\dots n,0\dots n}
+\end{align}
+Now focusing on $i = 1,2,\dots$, we can repeat all the same steps, since $R_{(i)}$ is orthogonal to the $i$th row of $N_{(i)}$ by construction.  Thus, in general, we find
+\begin{align}
+    Q_{(i)}^T N_{(0)}P_{(i)} = [N_{(0)}P_{(i)}]_{i\dots n,0\dots n}
+\end{align}
+
+With this identity, we now return to our computation of $2 f_{i + 1}^{-2}$:
+\begin{align}
+    2 f_{(i + 1)}^{-2} &=\vec e_0^T X_{(i)} K_{(0)}^{-1}X_{(i)}^T\vec e_0\,,\\
+    &=\vec e_0^T [N_{(0)} P_{(i)}]_{i\dots n,0\dots n} K_{(0)}^{-1}[N_{(0)} P_{(i)}]_{i\dots n,0\dots n}^T\vec e_0\,,\\\label{eqn:reduced_f_expression}
+    &=[N_{(0)} P_{(i)}]_{i,0\dots n} K_{(0)}^{-1}[N_{(0)} P_{(i)}]_{i,0\dots n}^T\,.
+\end{align}
+\Cref{eqn:reduced_f_expression} is far simpler to reason about than \cref{eqn:decay_constants}, since the matrix $P$ is just rank $n - i$ with eigenvalues $1$ or $0$, and otherwise the matrices involved contain the only fundamental parameters. All of the information about the relationships between the decay constants is contained in the projectors and the the distribution of the fundamental parameters.
+
+\subsubsection{Simple case}
+Let us assume that $N_{(0)}$ is an \emph{isotropic} random matrix, meaning that its elements are invariant under $O(n)$ transformations at the level of their distribution. Then, we can WLOG take the projection operator to be
+\begin{align}
+    P_{(i)} = \left[\begin{array}{cc}{\mathbb I}_{n - i\times n - i}&0\\0&0\end{array}\right]\,.
+\end{align}
+As a result, $[N_{(0)} P_{(i)}]_{i,0,\dots n}$ is just the $i$th row of $N_{(0)}$ where $i$ entries have been removed at random.
+
+Using the formula for the expectation value of a contraction of a random vector with a quadratic form, we get the following simple formula for $2f_{(i + 1)}^{-2}$
+\begin{align}
+    \langle2 f_{(i + 1)}^{-2}\rangle &= \langle [N_{(0)} P_{(i)}]_{i,0\dots n} K_{(0)}^{-1}[N_{(0)} P_{(i)}]_{i,0\dots n}^T \rangle\,,\\
+    &=\sigma_N^2{\rm tr}(K_{(0)}^{-1}{\mathbb I}_{n - i\times n  - i})\,,
+\end{align}
+If we further assume that $K_{(0)}^{-1}$ is isotropic, then we can replace the trace:
+\begin{align}
+    \langle2 f_{(i + 1)}^{-2}\rangle &= \sigma_N^2{\rm tr}(K_{(0)}^{-1}{\mathbb I}_{n - i\times n  - i})\,,\\
+    &=(N - i)\sigma_N^2\mu_K^{-2}\,,
+\end{align}
+where $\mu_K^2$ is the average eigenvalue of the kinetic matrix $K$. 
+
+
+This explains the behavior that we have been observing. In particular, I suspect that the flat random distribution we've been taking is \emph{not} isotropic, and the deviation from the $N - i$ scaling is a result of it. As projection matrices $P_{(i)}$ of lower and lower rank are applied to $N_{(0)}$, I suspect the distribution of the elements in the surviving subspace approach isotropy, since the subspace selected by $P_{(i)}$ would not seem to have a preferred direction.
 
 \pagebreak
 
