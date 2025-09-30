@@ -293,6 +293,7 @@ INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
 INPUT ./figs/Slope_vs_ApD.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold12.tfm
 INPUT ./figs/f-vs-axions.png
 INPUT ./figs/f-vs-axions.png
 INPUT ./figs/f-vs-axions.png

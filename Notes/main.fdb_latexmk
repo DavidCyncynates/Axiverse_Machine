@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1759255577.54059 "main.aux" "main.bbl" "main" 1759255829.36705 0
+["bibtex main"] 1759256642.24652 "main.aux" "main.bbl" "main" 1759256649.03205 0
   "./refs.bib" 1758324553.90164 1587 dcdae317dfec1e8cd942cbfa644b90fa ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1759255828.72698 26927 b90225b1813c8e76e848d1350f129207 "pdflatex"
+  "main.aux" 1759256648.38698 26860 868dd07c8f19de537ba90201d5c9fbae "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1759255822.70398 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1759255829.3676 0
-  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1759255822.22016 81794 24f6d4cdd0833b07339ad8a056828c0f ""
+["pdflatex"] 1759256642.48146 "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" "main.pdf" "main" 1759256649.03246 0
+  "/Users/ehenry98/Documents/GitHub/Axiverse_Machine/Notes/main.tex" 1759256638.53102 81768 a7cb6e69311b72d5004a9d5d44ad9d7f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -22,6 +22,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold10.tfm" 1266369035 788 aa2bfd021367054a224c4cf5a9967398 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold12.tfm" 1266369035 768 568afddd613f4818fa95373954d5df42 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold6.tfm" 1266369035 764 bc340104b2499eb440977e2d302aad8b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/bbold/bbold8.tfm" 1266369035 768 b3927d32cc38bf306f676b7e9ddf7414 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm" 1136768653 1116 4e6ba9d7914baa6482fd69f67d126380 ""
@@ -162,11 +163,11 @@
   "figs/naxions-equalC-vsN.png" 1754947638.67055 279011 201194eea3ac5e5f7f4cd8c493c60e1c ""
   "figs/naxions-equalC.png" 1754804857.49647 356759 37651d67709d86b454b0313c8a550cc6 ""
   "figs/nvec_sig_dist.png" 1758241212.43842 463275 77eaa75334a2bde882a8a20819143327 ""
-  "main.aux" 1759255828.72698 26927 b90225b1813c8e76e848d1350f129207 "pdflatex"
-  "main.bbl" 1759255577.76122 862 2d3227ff8dc04b74c98d6660cbd45816 "bibtex main"
-  "main.out" 1759255828.7303 6211 771c724b63d073f5051c705f1569af81 "pdflatex"
-  "main.tex" 1759255822.22016 81794 24f6d4cdd0833b07339ad8a056828c0f ""
-  "main.toc" 1759255828.73164 2848 886c6a3aaebc45e5325a7c9fb1cf0529 "pdflatex"
+  "main.aux" 1759256648.38698 26860 868dd07c8f19de537ba90201d5c9fbae "pdflatex"
+  "main.bbl" 1759256642.47416 862 2d3227ff8dc04b74c98d6660cbd45816 "bibtex main"
+  "main.out" 1759256648.39045 6091 643bb3e55ea7385b7dcdc9bbac6b9428 "pdflatex"
+  "main.tex" 1759256638.53102 81768 a7cb6e69311b72d5004a9d5d44ad9d7f ""
+  "main.toc" 1759256648.39106 2794 8c63c1279b296a9399b130765755ff12 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
